@@ -1,0 +1,46 @@
+% Auto-generated — do not edit by hand.
+\begin{table}[htbp]
+\centering
+\caption{Matched-budget head-to-head on Qwen3-8B (baseline PPL\,=\,12.10) and Llama-3.1-8B (baseline PPL\,=\,8.31), WikiText-2. Both algorithms run with configurations sized to land near each evaluator-call budget~$B$. \textbf{On both architectures, interchange-beam wins at $B{\geq}200$} by selecting fewer-but-better layers while calibration-free SLEB greedily removes too many and catastrophically degrades. At $B$\,=\,400, Qwen3-8B: interchange-beam removes 5 layers (PPL\,14.63, $+$20.8\%), calibration-free SLEB removes 13 (PPL\,40.74, $+$236.5\%). Llama-3.1-8B: interchange-beam removes 5 layers (PPL\,12.94, $+$55.7\%), calibration-free SLEB removes 16 (PPL\,185.4, $+$2131\%). At $B$\,=\,800, calibration-free SLEB destroys both models ($>$10$^{5}$--10$^{8}$ PPL), while interchange-beam remains stable. At $B$\,=\,50/100 calibration-free SLEB wins by removing fewer layers ($n$\,=\,1--3 vs.\ $n$\,=\,2--4); the budget ceiling prevents over-removal at small budgets, an implicit stopping rule absent at large budgets.}
+\label{tab:matched_budget}
+\normalsize
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.08}
+
+\noindent\textbf{Qwen3-8B} (baseline PPL\,=\,12.10).\par\vspace{0.35em}
+\begin{tabular}{@{}r >{\raggedright\arraybackslash}p{2.75cm} r r r r@{}}
+\toprule
+Budget & Method & Evals & \# Removed & Final PPL & $\Delta$\,\% \\
+\midrule
+50  & \makecell[l]{Calibration-free\\SLEB} & 36  & 1  & 12.30 & $+$1.6 \\
+50  & Interchange-beam & 43  & 2  & 12.55 & $+$3.7 \\
+100 & \makecell[l]{Calibration-free\\SLEB} & 71  & 2  & 12.55 & $+$3.7 \\
+100 & Interchange-beam & 77  & 3  & 12.97 & $+$7.1 \\
+200 & \makecell[l]{Calibration-free\\SLEB} & 170 & 5  & 14.63 & $+$20.8 \\
+200 & \textbf{Interchange-beam}   & 147 & 3  & \textbf{12.97} & $+$\textbf{7.1} \\
+400 & \makecell[l]{Calibration-free\\SLEB} & 390 & 13 & 40.74 & $+$236.5 \\
+400 & \textbf{Interchange-beam}   & 400 & 5  & \textbf{14.63} & $+$\textbf{20.8} \\
+800 & \makecell[l]{Calibration-free\\SLEB} & 666 & 36 & $1.08\!\times\!10^{8}$ & --- \\
+800 & \textbf{Interchange-beam}   & 655 & 6  & \textbf{15.97} & $+$\textbf{31.9} \\
+\bottomrule
+\end{tabular}
+
+\vspace{1.1em}
+\noindent\textbf{Llama-3.1-8B} (baseline PPL\,=\,8.31).\par\vspace{0.35em}
+\begin{tabular}{@{}r >{\raggedright\arraybackslash}p{2.75cm} r r r r@{}}
+\toprule
+Budget & Method & Evals & \# Removed & Final PPL & $\Delta$\,\% \\
+\midrule
+50  & \makecell[l]{\textbf{Calibration-free}\\\textbf{SLEB}} & 32  & \textbf{1}  & \textbf{9.07}  & $+$\textbf{9.2} \\
+50  & Interchange-beam & 39  & 2  & 9.79  & $+$17.8 \\
+100 & \makecell[l]{\textbf{Calibration-free}\\\textbf{SLEB}} & 93  & \textbf{3}  & \textbf{10.65} & $+$\textbf{28.1} \\
+100 & Interchange-beam & 98  & 4  & 11.65 & $+$40.2 \\
+200 & \makecell[l]{Calibration-free\\SLEB} & 177 & 6  & 14.37 & $+$72.9 \\
+200 & \textbf{Interchange-beam}   & 187 & \textbf{4}  & \textbf{11.65} & $+$\textbf{40.2} \\
+400 & \makecell[l]{Calibration-free\\SLEB} & 392 & 16 & 185.36 & $+$2131 \\
+400 & \textbf{Interchange-beam}   & 356 & \textbf{5}  & \textbf{12.94} & $+$\textbf{55.7} \\
+800 & \makecell[l]{Calibration-free\\SLEB} & 527 & 31 & $5.9\!\times\!10^{5}$ & --- \\
+800 & \textbf{Interchange-beam}   & 571 & \textbf{6}  & \textbf{14.37} & $+$\textbf{73.0} \\
+\bottomrule
+\end{tabular}
+\end{table}

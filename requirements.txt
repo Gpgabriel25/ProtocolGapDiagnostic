@@ -1,0 +1,34 @@
+# Core scientific stack
+numpy>=1.24
+scipy>=1.10
+pandas>=1.5
+matplotlib>=3.7
+
+# PyTorch (CPU/GPU, used by GPT-2-Medium, Pythia, BLOOM, downstream)
+torch>=2.0
+transformers>=4.40
+safetensors>=0.4
+accelerate>=0.27
+sentencepiece>=0.1.99
+protobuf>=4.21
+
+# JAX / TPU (used by Qwen3-8B, Llama-3.1-8B, Mistral-7B, 152M Chinchilla PE ablation)
+jax==0.10.0
+jaxlib==0.10.0
+flax>=0.7
+optax>=0.1.7
+chex>=0.1.7
+
+# Datasets / evaluation
+datasets>=2.14
+lm-eval>=0.4
+
+# Optional: 4-bit quantization for memory-constrained Mistral run
+# bitsandbytes>=0.43
+
+# Optional: HuggingFace hub for model downloads
+huggingface-hub>=0.20
+
+# tqdm + utilities
+tqdm
+pyyaml

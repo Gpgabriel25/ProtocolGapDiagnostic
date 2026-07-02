@@ -1,0 +1,138 @@
+{
+  "full_model_ppl": 23.533506092621803,
+  "skip_n1": {
+    "skip_layers": [
+      17
+    ],
+    "n_kept": 35,
+    "ppl_pruned": 24.194896736884193,
+    "ppl_recovered": 17.596790640294703,
+    "ppl_increase_pct": 2.810421199711285,
+    "ppl_recovery_pct": 997.6110417993542,
+    "n_lora_params": 14909440,
+    "training_steps": 200,
+    "losses": [
+      {
+        "step": 1,
+        "loss": 3.125
+      },
+      {
+        "step": 20,
+        "loss": 2.1875
+      },
+      {
+        "step": 40,
+        "loss": 2.03125
+      },
+      {
+        "step": 60,
+        "loss": 2.703125
+      },
+      {
+        "step": 80,
+        "loss": 3.375
+      },
+      {
+        "step": 100,
+        "loss": 2.578125
+      },
+      {
+        "step": 120,
+        "loss": 2.59375
+      },
+      {
+        "step": 140,
+        "loss": 2.859375
+      },
+      {
+        "step": 160,
+        "loss": 2.71875
+      },
+      {
+        "step": 180,
+        "loss": 2.65625
+      },
+      {
+        "step": 200,
+        "loss": 3.4375
+      }
+    ]
+  },
+  "skip_n3": {
+    "skip_layers": [
+      15,
+      17,
+      20
+    ],
+    "n_kept": 33,
+    "ppl_pruned": 26.802735065914156,
+    "ppl_recovered": 19.020394743395528,
+    "ppl_increase_pct": 13.891805838133564,
+    "ppl_recovery_pct": 238.0481876948876,
+    "n_lora_params": 14057472,
+    "training_steps": 200,
+    "losses": [
+      {
+        "step": 1,
+        "loss": 3.28125
+      },
+      {
+        "step": 20,
+        "loss": 2.296875
+      },
+      {
+        "step": 40,
+        "loss": 2.078125
+      },
+      {
+        "step": 60,
+        "loss": 2.75
+      },
+      {
+        "step": 80,
+        "loss": 3.40625
+      },
+      {
+        "step": 100,
+        "loss": 2.5625
+      },
+      {
+        "step": 120,
+        "loss": 2.71875
+      },
+      {
+        "step": 140,
+        "loss": 2.890625
+      },
+      {
+        "step": 160,
+        "loss": 2.6875
+      },
+      {
+        "step": 180,
+        "loss": 2.609375
+      },
+      {
+        "step": 200,
+        "loss": 3.515625
+      }
+    ]
+  },
+  "elapsed_sec": 440.1643946170807,
+  "config": {
+    "model": "Qwen/Qwen3-8B",
+    "lora_rank": 16,
+    "lora_alpha": 32,
+    "lr": 0.0002,
+    "n_steps": 200,
+    "batch_size": 1,
+    "seq_len": 128,
+    "eval_seqs": 50,
+    "targets": [
+      "q_w",
+      "k_w",
+      "v_w",
+      "o_w"
+    ]
+  }
+}

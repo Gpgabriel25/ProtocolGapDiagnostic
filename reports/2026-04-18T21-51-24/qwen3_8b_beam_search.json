@@ -1,0 +1,104 @@
+{
+  "model": "Qwen/Qwen3-8B",
+  "method": "beam_search_bisim",
+  "beam_width": 3,
+  "seed_k": 12,
+  "seed_strategy": "top-12 by interchange KL min-neighbor score",
+  "evaluator": {
+    "dataset": "wikitext-2-raw-v1 test",
+    "max_words": 5000,
+    "window": 512,
+    "stride": 256,
+    "dtype": "bfloat16",
+    "device": "TPU v6e-8 (bq-v6e-8, europe-west4-a)"
+  },
+  "baseline_ppl": 12.1045,
+  "note_on_baseline": "Actual run baseline PPL=12.1045 (n_tokens=5734). Paper table caption states 12.09 (rounded). Script's save_partial used paper's 12.09 but deltas in this final JSON use actual 12.1045 baseline.",
+  "n_tokens": 5734,
+  "total_evals": 406,
+  "total_time_s": 160.9,
+  "beam_search_time_s": 160.9,
+  "seed_layers_by_interchange_kl": [25, 26, 28, 29, 27, 20, 21, 22, 18, 19, 17, 30],
+  "seed_layer_scores": {
+    "20": 0.0612,
+    "21": 0.0612,
+    "17": 0.0778,
+    "18": 0.0742,
+    "19": 0.0742,
+    "22": 0.0729,
+    "25": 0.0555,
+    "26": 0.0555,
+    "27": 0.0582,
+    "28": 0.0581,
+    "29": 0.0581,
+    "30": 0.0802
+  },
+  "best_by_n": {
+    "1": {
+      "layers_removed": [20],
+      "ppl": 12.2979,
+      "delta_ppl_pct": 1.60
+    },
+    "2": {
+      "layers_removed": [15, 20],
+      "ppl": 12.5526,
+      "delta_ppl_pct": 3.70
+    },
+    "3": {
+      "layers_removed": [2, 15, 20],
+      "ppl": 12.9692,
+      "delta_ppl_pct": 7.14
+    },
+    "4": {
+      "layers_removed": [2, 15, 16, 20],
+      "ppl": 13.5780,
+      "delta_ppl_pct": 12.17
+    },
+    "5": {
+      "layers_removed": [2, 15, 16, 20, 26],
+      "ppl": 14.6268,
+      "delta_ppl_pct": 20.84
+    }
+  },
+  "top3_beams_by_n": {
+    "1": [
+      {"layers": [20], "ppl": 12.2979},
+      {"layers": [19], "ppl": 12.4309},
+      {"layers": [17], "ppl": 12.4106}
+    ],
+    "2": [
+      {"layers": [15, 20], "ppl": 12.5526},
+      {"layers": [18, 19], "ppl": 12.6775},
+      {"layers": [17, 20], "ppl": 12.7082}
+    ]
+  },
+  "comparison": {
+    "n1": {
+      "beam_bisim": {"layers": [20], "ppl": 12.2979, "delta_pct": 1.60},
+      "interchange_greedy": {"layers": [17], "ppl": 12.42, "delta_pct": 2.5},
+      "verdict": "BEAM WINS by 0.9pp"
+    },
+    "n2": {
+      "beam_bisim": {"layers": [15, 20], "ppl": 12.5526, "delta_pct": 3.70},
+      "sleb_greedy": {"layers": [15, 20], "ppl": 12.55, "delta_pct": 3.7},
+      "sleb_iterative": {"layers": [17, 18], "ppl": 13.00, "delta_pct": 7.3},
+      "verdict": "TIED with SLEB-greedy (same layers); BEAM WINS vs SLEB-iterative by 3.6pp"
+    },
+    "n3": {
+      "beam_bisim": {"layers": [2, 15, 20], "ppl": 12.9692, "delta_pct": 7.14},
+      "bisim_clustered": {"layers": [15, 17, 20], "ppl": 13.35, "delta_pct": 10.2},
+      "sleb_iterative": {"layers": [17, 18, 19], "ppl": 13.47, "delta_pct": 11.2},
+      "verdict": "BEAM WINS over bisim-clustered by 3.1pp; BEAM WINS over SLEB-iterative by 4.1pp"
+    },
+    "n5": {
+      "beam_bisim": {"layers": [2, 15, 16, 20, 26], "ppl": 14.6268, "delta_pct": 20.84},
+      "bisim_clustered": {"layers": [15, 17, 18, 19, 20], "ppl": 17.61, "delta_pct": 45.4},
+      "sleb_iterative": {"layers": [17, 18, 19, 20, 21], "ppl": 17.71, "delta_pct": 46.2},
+      "verdict": "BEAM DRAMATICALLY WINS over bisim-clustered by 24.6pp; over SLEB-iterative by 25.4pp"
+    }
+  },
+  "bisim_score_source": "reports/2026-04-07T16-02-23/qwen3_8b_output/qwen3_8b_results.json (102 pairs, gap<=3, 500 prompts, 128 tokens, bf16, TPU v6e-8)",
+  "script": "qwen3_beam_search.py",
+  "tpu_log": "reports/2026-04-18T21-51-24/qwen3_beam_search_tpu.log",
+  "run_timestamp": "2026-04-20T02:07:24"
+}

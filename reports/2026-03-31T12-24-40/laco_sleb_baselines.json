@@ -1,0 +1,473 @@
+{
+  "model": "gpt2-medium",
+  "baseline_ppl": 41.5,
+  "n_layers": 24,
+  "eval_texts": 50,
+  "results": [
+    {
+      "method": "bisim-guided",
+      "budget": 1,
+      "ppl": 43.81,
+      "delta_pct": 5.57,
+      "layers_removed": [
+        5
+      ]
+    },
+    {
+      "method": "bi-guided",
+      "budget": 1,
+      "ppl": 43.45,
+      "delta_pct": 4.71,
+      "layers_removed": [
+        6
+      ]
+    },
+    {
+      "method": "laco-bisim",
+      "budget": 1,
+      "ppl": 116.42,
+      "delta_pct": 180.57,
+      "layers_merged": [
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "method": "laco-bi",
+      "budget": 1,
+      "ppl": 93.18,
+      "delta_pct": 124.55,
+      "layers_merged": [
+        [
+          7,
+          8
+        ]
+      ]
+    },
+    {
+      "method": "laco-sequential",
+      "budget": 1,
+      "ppl": 9488.8,
+      "delta_pct": 22767.18,
+      "layers_merged": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "method": "sleb-greedy",
+      "budget": 1,
+      "ppl": 42.61,
+      "delta_pct": 2.69,
+      "layers_removed": [
+        2
+      ]
+    },
+    {
+      "method": "bisim-guided",
+      "budget": 2,
+      "ppl": 46.18,
+      "delta_pct": 11.28,
+      "layers_removed": [
+        5,
+        15
+      ]
+    },
+    {
+      "method": "bi-guided",
+      "budget": 2,
+      "ppl": 48.54,
+      "delta_pct": 16.98,
+      "layers_removed": [
+        6,
+        5
+      ]
+    },
+    {
+      "method": "laco-bisim",
+      "budget": 2,
+      "ppl": 144.17,
+      "delta_pct": 247.44,
+      "layers_merged": [
+        [
+          4,
+          5
+        ],
+        [
+          14,
+          15
+        ]
+      ]
+    },
+    {
+      "method": "laco-bi",
+      "budget": 2,
+      "ppl": 100.4,
+      "delta_pct": 141.95,
+      "layers_merged": [
+        [
+          7,
+          8
+        ],
+        [
+          10,
+          11
+        ]
+      ]
+    },
+    {
+      "method": "laco-sequential",
+      "budget": 2,
+      "ppl": 10832.61,
+      "delta_pct": 26005.65,
+      "layers_merged": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    },
+    {
+      "method": "sleb-greedy",
+      "budget": 2,
+      "ppl": 53.64,
+      "delta_pct": 29.27,
+      "layers_removed": [
+        2,
+        3
+      ]
+    },
+    {
+      "method": "bisim-guided",
+      "budget": 3,
+      "ppl": 51.73,
+      "delta_pct": 24.66,
+      "layers_removed": [
+        5,
+        15,
+        17
+      ]
+    },
+    {
+      "method": "bi-guided",
+      "budget": 3,
+      "ppl": 55.44,
+      "delta_pct": 33.6,
+      "layers_removed": [
+        6,
+        5,
+        7
+      ]
+    },
+    {
+      "method": "laco-bisim",
+      "budget": 3,
+      "ppl": 182.72,
+      "delta_pct": 340.34,
+      "layers_merged": [
+        [
+          4,
+          5
+        ],
+        [
+          14,
+          15
+        ],
+        [
+          16,
+          17
+        ]
+      ]
+    },
+    {
+      "method": "laco-bi",
+      "budget": 3,
+      "ppl": 236.54,
+      "delta_pct": 470.04,
+      "layers_merged": [
+        [
+          7,
+          8
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          5,
+          6
+        ]
+      ]
+    },
+    {
+      "method": "laco-sequential",
+      "budget": 3,
+      "ppl": 72576.21,
+      "delta_pct": 174802.34,
+      "layers_merged": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "method": "sleb-greedy",
+      "budget": 3,
+      "ppl": 96.05,
+      "delta_pct": 131.46,
+      "layers_removed": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "method": "bisim-guided",
+      "budget": 4,
+      "ppl": 57.09,
+      "delta_pct": 37.58,
+      "layers_removed": [
+        5,
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "method": "bi-guided",
+      "budget": 4,
+      "ppl": 70.13,
+      "delta_pct": 69.0,
+      "layers_removed": [
+        6,
+        5,
+        7,
+        8
+      ]
+    },
+    {
+      "method": "laco-bisim",
+      "budget": 4,
+      "ppl": 230.4,
+      "delta_pct": 455.26,
+      "layers_merged": [
+        [
+          4,
+          5
+        ],
+        [
+          14,
+          15
+        ],
+        [
+          16,
+          17
+        ],
+        [
+          20,
+          21
+        ]
+      ]
+    },
+    {
+      "method": "laco-bi",
+      "budget": 4,
+      "ppl": 415.51,
+      "delta_pct": 901.34,
+      "layers_merged": [
+        [
+          7,
+          8
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          12,
+          13
+        ]
+      ]
+    },
+    {
+      "method": "laco-sequential",
+      "budget": 4,
+      "ppl": 64150.91,
+      "delta_pct": 154498.1,
+      "layers_merged": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ]
+      ]
+    },
+    {
+      "method": "sleb-greedy",
+      "budget": 4,
+      "ppl": 119.1,
+      "delta_pct": 187.02,
+      "layers_removed": [
+        2,
+        3,
+        4,
+        8
+      ]
+    },
+    {
+      "method": "bisim-guided",
+      "budget": 5,
+      "ppl": 62.1,
+      "delta_pct": 49.67,
+      "layers_removed": [
+        5,
+        15,
+        16,
+        17,
+        21
+      ]
+    },
+    {
+      "method": "bi-guided",
+      "budget": 5,
+      "ppl": 90.86,
+      "delta_pct": 118.97,
+      "layers_removed": [
+        6,
+        5,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "method": "laco-bisim",
+      "budget": 5,
+      "ppl": 578.33,
+      "delta_pct": 1293.73,
+      "layers_merged": [
+        [
+          4,
+          5
+        ],
+        [
+          14,
+          15
+        ],
+        [
+          16,
+          17
+        ],
+        [
+          20,
+          21
+        ],
+        [
+          10,
+          11
+        ]
+      ]
+    },
+    {
+      "method": "laco-bi",
+      "budget": 5,
+      "ppl": 811.75,
+      "delta_pct": 1856.25,
+      "layers_merged": [
+        [
+          7,
+          8
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          14,
+          15
+        ]
+      ]
+    },
+    {
+      "method": "laco-sequential",
+      "budget": 5,
+      "ppl": 357080.85,
+      "delta_pct": 860433.79,
+      "layers_merged": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          8,
+          9
+        ]
+      ]
+    },
+    {
+      "method": "sleb-greedy",
+      "budget": 5,
+      "ppl": 179.58,
+      "delta_pct": 332.77,
+      "layers_removed": [
+        2,
+        3,
+        4,
+        8,
+        6
+      ]
+    }
+  ]
+}

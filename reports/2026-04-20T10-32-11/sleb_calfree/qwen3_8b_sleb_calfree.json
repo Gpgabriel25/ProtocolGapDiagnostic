@@ -1,0 +1,83 @@
+{
+  "baseline": {
+    "layers_removed": [],
+    "n_removed": 0,
+    "ppl": 12.1045,
+    "delta_ppl_pct": 0.0,
+    "n_tokens": 5734
+  },
+  "sleb_calfree_n1": {
+    "layers_removed": [
+      16
+    ],
+    "n_removed": 1,
+    "ppl": 12.5487,
+    "delta_ppl_pct": 3.67,
+    "n_tokens": 5734
+  },
+  "sleb_calfree_n2": {
+    "layers_removed": [
+      16,
+      10
+    ],
+    "n_removed": 2,
+    "ppl": 13.3854,
+    "delta_ppl_pct": 10.58,
+    "n_tokens": 5734
+  },
+  "sleb_calfree_n3": {
+    "layers_removed": [
+      16,
+      10,
+      15
+    ],
+    "n_removed": 3,
+    "ppl": 13.6684,
+    "delta_ppl_pct": 12.92,
+    "n_tokens": 5734
+  },
+  "sleb_calfree_n5": {
+    "layers_removed": [
+      16,
+      10,
+      15,
+      2,
+      30
+    ],
+    "n_removed": 5,
+    "ppl": 15.9539,
+    "delta_ppl_pct": 31.8,
+    "n_tokens": 5734
+  },
+  "_meta": {
+    "model": "Qwen/Qwen3-8B",
+    "bootstrap_len": 256,
+    "bootstrap_first16": [
+      151645,
+      8,
+      220,
+      17,
+      15,
+      17,
+      18,
+      12,
+      15,
+      19,
+      12,
+      16,
+      18,
+      220,
+      16,
+      19
+    ],
+    "bootstrap_protocol": "greedy decode from BOS, full model, no held-out calibration corpus",
+    "evaluator": "wikitext/wikitext-2-raw-v1:test",
+    "max_words": 5000,
+    "window": 512,
+    "stride": 256,
+    "dtype": "bfloat16",
+    "n_layers": 36,
+    "timestamp": "2026-04-20T14-33-45",
+    "total_time_s": 30.9
+  }
+}

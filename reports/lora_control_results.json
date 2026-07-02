@@ -1,0 +1,70 @@
+{
+  "full_baseline_ppl": 23.533506092621803,
+  "full_lora_ppl": 17.332761261021833,
+  "domain_adaptation_gain": 6.20074483159997,
+  "n_lora_params": 15335424,
+  "losses": [
+    {
+      "step": 1,
+      "loss": 3.140625
+    },
+    {
+      "step": 20,
+      "loss": 2.171875
+    },
+    {
+      "step": 40,
+      "loss": 2.0
+    },
+    {
+      "step": 60,
+      "loss": 2.640625
+    },
+    {
+      "step": 80,
+      "loss": 3.359375
+    },
+    {
+      "step": 100,
+      "loss": 2.546875
+    },
+    {
+      "step": 120,
+      "loss": 2.625
+    },
+    {
+      "step": 140,
+      "loss": 2.765625
+    },
+    {
+      "step": 160,
+      "loss": 2.4375
+    },
+    {
+      "step": 180,
+      "loss": 2.6875
+    },
+    {
+      "step": 200,
+      "loss": 3.3125
+    }
+  ],
+  "elapsed_sec": 249.39045357704163,
+  "config": {
+    "model": "Qwen/Qwen3-8B",
+    "n_layers": 36,
+    "lora_rank": 16,
+    "lora_alpha": 32,
+    "lr": 0.0002,
+    "n_steps": 200,
+    "batch_size": 1,
+    "seq_len": 128,
+    "eval_seqs": 50,
+    "targets": [
+      "q_w",
+      "k_w",
+      "v_w",
+      "o_w"
+    ]
+  }
+}

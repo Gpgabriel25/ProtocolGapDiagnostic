@@ -1,0 +1,292 @@
+{
+  "model": "Qwen/Qwen3-8B",
+  "n_prompts": 50,
+  "seq_len": 64,
+  "n_layers": 36,
+  "pairs": [
+    [
+      2,
+      3
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      8,
+      9
+    ],
+    [
+      11,
+      12
+    ],
+    [
+      14,
+      15
+    ],
+    [
+      17,
+      18
+    ],
+    [
+      20,
+      21
+    ],
+    [
+      23,
+      24
+    ],
+    [
+      26,
+      27
+    ],
+    [
+      29,
+      30
+    ],
+    [
+      32,
+      33
+    ],
+    [
+      34,
+      35
+    ]
+  ],
+  "baseline_divergence_mean_kl": 2.50305438041687,
+  "baseline_divergence_max_kl": 3.8504528999328613,
+  "mean_ir_ratio_normal": 0.3037830237389911,
+  "mean_ir_ratio_norope": 0.2584932753034579,
+  "mean_ir_delta": -0.045289748435533204,
+  "interpretation": "ROPE_NEUTRAL: Protocol gap is UNCHANGED without RoPE. Mechanism is layer weight specialization, not positional encoding.",
+  "results": [
+    {
+      "layer_a": 2,
+      "layer_b": 3,
+      "replacement_kl_normal": 0.590745210647583,
+      "interchange_kl_normal": 0.1662398874759674,
+      "replacement_max_kl_normal": 1.7798770666122437,
+      "interchange_max_kl_normal": 0.6284621953964233,
+      "ir_ratio_normal": 0.281407084610526,
+      "ir_max_ratio_normal": 0.3530930350109047,
+      "replacement_kl_norope": 0.30770403146743774,
+      "interchange_kl_norope": 0.1318211704492569,
+      "replacement_max_kl_norope": 1.180261492729187,
+      "interchange_max_kl_norope": 0.5036197900772095,
+      "ir_ratio_norope": 0.4284024808534452,
+      "ir_max_ratio_norope": 0.4267018734235413,
+      "ir_ratio_delta": 0.14699539624291919,
+      "ir_max_ratio_delta": 0.0736088384126366
+    },
+    {
+      "layer_a": 5,
+      "layer_b": 6,
+      "replacement_kl_normal": 5.882603645324707,
+      "interchange_kl_normal": 0.3363296091556549,
+      "replacement_max_kl_normal": 13.289802551269531,
+      "interchange_max_kl_normal": 1.3640542030334473,
+      "ir_ratio_normal": 0.057173596834619006,
+      "ir_max_ratio_normal": 0.10263916245340633,
+      "replacement_kl_norope": 4.0823845863342285,
+      "interchange_kl_norope": 0.17737171053886414,
+      "replacement_max_kl_norope": 11.015363693237305,
+      "interchange_max_kl_norope": 0.4177834093570709,
+      "ir_ratio_norope": 0.04344806492083462,
+      "ir_max_ratio_norope": 0.037927336853486,
+      "ir_ratio_delta": -0.013725531913784388,
+      "ir_max_ratio_delta": -0.06471182559992034
+    },
+    {
+      "layer_a": 8,
+      "layer_b": 9,
+      "replacement_kl_normal": 0.47420310974121094,
+      "interchange_kl_normal": 0.1673245131969452,
+      "replacement_max_kl_normal": 1.8431167602539062,
+      "interchange_max_kl_normal": 0.4980863332748413,
+      "ir_ratio_normal": 0.35285410356811026,
+      "ir_max_ratio_normal": 0.2702413346869166,
+      "replacement_kl_norope": 0.20433592796325684,
+      "interchange_kl_norope": 0.061195019632577896,
+      "replacement_max_kl_norope": 0.8010127544403076,
+      "interchange_max_kl_norope": 0.18446876108646393,
+      "ir_ratio_norope": 0.2994824270139211,
+      "ir_max_ratio_norope": 0.23029441174798515,
+      "ir_ratio_delta": -0.053371676554189174,
+      "ir_max_ratio_delta": -0.03994692293893143
+    },
+    {
+      "layer_a": 11,
+      "layer_b": 12,
+      "replacement_kl_normal": 0.3242485821247101,
+      "interchange_kl_normal": 0.12917225062847137,
+      "replacement_max_kl_normal": 0.8543570637702942,
+      "interchange_max_kl_normal": 0.5005379915237427,
+      "ir_ratio_normal": 0.3983741417835718,
+      "ir_max_ratio_normal": 0.5858651057613533,
+      "replacement_kl_norope": 0.08893343061208725,
+      "interchange_kl_norope": 0.02924806997179985,
+      "replacement_max_kl_norope": 0.32048681378364563,
+      "interchange_max_kl_norope": 0.08928285539150238,
+      "ir_ratio_norope": 0.32887598927084055,
+      "ir_max_ratio_norope": 0.2785851134947957,
+      "ir_ratio_delta": -0.06949815251273123,
+      "ir_max_ratio_delta": -0.3072799922665576
+    },
+    {
+      "layer_a": 14,
+      "layer_b": 15,
+      "replacement_kl_normal": 0.23261263966560364,
+      "interchange_kl_normal": 0.08947757631540298,
+      "replacement_max_kl_normal": 1.0968470573425293,
+      "interchange_max_kl_normal": 0.37346360087394714,
+      "ir_ratio_normal": 0.3846634320647108,
+      "ir_max_ratio_normal": 0.3404883099917183,
+      "replacement_kl_norope": 0.0777226984500885,
+      "interchange_kl_norope": 0.025707343593239784,
+      "replacement_max_kl_norope": 0.26322293281555176,
+      "interchange_max_kl_norope": 0.12953290343284607,
+      "ir_ratio_norope": 0.3307572190091724,
+      "ir_max_ratio_norope": 0.49210341229505894,
+      "ir_ratio_delta": -0.05390621305553844,
+      "ir_max_ratio_delta": 0.15161510230334063
+    },
+    {
+      "layer_a": 17,
+      "layer_b": 18,
+      "replacement_kl_normal": 0.22557391226291656,
+      "interchange_kl_normal": 0.10055907070636749,
+      "replacement_max_kl_normal": 1.4702229499816895,
+      "interchange_max_kl_normal": 0.8677971959114075,
+      "ir_ratio_normal": 0.44579211176317834,
+      "ir_max_ratio_normal": 0.5902487074645483,
+      "replacement_kl_norope": 0.06945112347602844,
+      "interchange_kl_norope": 0.01664673537015915,
+      "replacement_max_kl_norope": 0.34348663687705994,
+      "interchange_max_kl_norope": 0.05518382415175438,
+      "ir_ratio_norope": 0.2396899364184496,
+      "ir_max_ratio_norope": 0.16065784874043199,
+      "ir_ratio_delta": -0.20610217534472874,
+      "ir_max_ratio_delta": -0.4295908587241163
+    },
+    {
+      "layer_a": 20,
+      "layer_b": 21,
+      "replacement_kl_normal": 0.26017624139785767,
+      "interchange_kl_normal": 0.06333191692829132,
+      "replacement_max_kl_normal": 1.6708664894104004,
+      "interchange_max_kl_normal": 0.5860484838485718,
+      "ir_ratio_normal": 0.2434192937372982,
+      "ir_max_ratio_normal": 0.35074524958326925,
+      "replacement_kl_norope": 0.08423559367656708,
+      "interchange_kl_norope": 0.024520408362150192,
+      "replacement_max_kl_norope": 0.2781640589237213,
+      "interchange_max_kl_norope": 0.2505970597267151,
+      "ir_ratio_norope": 0.2910931981591928,
+      "ir_max_ratio_norope": 0.9008966172564885,
+      "ir_ratio_delta": 0.04767390442189462,
+      "ir_max_ratio_delta": 0.5501513676732193
+    },
+    {
+      "layer_a": 23,
+      "layer_b": 24,
+      "replacement_kl_normal": 0.3513168692588806,
+      "interchange_kl_normal": 0.08427934348583221,
+      "replacement_max_kl_normal": 1.3680514097213745,
+      "interchange_max_kl_normal": 0.44096091389656067,
+      "ir_ratio_normal": 0.23989552128146718,
+      "ir_max_ratio_normal": 0.3223277361969675,
+      "replacement_kl_norope": 0.16349180042743683,
+      "interchange_kl_norope": 0.031093217432498932,
+      "replacement_max_kl_norope": 0.8146738409996033,
+      "interchange_max_kl_norope": 0.16199591755867004,
+      "ir_ratio_norope": 0.1901821213737208,
+      "ir_max_ratio_norope": 0.1988475748281071,
+      "ir_ratio_delta": -0.04971339990774637,
+      "ir_max_ratio_delta": -0.12348016136886036
+    },
+    {
+      "layer_a": 26,
+      "layer_b": 27,
+      "replacement_kl_normal": 0.31404152512550354,
+      "interchange_kl_normal": 0.05850173905491829,
+      "replacement_max_kl_normal": 1.1004005670547485,
+      "interchange_max_kl_normal": 0.4672142267227173,
+      "ir_ratio_normal": 0.1862866352834666,
+      "ir_max_ratio_normal": 0.42458559247495536,
+      "replacement_kl_norope": 0.1199067160487175,
+      "interchange_kl_norope": 0.01720413938164711,
+      "replacement_max_kl_norope": 0.39042118191719055,
+      "interchange_max_kl_norope": 0.058031268417835236,
+      "ir_ratio_norope": 0.1434793641972244,
+      "ir_max_ratio_norope": 0.14863760242942922,
+      "ir_ratio_delta": -0.04280727108624219,
+      "ir_max_ratio_delta": -0.27594799004552617
+    },
+    {
+      "layer_a": 29,
+      "layer_b": 30,
+      "replacement_kl_normal": 0.37804725766181946,
+      "interchange_kl_normal": 0.06256210803985596,
+      "replacement_max_kl_normal": 0.8553801774978638,
+      "interchange_max_kl_normal": 0.21616101264953613,
+      "ir_ratio_normal": 0.16548753303170533,
+      "ir_max_ratio_normal": 0.252707530915487,
+      "replacement_kl_norope": 0.13848072290420532,
+      "interchange_kl_norope": 0.01811767928302288,
+      "replacement_max_kl_norope": 0.6815366148948669,
+      "interchange_max_kl_norope": 0.07570063322782516,
+      "ir_ratio_norope": 0.13083177862637146,
+      "ir_max_ratio_norope": 0.11107346483431804,
+      "ir_ratio_delta": -0.03465575440533386,
+      "ir_max_ratio_delta": -0.14163406608116894
+    },
+    {
+      "layer_a": 32,
+      "layer_b": 33,
+      "replacement_kl_normal": 0.25901052355766296,
+      "interchange_kl_normal": 0.07321202754974365,
+      "replacement_max_kl_normal": 0.7284472584724426,
+      "interchange_max_kl_normal": 0.23632211983203888,
+      "ir_ratio_normal": 0.2826604361248844,
+      "ir_max_ratio_normal": 0.3244189844678769,
+      "replacement_kl_norope": 0.11010686308145523,
+      "interchange_kl_norope": 0.020809045061469078,
+      "replacement_max_kl_norope": 0.2978016138076782,
+      "interchange_max_kl_norope": 0.06814782321453094,
+      "ir_ratio_norope": 0.18898953688359,
+      "ir_max_ratio_norope": 0.2288363126821104,
+      "ir_ratio_delta": -0.0936708992412944,
+      "ir_max_ratio_delta": -0.09558267178576652
+    },
+    {
+      "layer_a": 34,
+      "layer_b": 35,
+      "replacement_kl_normal": 11.459498405456543,
+      "interchange_kl_normal": 6.960297584533691,
+      "replacement_max_kl_normal": 14.284466743469238,
+      "interchange_max_kl_normal": 8.313694953918457,
+      "ir_ratio_normal": 0.6073823947843549,
+      "ir_max_ratio_normal": 0.582009472472567,
+      "replacement_kl_norope": 7.772289752960205,
+      "interchange_kl_norope": 3.7826738357543945,
+      "replacement_max_kl_norope": 10.133235931396484,
+      "interchange_max_kl_norope": 5.675776958465576,
+      "ir_ratio_norope": 0.48668718691473134,
+      "ir_max_ratio_norope": 0.5601149521131681,
+      "ir_ratio_delta": -0.12069520786962351,
+      "ir_max_ratio_delta": -0.021894520359398872
+    }
+  ],
+  "total_time_s": 30.52077341079712,
+  "arch": {
+    "n_layers": 36,
+    "hidden": 4096,
+    "n_heads": 32,
+    "n_kv": 8,
+    "head_dim": 128,
+    "inter": 12288,
+    "rope_theta": 1000000.0,
+    "eps": 1e-06,
+    "has_qk_norm": true
+  }
+}

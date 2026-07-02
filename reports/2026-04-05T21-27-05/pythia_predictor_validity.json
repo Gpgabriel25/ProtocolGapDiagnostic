@@ -1,0 +1,17 @@
+{
+  "model": "EleutherAI/pythia-1.4b",
+  "n_samples": 8,
+  "max_length": 128,
+  "baseline_ppl": 23.57797161008437,
+  "correlation_interchange": {
+    "n_pairs": 23,
+    "spearman_rho": 0.49096831889936104,
+    "spearman_pvalue": 0.017364675059297844
+  },
+  "correlation_replacement": {
+    "n_pairs": 23,
+    "spearman_rho": 0.5657024077640822,
+    "spearman_pvalue": 0.004902153437652378
+  },
+  "elapsed_s": 236.70024394989014
+}

@@ -1,0 +1,43 @@
+{
+  "baseline": {
+    "kind": "baseline",
+    "n_layers": 24,
+    "perplexity": 19.19,
+    "n_tokens": null,
+    "time_s": 0.0,
+    "note": "cached from prior run",
+    "ppl_delta_pct": 0.0
+  },
+  "skip_5": {
+    "kind": "skip",
+    "n_layers": 23,
+    "perplexity": 20.1723,
+    "n_tokens": 22688,
+    "time_s": 121.9,
+    "ppl_delta_pct": 5.12
+  },
+  "share_4_at_both": {
+    "kind": "share",
+    "n_layers": 24,
+    "perplexity": 20.4467,
+    "n_tokens": 22688,
+    "time_s": 74.7,
+    "ppl_delta_pct": 6.55
+  },
+  "share_5_at_both": {
+    "kind": "share",
+    "n_layers": 24,
+    "perplexity": 20.2536,
+    "n_tokens": 22688,
+    "time_s": 113.2,
+    "ppl_delta_pct": 5.54
+  },
+  "multi_share": {
+    "kind": "share",
+    "n_layers": 24,
+    "perplexity": 22.0562,
+    "n_tokens": 22688,
+    "time_s": 104.9,
+    "ppl_delta_pct": 14.94
+  }
+}

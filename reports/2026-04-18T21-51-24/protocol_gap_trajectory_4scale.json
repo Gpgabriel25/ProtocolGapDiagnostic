@@ -1,0 +1,2916 @@
+{
+  "config": {
+    "prompts": 32,
+    "max_length": 128,
+    "dtype": "float32",
+    "models": [
+      "EleutherAI/pythia-410m"
+    ],
+    "checkpoints": [
+      "step0"
+    ],
+    "smoke": false
+  },
+  "results": [
+    {
+      "model": "EleutherAI/pythia-410m",
+      "checkpoint": "step0",
+      "n_layers": 24,
+      "n_pairs": 23,
+      "mean_interchange_kl": 0.01899014780982448,
+      "mean_replacement_kl": 0.054232680074283446,
+      "gap_kl": 0.03524253226445896,
+      "pearson_r": 0.940326260272495,
+      "per_pair": [
+        {
+          "layer_a": 0,
+          "layer_b": 1,
+          "interchange_kl": 0.20670262817293406,
+          "replacement_kl": 0.23497873079031706
+        },
+        {
+          "layer_a": 1,
+          "layer_b": 2,
+          "interchange_kl": 0.07999357325024903,
+          "replacement_kl": 0.1624401118606329
+        },
+        {
+          "layer_a": 2,
+          "layer_b": 3,
+          "interchange_kl": 0.042295298422686756,
+          "replacement_kl": 0.11572191468439996
+        },
+        {
+          "layer_a": 3,
+          "layer_b": 4,
+          "interchange_kl": 0.024234466953203082,
+          "replacement_kl": 0.09023640654049814
+        },
+        {
+          "layer_a": 4,
+          "layer_b": 5,
+          "interchange_kl": 0.017881062056403607,
+          "replacement_kl": 0.06992588215507567
+        },
+        {
+          "layer_a": 5,
+          "layer_b": 6,
+          "interchange_kl": 0.01258373461314477,
+          "replacement_kl": 0.06571300397627056
+        },
+        {
+          "layer_a": 6,
+          "layer_b": 7,
+          "interchange_kl": 0.009308526641689241,
+          "replacement_kl": 0.0540919853374362
+        },
+        {
+          "layer_a": 7,
+          "layer_b": 8,
+          "interchange_kl": 0.00756726719555445,
+          "replacement_kl": 0.04454325686674565
+        },
+        {
+          "layer_a": 8,
+          "layer_b": 9,
+          "interchange_kl": 0.005683588999090716,
+          "replacement_kl": 0.04273295681923628
+        },
+        {
+          "layer_a": 9,
+          "layer_b": 10,
+          "interchange_kl": 0.004627194764907472,
+          "replacement_kl": 0.04389931622426957
+        },
+        {
+          "layer_a": 10,
+          "layer_b": 11,
+          "interchange_kl": 0.004245877491484862,
+          "replacement_kl": 0.03697209432721138
+        },
+        {
+          "layer_a": 11,
+          "layer_b": 12,
+          "interchange_kl": 0.0033950885117519647,
+          "replacement_kl": 0.03387049515731633
+        },
+        {
+          "layer_a": 12,
+          "layer_b": 13,
+          "interchange_kl": 0.003096373868174851,
+          "replacement_kl": 0.030804777634330094
+        },
+        {
+          "layer_a": 13,
+          "layer_b": 14,
+          "interchange_kl": 0.0026308691303711385,
+          "replacement_kl": 0.03048336796928197
+        },
+        {
+          "layer_a": 14,
+          "layer_b": 15,
+          "interchange_kl": 0.0022657035588053986,
+          "replacement_kl": 0.028022148937452585
+        },
+        {
+          "layer_a": 15,
+          "layer_b": 16,
+          "interchange_kl": 0.0019292605284135789,
+          "replacement_kl": 0.025623693014495075
+        },
+        {
+          "layer_a": 16,
+          "layer_b": 17,
+          "interchange_kl": 0.001652295766689349,
+          "replacement_kl": 0.02366240875562653
+        },
+        {
+          "layer_a": 17,
+          "layer_b": 18,
+          "interchange_kl": 0.0014726075096405111,
+          "replacement_kl": 0.020417864143382758
+        },
+        {
+          "layer_a": 18,
+          "layer_b": 19,
+          "interchange_kl": 0.0011572407020139508,
+          "replacement_kl": 0.020164931542240083
+        },
+        {
+          "layer_a": 19,
+          "layer_b": 20,
+          "interchange_kl": 0.001142636905569816,
+          "replacement_kl": 0.01891032821731642
+        },
+        {
+          "layer_a": 20,
+          "layer_b": 21,
+          "interchange_kl": 0.0010468952441442525,
+          "replacement_kl": 0.018668442964553833
+        },
+        {
+          "layer_a": 21,
+          "layer_b": 22,
+          "interchange_kl": 0.0009737163345562294,
+          "replacement_kl": 0.01820793724618852
+        },
+        {
+          "layer_a": 22,
+          "layer_b": 23,
+          "interchange_kl": 0.0008874930044839857,
+          "replacement_kl": 0.017259586544241756
+        }
+      ],
+      "wall_time_s": 39.24
+    },
+    {
+      "model": "EleutherAI/pythia-410m",
+      "checkpoint": "step1000",
+      "n_layers": 24,
+      "n_pairs": 23,
+      "mean_interchange_kl": 0.07375648207285533,
+      "mean_replacement_kl": 0.11455613225774394,
+      "gap_kl": 0.04079965018488861,
+      "pearson_r": 0.996218935388567,
+      "per_pair": [
+        {
+          "layer_a": 0,
+          "layer_b": 1,
+          "interchange_kl": 1.5495448857545853,
+          "replacement_kl": 1.640564650297165
+        },
+        {
+          "layer_a": 1,
+          "layer_b": 2,
+          "interchange_kl": 0.024757084902375937,
+          "replacement_kl": 0.16645928472280502
+        },
+        {
+          "layer_a": 2,
+          "layer_b": 3,
+          "interchange_kl": 0.01279364334186539,
+          "replacement_kl": 0.07321241148747504
+        },
+        {
+          "layer_a": 3,
+          "layer_b": 4,
+          "interchange_kl": 0.012240902433404699,
+          "replacement_kl": 0.05715641216374934
+        },
+        {
+          "layer_a": 4,
+          "layer_b": 5,
+          "interchange_kl": 0.013337512355064973,
+          "replacement_kl": 0.062016022275201976
+        },
+        {
+          "layer_a": 5,
+          "layer_b": 6,
+          "interchange_kl": 0.012291383696720004,
+          "replacement_kl": 0.08318470255471766
+        },
+        {
+          "layer_a": 6,
+          "layer_b": 7,
+          "interchange_kl": 0.004978340308298357,
+          "replacement_kl": 0.029529893305152655
+        },
+        {
+          "layer_a": 7,
+          "layer_b": 8,
+          "interchange_kl": 0.005473458586493507,
+          "replacement_kl": 0.021892912103794515
+        },
+        {
+          "layer_a": 8,
+          "layer_b": 9,
+          "interchange_kl": 0.00455455482006073,
+          "replacement_kl": 0.02582341036759317
+        },
+        {
+          "layer_a": 9,
+          "layer_b": 10,
+          "interchange_kl": 0.001799902893253602,
+          "replacement_kl": 0.03405342937912792
+        },
+        {
+          "layer_a": 10,
+          "layer_b": 11,
+          "interchange_kl": 0.001876275971881114,
+          "replacement_kl": 0.0888291448354721
+        },
+        {
+          "layer_a": 11,
+          "layer_b": 12,
+          "interchange_kl": 0.0011096080397692276,
+          "replacement_kl": 0.04102220432832837
+        },
+        {
+          "layer_a": 12,
+          "layer_b": 13,
+          "interchange_kl": 0.0009447254942642758,
+          "replacement_kl": 0.013228897558292374
+        },
+        {
+          "layer_a": 13,
+          "layer_b": 14,
+          "interchange_kl": 0.0011643919642665423,
+          "replacement_kl": 0.01791370374849066
+        },
+        {
+          "layer_a": 14,
+          "layer_b": 15,
+          "interchange_kl": 0.001982425896130735,
+          "replacement_kl": 0.01886612136149779
+        },
+        {
+          "layer_a": 15,
+          "layer_b": 16,
+          "interchange_kl": 0.0015180693262664136,
+          "replacement_kl": 0.018700506538152695
+        },
+        {
+          "layer_a": 16,
+          "layer_b": 17,
+          "interchange_kl": 0.0014629660290665925,
+          "replacement_kl": 0.027433222974650562
+        },
+        {
+          "layer_a": 17,
+          "layer_b": 18,
+          "interchange_kl": 0.002026281123107765,
+          "replacement_kl": 0.022147508047055453
+        },
+        {
+          "layer_a": 18,
+          "layer_b": 19,
+          "interchange_kl": 0.0029543409546022303,
+          "replacement_kl": 0.026328201172873378
+        },
+        {
+          "layer_a": 19,
+          "layer_b": 20,
+          "interchange_kl": 0.0022553571543539874,
+          "replacement_kl": 0.026440959016326815
+        },
+        {
+          "layer_a": 20,
+          "layer_b": 21,
+          "interchange_kl": 0.0033144625849672593,
+          "replacement_kl": 0.037021018215455115
+        },
+        {
+          "layer_a": 21,
+          "layer_b": 22,
+          "interchange_kl": 0.0026956011497532018,
+          "replacement_kl": 0.03452824195846915
+        },
+        {
+          "layer_a": 22,
+          "layer_b": 23,
+          "interchange_kl": 0.03132291289512068,
+          "replacement_kl": 0.06843818351626396
+        }
+      ],
+      "wall_time_s": 32.31
+    },
+    {
+      "model": "EleutherAI/pythia-410m",
+      "checkpoint": "step16000",
+      "n_layers": 24,
+      "n_pairs": 23,
+      "mean_interchange_kl": 0.22140207852538404,
+      "mean_replacement_kl": 0.37217454694378516,
+      "gap_kl": 0.1507724684184011,
+      "pearson_r": 0.9757582391152615,
+      "per_pair": [
+        {
+          "layer_a": 0,
+          "layer_b": 1,
+          "interchange_kl": 4.5066379234194756,
+          "replacement_kl": 5.1726057305932045
+        },
+        {
+          "layer_a": 1,
+          "layer_b": 2,
+          "interchange_kl": 0.038268817734206095,
+          "replacement_kl": 0.05982863868121058
+        },
+        {
+          "layer_a": 2,
+          "layer_b": 3,
+          "interchange_kl": 0.021208079007919878,
+          "replacement_kl": 0.1441025787498802
+        },
+        {
+          "layer_a": 3,
+          "layer_b": 4,
+          "interchange_kl": 0.0715988950105384,
+          "replacement_kl": 0.0725724013755098
+        },
+        {
+          "layer_a": 4,
+          "layer_b": 5,
+          "interchange_kl": 0.10777649364899844,
+          "replacement_kl": 0.08107918605674058
+        },
+        {
+          "layer_a": 5,
+          "layer_b": 6,
+          "interchange_kl": 0.15881120203994215,
+          "replacement_kl": 0.26922338316217065
+        },
+        {
+          "layer_a": 6,
+          "layer_b": 7,
+          "interchange_kl": 0.11423643154557794,
+          "replacement_kl": 0.24341017799451947
+        },
+        {
+          "layer_a": 7,
+          "layer_b": 8,
+          "interchange_kl": 0.008485613041557372,
+          "replacement_kl": 0.24019888206385076
+        },
+        {
+          "layer_a": 8,
+          "layer_b": 9,
+          "interchange_kl": 0.0017732177111611236,
+          "replacement_kl": 0.2150877034291625
+        },
+        {
+          "layer_a": 9,
+          "layer_b": 10,
+          "interchange_kl": 0.0017599337697902229,
+          "replacement_kl": 0.01879329257644713
+        },
+        {
+          "layer_a": 10,
+          "layer_b": 11,
+          "interchange_kl": 0.0018451567684678594,
+          "replacement_kl": 0.015285622415831313
+        },
+        {
+          "layer_a": 11,
+          "layer_b": 12,
+          "interchange_kl": 0.0017953853875951609,
+          "replacement_kl": 0.02023587009171024
+        },
+        {
+          "layer_a": 12,
+          "layer_b": 13,
+          "interchange_kl": 0.001886880809252034,
+          "replacement_kl": 0.013538142229663208
+        },
+        {
+          "layer_a": 13,
+          "layer_b": 14,
+          "interchange_kl": 0.0019159295388817554,
+          "replacement_kl": 0.019952969771111384
+        },
+        {
+          "layer_a": 14,
+          "layer_b": 15,
+          "interchange_kl": 0.0018175864061049651,
+          "replacement_kl": 0.017290562798734754
+        },
+        {
+          "layer_a": 15,
+          "layer_b": 16,
+          "interchange_kl": 0.0020762424337590346,
+          "replacement_kl": 0.022246158856432885
+        },
+        {
+          "layer_a": 16,
+          "layer_b": 17,
+          "interchange_kl": 0.002081662059936207,
+          "replacement_kl": 0.02624989958712831
+        },
+        {
+          "layer_a": 17,
+          "layer_b": 18,
+          "interchange_kl": 0.0017325649969279766,
+          "replacement_kl": 0.02191354683600366
+        },
+        {
+          "layer_a": 18,
+          "layer_b": 19,
+          "interchange_kl": 0.0013388605857471703,
+          "replacement_kl": 0.023045863898005337
+        },
+        {
+          "layer_a": 19,
+          "layer_b": 20,
+          "interchange_kl": 0.0012894687697553309,
+          "replacement_kl": 0.03705046250252053
+        },
+        {
+          "layer_a": 20,
+          "layer_b": 21,
+          "interchange_kl": 0.00138101153424941,
+          "replacement_kl": 0.10486570908688009
+        },
+        {
+          "layer_a": 21,
+          "layer_b": 22,
+          "interchange_kl": 0.00610538333421573,
+          "replacement_kl": 0.8498558308929205
+        },
+        {
+          "layer_a": 22,
+          "layer_b": 23,
+          "interchange_kl": 0.036425066529773176,
+          "replacement_kl": 0.8715819660574198
+        }
+      ],
+      "wall_time_s": 29.71
+    },
+    {
+      "model": "EleutherAI/pythia-410m",
+      "checkpoint": "step64000",
+      "n_layers": 24,
+      "n_pairs": 23,
+      "mean_interchange_kl": 0.29527117479080084,
+      "mean_replacement_kl": 0.5047773153384459,
+      "gap_kl": 0.2095061405476451,
+      "pearson_r": 0.8512167911239034,
+      "per_pair": [
+        {
+          "layer_a": 0,
+          "layer_b": 1,
+          "interchange_kl": 5.831552408635616,
+          "replacement_kl": 4.506878912448883
+        },
+        {
+          "layer_a": 1,
+          "layer_b": 2,
+          "interchange_kl": 0.06809699512086809,
+          "replacement_kl": 0.08877129410393536
+        },
+        {
+          "layer_a": 2,
+          "layer_b": 3,
+          "interchange_kl": 0.05963307688944042,
+          "replacement_kl": 0.13494831579737365
+        },
+        {
+          "layer_a": 3,
+          "layer_b": 4,
+          "interchange_kl": 0.0900612841360271,
+          "replacement_kl": 0.22915270715020597
+        },
+        {
+          "layer_a": 4,
+          "layer_b": 5,
+          "interchange_kl": 0.10370373330079019,
+          "replacement_kl": 0.10236628539860249
+        },
+        {
+          "layer_a": 5,
+          "layer_b": 6,
+          "interchange_kl": 0.17381242895498872,
+          "replacement_kl": 1.5604721121490002
+        },
+        {
+          "layer_a": 6,
+          "layer_b": 7,
+          "interchange_kl": 0.18294769152998924,
+          "replacement_kl": 0.8919241167604923
+        },
+        {
+          "layer_a": 7,
+          "layer_b": 8,
+          "interchange_kl": 0.005034380119468551,
+          "replacement_kl": 0.40489926654845476
+        },
+        {
+          "layer_a": 8,
+          "layer_b": 9,
+          "interchange_kl": 0.0025056366612261627,
+          "replacement_kl": 0.27083731070160866
+        },
+        {
+          "layer_a": 9,
+          "layer_b": 10,
+          "interchange_kl": 0.0029768886670353822,
+          "replacement_kl": 0.04017150483559817
+        },
+        {
+          "layer_a": 10,
+          "layer_b": 11,
+          "interchange_kl": 0.0025106553184741642,
+          "replacement_kl": 0.02551125461468473
+        },
+        {
+          "layer_a": 11,
+          "layer_b": 12,
+          "interchange_kl": 0.0026285618187102955,
+          "replacement_kl": 0.02177851425949484
+        },
+        {
+          "layer_a": 12,
+          "layer_b": 13,
+          "interchange_kl": 0.0031343645896413364,
+          "replacement_kl": 0.02966295153601095
+        },
+        {
+          "layer_a": 13,
+          "layer_b": 14,
+          "interchange_kl": 0.003678180968563538,
+          "replacement_kl": 0.03156469709938392
+        },
+        {
+          "layer_a": 14,
+          "layer_b": 15,
+          "interchange_kl": 0.0030317108539748006,
+          "replacement_kl": 0.02261481387540698
+        },
+        {
+          "layer_a": 15,
+          "layer_b": 16,
+          "interchange_kl": 0.0034974317022715695,
+          "replacement_kl": 0.03290284192189574
+        },
+        {
+          "layer_a": 16,
+          "layer_b": 17,
+          "interchange_kl": 0.0029881555601605214,
+          "replacement_kl": 0.031501058023422956
+        },
+        {
+          "layer_a": 17,
+          "layer_b": 18,
+          "interchange_kl": 0.0029663315890502417,
+          "replacement_kl": 0.031820207252167165
+        },
+        {
+          "layer_a": 18,
+          "layer_b": 19,
+          "interchange_kl": 0.0022250450929277577,
+          "replacement_kl": 0.03271349333226681
+        },
+        {
+          "layer_a": 19,
+          "layer_b": 20,
+          "interchange_kl": 0.00205480215663556,
+          "replacement_kl": 0.04885782650671899
+        },
+        {
+          "layer_a": 20,
+          "layer_b": 21,
+          "interchange_kl": 0.0025381357572769048,
+          "replacement_kl": 0.22476254077628255
+        },
+        {
+          "layer_a": 21,
+          "layer_b": 22,
+          "interchange_kl": 0.013758751068962738,
+          "replacement_kl": 2.3097895085811615
+        },
+        {
+          "layer_a": 22,
+          "layer_b": 23,
+          "interchange_kl": 0.2259003696963191,
+          "replacement_kl": 0.5359767191112041
+        }
+      ],
+      "wall_time_s": 29.23
+    },
+    {
+      "model": "EleutherAI/pythia-410m",
+      "checkpoint": "step143000",
+      "n_layers": 24,
+      "n_pairs": 23,
+      "mean_interchange_kl": 0.4116810678560401,
+      "mean_replacement_kl": 0.6727181451455893,
+      "gap_kl": 0.26103707728954917,
+      "pearson_r": 0.7674957956193922,
+      "per_pair": [
+        {
+          "layer_a": 0,
+          "layer_b": 1,
+          "interchange_kl": 6.846767768263817,
+          "replacement_kl": 3.6843075528740883
+        },
+        {
+          "layer_a": 1,
+          "layer_b": 2,
+          "interchange_kl": 0.2270442177541554,
+          "replacement_kl": 0.3792243869975209
+        },
+        {
+          "layer_a": 2,
+          "layer_b": 3,
+          "interchange_kl": 0.08076422824524343,
+          "replacement_kl": 0.2912240354344249
+        },
+        {
+          "layer_a": 3,
+          "layer_b": 4,
+          "interchange_kl": 0.2134967795573175,
+          "replacement_kl": 0.1599186584353447
+        },
+        {
+          "layer_a": 4,
+          "layer_b": 5,
+          "interchange_kl": 0.14895999850705266,
+          "replacement_kl": 0.23809131793677807
+        },
+        {
+          "layer_a": 5,
+          "layer_b": 6,
+          "interchange_kl": 0.281008527148515,
+          "replacement_kl": 2.247106336057186
+        },
+        {
+          "layer_a": 6,
+          "layer_b": 7,
+          "interchange_kl": 0.3270839685574174,
+          "replacement_kl": 1.2490339875221252
+        },
+        {
+          "layer_a": 7,
+          "layer_b": 8,
+          "interchange_kl": 0.009739090164657682,
+          "replacement_kl": 0.8646759819239378
+        },
+        {
+          "layer_a": 8,
+          "layer_b": 9,
+          "interchange_kl": 0.00434889699681662,
+          "replacement_kl": 0.4384077824652195
+        },
+        {
+          "layer_a": 9,
+          "layer_b": 10,
+          "interchange_kl": 0.005648423415550496,
+          "replacement_kl": 0.06419606949202716
+        },
+        {
+          "layer_a": 10,
+          "layer_b": 11,
+          "interchange_kl": 0.004130487570364494,
+          "replacement_kl": 0.05033007124438882
+        },
+        {
+          "layer_a": 11,
+          "layer_b": 12,
+          "interchange_kl": 0.004647618312446866,
+          "replacement_kl": 0.04646837944164872
+        },
+        {
+          "layer_a": 12,
+          "layer_b": 13,
+          "interchange_kl": 0.004818091609195108,
+          "replacement_kl": 0.05850722023751587
+        },
+        {
+          "layer_a": 13,
+          "layer_b": 14,
+          "interchange_kl": 0.0068136047120788135,
+          "replacement_kl": 0.06029127782676369
+        },
+        {
+          "layer_a": 14,
+          "layer_b": 15,
+          "interchange_kl": 0.005983548311633058,
+          "replacement_kl": 0.0554886048194021
+        },
+        {
+          "layer_a": 15,
+          "layer_b": 16,
+          "interchange_kl": 0.006392511735612061,
+          "replacement_kl": 0.13063939730636775
+        },
+        {
+          "layer_a": 16,
+          "layer_b": 17,
+          "interchange_kl": 0.00824480458686594,
+          "replacement_kl": 0.1665684967301786
+        },
+        {
+          "layer_a": 17,
+          "layer_b": 18,
+          "interchange_kl": 0.0072492126855649985,
+          "replacement_kl": 0.1341075743548572
+        },
+        {
+          "layer_a": 18,
+          "layer_b": 19,
+          "interchange_kl": 0.0051806278206640854,
+          "replacement_kl": 0.3595096720382571
+        },
+        {
+          "layer_a": 19,
+          "layer_b": 20,
+          "interchange_kl": 0.004470383399166167,
+          "replacement_kl": 0.22897523315623403
+        },
+        {
+          "layer_a": 20,
+          "layer_b": 21,
+          "interchange_kl": 0.006455973445554264,
+          "replacement_kl": 0.7473124172538519
+        },
+        {
+          "layer_a": 21,
+          "layer_b": 22,
+          "interchange_kl": 0.05427131429314613,
+          "replacement_kl": 1.9452009163796902
+        },
+        {
+          "layer_a": 22,
+          "layer_b": 23,
+          "interchange_kl": 1.2051444835960865,
+          "replacement_kl": 1.872931968420744
+        }
+      ],
+      "wall_time_s": 27.21
+    },
+    {
+      "model": "EleutherAI/pythia-1.4b",
+      "checkpoint": "step0",
+      "n_layers": 24,
+      "n_pairs": 23,
+      "mean_interchange_kl": 0.01951226590070924,
+      "mean_replacement_kl": 0.05384536709322635,
+      "gap_kl": 0.034333101192517104,
+      "pearson_r": 0.9535315350244302,
+      "per_pair": [
+        {
+          "layer_a": 0,
+          "layer_b": 1,
+          "interchange_kl": 0.22037280211225152,
+          "replacement_kl": 0.25377453677356243
+        },
+        {
+          "layer_a": 1,
+          "layer_b": 2,
+          "interchange_kl": 0.08557743532583117,
+          "replacement_kl": 0.16122139105573297
+        },
+        {
+          "layer_a": 2,
+          "layer_b": 3,
+          "interchange_kl": 0.042634602170437574,
+          "replacement_kl": 0.11321691214106977
+        },
+        {
+          "layer_a": 3,
+          "layer_b": 4,
+          "interchange_kl": 0.02399822184816003,
+          "replacement_kl": 0.08474762015976012
+        },
+        {
+          "layer_a": 4,
+          "layer_b": 5,
+          "interchange_kl": 0.016191715898457915,
+          "replacement_kl": 0.07324608275666833
+        },
+        {
+          "layer_a": 5,
+          "layer_b": 6,
+          "interchange_kl": 0.011854780925204977,
+          "replacement_kl": 0.062321197357960045
+        },
+        {
+          "layer_a": 6,
+          "layer_b": 7,
+          "interchange_kl": 0.008531461120583117,
+          "replacement_kl": 0.056134147802367806
+        },
+        {
+          "layer_a": 7,
+          "layer_b": 8,
+          "interchange_kl": 0.0065454514406155795,
+          "replacement_kl": 0.046902119647711515
+        },
+        {
+          "layer_a": 8,
+          "layer_b": 9,
+          "interchange_kl": 0.005803924665087834,
+          "replacement_kl": 0.042694652918726206
+        },
+        {
+          "layer_a": 9,
+          "layer_b": 10,
+          "interchange_kl": 0.004731460561743006,
+          "replacement_kl": 0.03892117342911661
+        },
+        {
+          "layer_a": 10,
+          "layer_b": 11,
+          "interchange_kl": 0.0035556274306145497,
+          "replacement_kl": 0.033405611757189035
+        },
+        {
+          "layer_a": 11,
+          "layer_b": 12,
+          "interchange_kl": 0.002839558816049248,
+          "replacement_kl": 0.030210826080292463
+        },
+        {
+          "layer_a": 12,
+          "layer_b": 13,
+          "interchange_kl": 0.002400240657152608,
+          "replacement_kl": 0.02863267541397363
+        },
+        {
+          "layer_a": 13,
+          "layer_b": 14,
+          "interchange_kl": 0.00220816600631224,
+          "replacement_kl": 0.02608930942369625
+        },
+        {
+          "layer_a": 14,
+          "layer_b": 15,
+          "interchange_kl": 0.0019871478725690395,
+          "replacement_kl": 0.0261669650208205
+        },
+        {
+          "layer_a": 15,
+          "layer_b": 16,
+          "interchange_kl": 0.0017219483706867322,
+          "replacement_kl": 0.023523296404164284
+        },
+        {
+          "layer_a": 16,
+          "layer_b": 17,
+          "interchange_kl": 0.0015141924086492509,
+          "replacement_kl": 0.021564422466326505
+        },
+        {
+          "layer_a": 17,
+          "layer_b": 18,
+          "interchange_kl": 0.0013283014814078342,
+          "replacement_kl": 0.021885201975237578
+        },
+        {
+          "layer_a": 18,
+          "layer_b": 19,
+          "interchange_kl": 0.0012571215338539332,
+          "replacement_kl": 0.02052799763623625
+        },
+        {
+          "layer_a": 19,
+          "layer_b": 20,
+          "interchange_kl": 0.0010315123399777804,
+          "replacement_kl": 0.01961235684575513
+        },
+        {
+          "layer_a": 20,
+          "layer_b": 21,
+          "interchange_kl": 0.0009746914965944597,
+          "replacement_kl": 0.01882241218117997
+        },
+        {
+          "layer_a": 21,
+          "layer_b": 22,
+          "interchange_kl": 0.0008872129619703628,
+          "replacement_kl": 0.017606021428946406
+        },
+        {
+          "layer_a": 22,
+          "layer_b": 23,
+          "interchange_kl": 0.0008345382721017813,
+          "replacement_kl": 0.017216512467712164
+        }
+      ],
+      "wall_time_s": 66.43
+    },
+    {
+      "model": "EleutherAI/pythia-1.4b",
+      "checkpoint": "step1000",
+      "n_layers": 24,
+      "n_pairs": 23,
+      "mean_interchange_kl": 0.08848304936564881,
+      "mean_replacement_kl": 0.0922258331911112,
+      "gap_kl": 0.0037427838254623924,
+      "pearson_r": 0.9996154370982853,
+      "per_pair": [
+        {
+          "layer_a": 0,
+          "layer_b": 1,
+          "interchange_kl": 1.9801182001829147,
+          "replacement_kl": 1.7193200886249542
+        },
+        {
+          "layer_a": 1,
+          "layer_b": 2,
+          "interchange_kl": 0.01790107527631335,
+          "replacement_kl": 0.05913935077842325
+        },
+        {
+          "layer_a": 2,
+          "layer_b": 3,
+          "interchange_kl": 0.00816942188248504,
+          "replacement_kl": 0.029667026596143842
+        },
+        {
+          "layer_a": 3,
+          "layer_b": 4,
+          "interchange_kl": 0.004532784099865239,
+          "replacement_kl": 0.02897321170894429
+        },
+        {
+          "layer_a": 4,
+          "layer_b": 5,
+          "interchange_kl": 0.0017730663421389181,
+          "replacement_kl": 0.01661204162519425
+        },
+        {
+          "layer_a": 5,
+          "layer_b": 6,
+          "interchange_kl": 0.001464118486182997,
+          "replacement_kl": 0.014743906300282106
+        },
+        {
+          "layer_a": 6,
+          "layer_b": 7,
+          "interchange_kl": 0.0011850377850350924,
+          "replacement_kl": 0.016490130248712376
+        },
+        {
+          "layer_a": 7,
+          "layer_b": 8,
+          "interchange_kl": 0.000974447235421394,
+          "replacement_kl": 0.014274210843723267
+        },
+        {
+          "layer_a": 8,
+          "layer_b": 9,
+          "interchange_kl": 0.0008321736331708962,
+          "replacement_kl": 0.016313617350533605
+        },
+        {
+          "layer_a": 9,
+          "layer_b": 10,
+          "interchange_kl": 0.0013552773743867874,
+          "replacement_kl": 0.027247542864643037
+        },
+        {
+          "layer_a": 10,
+          "layer_b": 11,
+          "interchange_kl": 0.0006433051994463312,
+          "replacement_kl": 0.010534168250160292
+        },
+        {
+          "layer_a": 11,
+          "layer_b": 12,
+          "interchange_kl": 0.00036592256492440356,
+          "replacement_kl": 0.008428338434896432
+        },
+        {
+          "layer_a": 12,
+          "layer_b": 13,
+          "interchange_kl": 0.00034693572342803236,
+          "replacement_kl": 0.007476449478417635
+        },
+        {
+          "layer_a": 13,
+          "layer_b": 14,
+          "interchange_kl": 0.00024382374067499768,
+          "replacement_kl": 0.008423183229751885
+        },
+        {
+          "layer_a": 14,
+          "layer_b": 15,
+          "interchange_kl": 0.00036836347499047406,
+          "replacement_kl": 0.008004694318515249
+        },
+        {
+          "layer_a": 15,
+          "layer_b": 16,
+          "interchange_kl": 0.0003177501375830616,
+          "replacement_kl": 0.008789985004113987
+        },
+        {
+          "layer_a": 16,
+          "layer_b": 17,
+          "interchange_kl": 0.00039890967855171766,
+          "replacement_kl": 0.009955629095202312
+        },
+        {
+          "layer_a": 17,
+          "layer_b": 18,
+          "interchange_kl": 0.0006021664303261787,
+          "replacement_kl": 0.01097236093482934
+        },
+        {
+          "layer_a": 18,
+          "layer_b": 19,
+          "interchange_kl": 0.0005172017981749377,
+          "replacement_kl": 0.008807087870081887
+        },
+        {
+          "layer_a": 19,
+          "layer_b": 20,
+          "interchange_kl": 0.0007582303405797575,
+          "replacement_kl": 0.011684532189974561
+        },
+        {
+          "layer_a": 20,
+          "layer_b": 21,
+          "interchange_kl": 0.0006909958046890097,
+          "replacement_kl": 0.012205978040583432
+        },
+        {
+          "layer_a": 21,
+          "layer_b": 22,
+          "interchange_kl": 0.0067905840842286125,
+          "replacement_kl": 0.04441768839024007
+        },
+        {
+          "layer_a": 22,
+          "layer_b": 23,
+          "interchange_kl": 0.004760344134410843,
+          "replacement_kl": 0.02871294121723622
+        }
+      ],
+      "wall_time_s": 53.17
+    },
+    {
+      "model": "EleutherAI/pythia-1.4b",
+      "checkpoint": "step16000",
+      "n_layers": 24,
+      "n_pairs": 23,
+      "mean_interchange_kl": 0.25274065170220716,
+      "mean_replacement_kl": 0.3061152026854435,
+      "gap_kl": 0.053374550983236346,
+      "pearson_r": 0.978180686050875,
+      "per_pair": [
+        {
+          "layer_a": 0,
+          "layer_b": 1,
+          "interchange_kl": 5.467749014496803,
+          "replacement_kl": 4.99495105445385
+        },
+        {
+          "layer_a": 1,
+          "layer_b": 2,
+          "interchange_kl": 0.024969301011878997,
+          "replacement_kl": 0.08168398821726441
+        },
+        {
+          "layer_a": 2,
+          "layer_b": 3,
+          "interchange_kl": 0.048342176829464734,
+          "replacement_kl": 0.05479578243102878
+        },
+        {
+          "layer_a": 3,
+          "layer_b": 4,
+          "interchange_kl": 0.0603399989195168,
+          "replacement_kl": 0.08981102425605059
+        },
+        {
+          "layer_a": 4,
+          "layer_b": 5,
+          "interchange_kl": 0.0022434838610934094,
+          "replacement_kl": 0.06509087712038308
+        },
+        {
+          "layer_a": 5,
+          "layer_b": 6,
+          "interchange_kl": 0.001943677503732033,
+          "replacement_kl": 0.06140366243198514
+        },
+        {
+          "layer_a": 6,
+          "layer_b": 7,
+          "interchange_kl": 0.0015150002200243762,
+          "replacement_kl": 0.0767368609085679
+        },
+        {
+          "layer_a": 7,
+          "layer_b": 8,
+          "interchange_kl": 0.0016902181669138372,
+          "replacement_kl": 0.042643361375667155
+        },
+        {
+          "layer_a": 8,
+          "layer_b": 9,
+          "interchange_kl": 0.0017135456000687554,
+          "replacement_kl": 0.029050668934360147
+        },
+        {
+          "layer_a": 9,
+          "layer_b": 10,
+          "interchange_kl": 0.0012150529873906635,
+          "replacement_kl": 0.01131976768374443
+        },
+        {
+          "layer_a": 10,
+          "layer_b": 11,
+          "interchange_kl": 0.0012276692486921092,
+          "replacement_kl": 0.013962030003312975
+        },
+        {
+          "layer_a": 11,
+          "layer_b": 12,
+          "interchange_kl": 0.0011868241672345903,
+          "replacement_kl": 0.011157285392982885
+        },
+        {
+          "layer_a": 12,
+          "layer_b": 13,
+          "interchange_kl": 0.0008407471441387315,
+          "replacement_kl": 0.012197802745504305
+        },
+        {
+          "layer_a": 13,
+          "layer_b": 14,
+          "interchange_kl": 0.0007419062603730708,
+          "replacement_kl": 0.0130442000227049
+        },
+        {
+          "layer_a": 14,
+          "layer_b": 15,
+          "interchange_kl": 0.0008873926344676875,
+          "replacement_kl": 0.013047052023466676
+        },
+        {
+          "layer_a": 15,
+          "layer_b": 16,
+          "interchange_kl": 0.0007205007309494249,
+          "replacement_kl": 0.010061765235150233
+        },
+        {
+          "layer_a": 16,
+          "layer_b": 17,
+          "interchange_kl": 0.0005600838303507771,
+          "replacement_kl": 0.011015486699761823
+        },
+        {
+          "layer_a": 17,
+          "layer_b": 18,
+          "interchange_kl": 0.0006142817323961935,
+          "replacement_kl": 0.017363433813443407
+        },
+        {
+          "layer_a": 18,
+          "layer_b": 19,
+          "interchange_kl": 0.0007688782452532905,
+          "replacement_kl": 0.016772794188000262
+        },
+        {
+          "layer_a": 19,
+          "layer_b": 20,
+          "interchange_kl": 0.0006792095391574549,
+          "replacement_kl": 0.021828346303664148
+        },
+        {
+          "layer_a": 20,
+          "layer_b": 21,
+          "interchange_kl": 0.0008805746792859281,
+          "replacement_kl": 0.053272165823727846
+        },
+        {
+          "layer_a": 21,
+          "layer_b": 22,
+          "interchange_kl": 0.005862921389052644,
+          "replacement_kl": 1.0730217471718788
+        },
+        {
+          "layer_a": 22,
+          "layer_b": 23,
+          "interchange_kl": 0.1863425299525261,
+          "replacement_kl": 0.2664185045287013
+        }
+      ],
+      "wall_time_s": 55.2
+    },
+    {
+      "model": "EleutherAI/pythia-1.4b",
+      "checkpoint": "step64000",
+      "n_layers": 24,
+      "n_pairs": 23,
+      "mean_interchange_kl": 0.20237345847157406,
+      "mean_replacement_kl": 0.3697861873521976,
+      "gap_kl": 0.16741272888062353,
+      "pearson_r": 0.9498788691431617,
+      "per_pair": [
+        {
+          "layer_a": 0,
+          "layer_b": 1,
+          "interchange_kl": 3.5198755264282227,
+          "replacement_kl": 4.0711619928479195
+        },
+        {
+          "layer_a": 1,
+          "layer_b": 2,
+          "interchange_kl": 0.10214853123761714,
+          "replacement_kl": 0.17798572592437267
+        },
+        {
+          "layer_a": 2,
+          "layer_b": 3,
+          "interchange_kl": 0.17248464142903686,
+          "replacement_kl": 0.22484267642721534
+        },
+        {
+          "layer_a": 3,
+          "layer_b": 4,
+          "interchange_kl": 0.12854115129448473,
+          "replacement_kl": 0.6587218381464481
+        },
+        {
+          "layer_a": 4,
+          "layer_b": 5,
+          "interchange_kl": 0.0038323021435644478,
+          "replacement_kl": 0.3307188106700778
+        },
+        {
+          "layer_a": 5,
+          "layer_b": 6,
+          "interchange_kl": 0.002980322802613955,
+          "replacement_kl": 0.07671234617009759
+        },
+        {
+          "layer_a": 6,
+          "layer_b": 7,
+          "interchange_kl": 0.002574735666712513,
+          "replacement_kl": 0.13072167406789958
+        },
+        {
+          "layer_a": 7,
+          "layer_b": 8,
+          "interchange_kl": 0.0024440620582026895,
+          "replacement_kl": 0.04105951345991343
+        },
+        {
+          "layer_a": 8,
+          "layer_b": 9,
+          "interchange_kl": 0.002349282733121072,
+          "replacement_kl": 0.031020111171528697
+        },
+        {
+          "layer_a": 9,
+          "layer_b": 10,
+          "interchange_kl": 0.001822373055802018,
+          "replacement_kl": 0.02218516921857372
+        },
+        {
+          "layer_a": 10,
+          "layer_b": 11,
+          "interchange_kl": 0.002100668440107256,
+          "replacement_kl": 0.04416623082943261
+        },
+        {
+          "layer_a": 11,
+          "layer_b": 12,
+          "interchange_kl": 0.00232931864229613,
+          "replacement_kl": 0.02557471999898553
+        },
+        {
+          "layer_a": 12,
+          "layer_b": 13,
+          "interchange_kl": 0.002018661902184249,
+          "replacement_kl": 0.018510989379137754
+        },
+        {
+          "layer_a": 13,
+          "layer_b": 14,
+          "interchange_kl": 0.0020389394157973584,
+          "replacement_kl": 0.018924934323877096
+        },
+        {
+          "layer_a": 14,
+          "layer_b": 15,
+          "interchange_kl": 0.002187668329497683,
+          "replacement_kl": 0.024559581885114312
+        },
+        {
+          "layer_a": 15,
+          "layer_b": 16,
+          "interchange_kl": 0.0017712324897729559,
+          "replacement_kl": 0.018937794404337183
+        },
+        {
+          "layer_a": 16,
+          "layer_b": 17,
+          "interchange_kl": 0.0017456598307035165,
+          "replacement_kl": 0.027899572683963925
+        },
+        {
+          "layer_a": 17,
+          "layer_b": 18,
+          "interchange_kl": 0.001948947226992459,
+          "replacement_kl": 0.06821524002589285
+        },
+        {
+          "layer_a": 18,
+          "layer_b": 19,
+          "interchange_kl": 0.002256125590065494,
+          "replacement_kl": 0.030876355420332402
+        },
+        {
+          "layer_a": 19,
+          "layer_b": 20,
+          "interchange_kl": 0.0014774052924622083,
+          "replacement_kl": 0.11453499179333448
+        },
+        {
+          "layer_a": 20,
+          "layer_b": 21,
+          "interchange_kl": 0.0024334976042155176,
+          "replacement_kl": 0.09147695451974869
+        },
+        {
+          "layer_a": 21,
+          "layer_b": 22,
+          "interchange_kl": 0.04295784852001816,
+          "replacement_kl": 1.319071788340807
+        },
+        {
+          "layer_a": 22,
+          "layer_b": 23,
+          "interchange_kl": 0.6502706427127123,
+          "replacement_kl": 0.9372032973915339
+        }
+      ],
+      "wall_time_s": 52.22
+    },
+    {
+      "model": "EleutherAI/pythia-1.4b",
+      "checkpoint": "step143000",
+      "n_layers": 24,
+      "n_pairs": 23,
+      "mean_interchange_kl": 0.2614059037856034,
+      "mean_replacement_kl": 0.6401119640694283,
+      "gap_kl": 0.37870606028382486,
+      "pearson_r": 0.8734315771886135,
+      "per_pair": [
+        {
+          "layer_a": 0,
+          "layer_b": 1,
+          "interchange_kl": 3.3864984661340714,
+          "replacement_kl": 5.607536673545837
+        },
+        {
+          "layer_a": 1,
+          "layer_b": 2,
+          "interchange_kl": 0.17934677610173821,
+          "replacement_kl": 0.2185568460263312
+        },
+        {
+          "layer_a": 2,
+          "layer_b": 3,
+          "interchange_kl": 0.4405011283233762,
+          "replacement_kl": 0.5038710301741958
+        },
+        {
+          "layer_a": 3,
+          "layer_b": 4,
+          "interchange_kl": 0.2418367201462388,
+          "replacement_kl": 1.471442386507988
+        },
+        {
+          "layer_a": 4,
+          "layer_b": 5,
+          "interchange_kl": 0.012578841240610927,
+          "replacement_kl": 1.400309644639492
+        },
+        {
+          "layer_a": 5,
+          "layer_b": 6,
+          "interchange_kl": 0.004848832388233859,
+          "replacement_kl": 0.13121752464212477
+        },
+        {
+          "layer_a": 6,
+          "layer_b": 7,
+          "interchange_kl": 0.004215387467411347,
+          "replacement_kl": 0.21793056093156338
+        },
+        {
+          "layer_a": 7,
+          "layer_b": 8,
+          "interchange_kl": 0.00421191747955163,
+          "replacement_kl": 0.07069172547198832
+        },
+        {
+          "layer_a": 8,
+          "layer_b": 9,
+          "interchange_kl": 0.0036505632670014165,
+          "replacement_kl": 0.06245707510970533
+        },
+        {
+          "layer_a": 9,
+          "layer_b": 10,
+          "interchange_kl": 0.0030316876182041597,
+          "replacement_kl": 0.05147737939842045
+        },
+        {
+          "layer_a": 10,
+          "layer_b": 11,
+          "interchange_kl": 0.0038819558794784825,
+          "replacement_kl": 0.05854428024031222
+        },
+        {
+          "layer_a": 11,
+          "layer_b": 12,
+          "interchange_kl": 0.004335137255111476,
+          "replacement_kl": 0.048255516099743545
+        },
+        {
+          "layer_a": 12,
+          "layer_b": 13,
+          "interchange_kl": 0.003458480761764804,
+          "replacement_kl": 0.04203865851741284
+        },
+        {
+          "layer_a": 13,
+          "layer_b": 14,
+          "interchange_kl": 0.004143410442338791,
+          "replacement_kl": 0.050306833581998944
+        },
+        {
+          "layer_a": 14,
+          "layer_b": 15,
+          "interchange_kl": 0.004283753562049242,
+          "replacement_kl": 0.064948168117553
+        },
+        {
+          "layer_a": 15,
+          "layer_b": 16,
+          "interchange_kl": 0.003409158922295319,
+          "replacement_kl": 0.04734547424595803
+        },
+        {
+          "layer_a": 16,
+          "layer_b": 17,
+          "interchange_kl": 0.0033649339675321244,
+          "replacement_kl": 0.04738545301370323
+        },
+        {
+          "layer_a": 17,
+          "layer_b": 18,
+          "interchange_kl": 0.003814431322098244,
+          "replacement_kl": 0.21273344149813056
+        },
+        {
+          "layer_a": 18,
+          "layer_b": 19,
+          "interchange_kl": 0.0042402800027048215,
+          "replacement_kl": 0.09018012415617704
+        },
+        {
+          "layer_a": 19,
+          "layer_b": 20,
+          "interchange_kl": 0.003209918435459258,
+          "replacement_kl": 0.2951012277044356
+        },
+        {
+          "layer_a": 20,
+          "layer_b": 21,
+          "interchange_kl": 0.005058066082710866,
+          "replacement_kl": 0.15527091035619378
+        },
+        {
+          "layer_a": 21,
+          "layer_b": 22,
+          "interchange_kl": 0.06447548733558506,
+          "replacement_kl": 2.362245090305805
+        },
+        {
+          "layer_a": 22,
+          "layer_b": 23,
+          "interchange_kl": 1.6239404529333115,
+          "replacement_kl": 1.512729149311781
+        }
+      ],
+      "wall_time_s": 59.55
+    },
+    {
+      "model": "EleutherAI/pythia-6.9b",
+      "checkpoint": "step0",
+      "n_layers": 32,
+      "n_pairs": 31,
+      "mean_interchange_kl": 0.06137835531485654,
+      "mean_replacement_kl": 0.1766530150179601,
+      "gap_kl": 0.11527465970310356,
+      "pearson_r": 0.9362544857106816,
+      "per_pair": [
+        {
+          "layer_a": 0,
+          "layer_b": 1,
+          "interchange_kl": 0.8930999021977186,
+          "replacement_kl": 0.9446827787905931
+        },
+        {
+          "layer_a": 1,
+          "layer_b": 2,
+          "interchange_kl": 0.3599157202988863,
+          "replacement_kl": 0.6762201488018036
+        },
+        {
+          "layer_a": 2,
+          "layer_b": 3,
+          "interchange_kl": 0.18814477790147066,
+          "replacement_kl": 0.4413001639768481
+        },
+        {
+          "layer_a": 3,
+          "layer_b": 4,
+          "interchange_kl": 0.11490056221373379,
+          "replacement_kl": 0.3631786713376641
+        },
+        {
+          "layer_a": 4,
+          "layer_b": 5,
+          "interchange_kl": 0.07109026028774679,
+          "replacement_kl": 0.29686166252940893
+        },
+        {
+          "layer_a": 5,
+          "layer_b": 6,
+          "interchange_kl": 0.05195300199557096,
+          "replacement_kl": 0.2554538380354643
+        },
+        {
+          "layer_a": 6,
+          "layer_b": 7,
+          "interchange_kl": 0.03886134049389511,
+          "replacement_kl": 0.21143247140571475
+        },
+        {
+          "layer_a": 7,
+          "layer_b": 8,
+          "interchange_kl": 0.029064820613712072,
+          "replacement_kl": 0.2075848514214158
+        },
+        {
+          "layer_a": 8,
+          "layer_b": 9,
+          "interchange_kl": 0.021415658004116267,
+          "replacement_kl": 0.16413688100874424
+        },
+        {
+          "layer_a": 9,
+          "layer_b": 10,
+          "interchange_kl": 0.01784292870434001,
+          "replacement_kl": 0.15750628570094705
+        },
+        {
+          "layer_a": 10,
+          "layer_b": 11,
+          "interchange_kl": 0.015199773362837732,
+          "replacement_kl": 0.14118952490389347
+        },
+        {
+          "layer_a": 11,
+          "layer_b": 12,
+          "interchange_kl": 0.013012583047384396,
+          "replacement_kl": 0.1330732125788927
+        },
+        {
+          "layer_a": 12,
+          "layer_b": 13,
+          "interchange_kl": 0.010912405356066301,
+          "replacement_kl": 0.12455901131033897
+        },
+        {
+          "layer_a": 13,
+          "layer_b": 14,
+          "interchange_kl": 0.009277086413931102,
+          "replacement_kl": 0.11338712507858872
+        },
+        {
+          "layer_a": 14,
+          "layer_b": 15,
+          "interchange_kl": 0.008126984976115637,
+          "replacement_kl": 0.10200267238542438
+        },
+        {
+          "layer_a": 15,
+          "layer_b": 16,
+          "interchange_kl": 0.007305815757717937,
+          "replacement_kl": 0.10013862233608961
+        },
+        {
+          "layer_a": 16,
+          "layer_b": 17,
+          "interchange_kl": 0.00665032266988419,
+          "replacement_kl": 0.09629899403080344
+        },
+        {
+          "layer_a": 17,
+          "layer_b": 18,
+          "interchange_kl": 0.005730555043555796,
+          "replacement_kl": 0.0905201390851289
+        },
+        {
+          "layer_a": 18,
+          "layer_b": 19,
+          "interchange_kl": 0.005024304817197844,
+          "replacement_kl": 0.08116533933207393
+        },
+        {
+          "layer_a": 19,
+          "layer_b": 20,
+          "interchange_kl": 0.004520445174421184,
+          "replacement_kl": 0.0792694422416389
+        },
+        {
+          "layer_a": 20,
+          "layer_b": 21,
+          "interchange_kl": 0.004084934989805333,
+          "replacement_kl": 0.07836445746943355
+        },
+        {
+          "layer_a": 21,
+          "layer_b": 22,
+          "interchange_kl": 0.003957424974942114,
+          "replacement_kl": 0.07658135215751827
+        },
+        {
+          "layer_a": 22,
+          "layer_b": 23,
+          "interchange_kl": 0.003357891437190119,
+          "replacement_kl": 0.0716266087256372
+        },
+        {
+          "layer_a": 23,
+          "layer_b": 24,
+          "interchange_kl": 0.00309842117712833,
+          "replacement_kl": 0.0681033474393189
+        },
+        {
+          "layer_a": 24,
+          "layer_b": 25,
+          "interchange_kl": 0.0028361325603327714,
+          "replacement_kl": 0.06499269581399858
+        },
+        {
+          "layer_a": 25,
+          "layer_b": 26,
+          "interchange_kl": 0.002608781614981126,
+          "replacement_kl": 0.061825116630643606
+        },
+        {
+          "layer_a": 26,
+          "layer_b": 27,
+          "interchange_kl": 0.0024959983566077426,
+          "replacement_kl": 0.0575759686762467
+        },
+        {
+          "layer_a": 27,
+          "layer_b": 28,
+          "interchange_kl": 0.0022911140040378086,
+          "replacement_kl": 0.0580649571493268
+        },
+        {
+          "layer_a": 28,
+          "layer_b": 29,
+          "interchange_kl": 0.002091388487315271,
+          "replacement_kl": 0.05456047714687884
+        },
+        {
+          "layer_a": 29,
+          "layer_b": 30,
+          "interchange_kl": 0.001942293471074663,
+          "replacement_kl": 0.05183696572203189
+        },
+        {
+          "layer_a": 30,
+          "layer_b": 31,
+          "interchange_kl": 0.0019153843568346929,
+          "replacement_kl": 0.0527496823342517
+        }
+      ],
+      "wall_time_s": 137.28
+    },
+    {
+      "model": "EleutherAI/pythia-6.9b",
+      "checkpoint": "step1000",
+      "n_layers": 32,
+      "n_pairs": 31,
+      "mean_interchange_kl": 0.08820333711751191,
+      "mean_replacement_kl": 0.12528993802017444,
+      "gap_kl": 0.037086600902662525,
+      "pearson_r": 0.9993476093436318,
+      "per_pair": [
+        {
+          "layer_a": 0,
+          "layer_b": 1,
+          "interchange_kl": 2.6187737733125687,
+          "replacement_kl": 3.2809274196624756
+        },
+        {
+          "layer_a": 1,
+          "layer_b": 2,
+          "interchange_kl": 0.04886923765297979,
+          "replacement_kl": 0.15771061927080154
+        },
+        {
+          "layer_a": 2,
+          "layer_b": 3,
+          "interchange_kl": 0.02659810904879123,
+          "replacement_kl": 0.11198304151184857
+        },
+        {
+          "layer_a": 3,
+          "layer_b": 4,
+          "interchange_kl": 0.0150663266540505,
+          "replacement_kl": 0.06078577204607427
+        },
+        {
+          "layer_a": 4,
+          "layer_b": 5,
+          "interchange_kl": 0.0076576760184252635,
+          "replacement_kl": 0.034628446970600635
+        },
+        {
+          "layer_a": 5,
+          "layer_b": 6,
+          "interchange_kl": 0.005028983578085899,
+          "replacement_kl": 0.03382804029388353
+        },
+        {
+          "layer_a": 6,
+          "layer_b": 7,
+          "interchange_kl": 0.0026823561420314945,
+          "replacement_kl": 0.019863557361532003
+        },
+        {
+          "layer_a": 7,
+          "layer_b": 8,
+          "interchange_kl": 0.0015609732727170922,
+          "replacement_kl": 0.019877124868799
+        },
+        {
+          "layer_a": 8,
+          "layer_b": 9,
+          "interchange_kl": 0.0009351086791866692,
+          "replacement_kl": 0.00995948663330637
+        },
+        {
+          "layer_a": 9,
+          "layer_b": 10,
+          "interchange_kl": 0.0010602343445498263,
+          "replacement_kl": 0.012167457083705813
+        },
+        {
+          "layer_a": 10,
+          "layer_b": 11,
+          "interchange_kl": 0.0010068585579574574,
+          "replacement_kl": 0.010768451931653544
+        },
+        {
+          "layer_a": 11,
+          "layer_b": 12,
+          "interchange_kl": 0.0004909901826977148,
+          "replacement_kl": 0.01188103252206929
+        },
+        {
+          "layer_a": 12,
+          "layer_b": 13,
+          "interchange_kl": 0.0004076563409398659,
+          "replacement_kl": 0.007890238572144881
+        },
+        {
+          "layer_a": 13,
+          "layer_b": 14,
+          "interchange_kl": 0.00044046429320587777,
+          "replacement_kl": 0.007263573817908764
+        },
+        {
+          "layer_a": 14,
+          "layer_b": 15,
+          "interchange_kl": 0.0002721823216234043,
+          "replacement_kl": 0.007083228469127789
+        },
+        {
+          "layer_a": 15,
+          "layer_b": 16,
+          "interchange_kl": 0.00024960442851806874,
+          "replacement_kl": 0.009472962672589347
+        },
+        {
+          "layer_a": 16,
+          "layer_b": 17,
+          "interchange_kl": 0.00018365795995123335,
+          "replacement_kl": 0.0065706148307072
+        },
+        {
+          "layer_a": 17,
+          "layer_b": 18,
+          "interchange_kl": 0.00015294166132662212,
+          "replacement_kl": 0.0057074759097304195
+        },
+        {
+          "layer_a": 18,
+          "layer_b": 19,
+          "interchange_kl": 0.00013217470927884278,
+          "replacement_kl": 0.005832115581142716
+        },
+        {
+          "layer_a": 19,
+          "layer_b": 20,
+          "interchange_kl": 0.00012422022314240166,
+          "replacement_kl": 0.005767613591160625
+        },
+        {
+          "layer_a": 20,
+          "layer_b": 21,
+          "interchange_kl": 0.00011656963715722668,
+          "replacement_kl": 0.00442806141654728
+        },
+        {
+          "layer_a": 21,
+          "layer_b": 22,
+          "interchange_kl": 0.00010158458212572441,
+          "replacement_kl": 0.0046276132634375244
+        },
+        {
+          "layer_a": 22,
+          "layer_b": 23,
+          "interchange_kl": 7.947398921714921e-05,
+          "replacement_kl": 0.0033505361279821955
+        },
+        {
+          "layer_a": 23,
+          "layer_b": 24,
+          "interchange_kl": 7.63201545623815e-05,
+          "replacement_kl": 0.00371626242849743
+        },
+        {
+          "layer_a": 24,
+          "layer_b": 25,
+          "interchange_kl": 7.421571058330301e-05,
+          "replacement_kl": 0.004266394185833633
+        },
+        {
+          "layer_a": 25,
+          "layer_b": 26,
+          "interchange_kl": 9.840329335020215e-05,
+          "replacement_kl": 0.005755407808464952
+        },
+        {
+          "layer_a": 26,
+          "layer_b": 27,
+          "interchange_kl": 0.00021156477259864914,
+          "replacement_kl": 0.011025430139852688
+        },
+        {
+          "layer_a": 27,
+          "layer_b": 28,
+          "interchange_kl": 0.00034948061329487246,
+          "replacement_kl": 0.0075267691718181595
+        },
+        {
+          "layer_a": 28,
+          "layer_b": 29,
+          "interchange_kl": 0.00011981385432591196,
+          "replacement_kl": 0.004146504208620172
+        },
+        {
+          "layer_a": 29,
+          "layer_b": 30,
+          "interchange_kl": 0.0003965418436564505,
+          "replacement_kl": 0.004858368163695559
+        },
+        {
+          "layer_a": 30,
+          "layer_b": 31,
+          "interchange_kl": 0.0009859528099696035,
+          "replacement_kl": 0.010318458109395579
+        }
+      ],
+      "wall_time_s": 121.91
+    },
+    {
+      "model": "EleutherAI/pythia-6.9b",
+      "checkpoint": "step16000",
+      "n_layers": 32,
+      "n_pairs": 31,
+      "mean_interchange_kl": 0.13975874864885438,
+      "mean_replacement_kl": 0.21330912259450527,
+      "gap_kl": 0.0735503739456509,
+      "pearson_r": 0.9227119666078286,
+      "per_pair": [
+        {
+          "layer_a": 0,
+          "layer_b": 1,
+          "interchange_kl": 3.975899025797844,
+          "replacement_kl": 3.7686212435364723
+        },
+        {
+          "layer_a": 1,
+          "layer_b": 2,
+          "interchange_kl": 0.01777178730117157,
+          "replacement_kl": 0.048136658675502986
+        },
+        {
+          "layer_a": 2,
+          "layer_b": 3,
+          "interchange_kl": 0.0142430734122172,
+          "replacement_kl": 0.020090385107323527
+        },
+        {
+          "layer_a": 3,
+          "layer_b": 4,
+          "interchange_kl": 0.03358842484885827,
+          "replacement_kl": 0.038206380733754486
+        },
+        {
+          "layer_a": 4,
+          "layer_b": 5,
+          "interchange_kl": 0.013398682232946157,
+          "replacement_kl": 0.054523503058589995
+        },
+        {
+          "layer_a": 5,
+          "layer_b": 6,
+          "interchange_kl": 0.02177822048543021,
+          "replacement_kl": 0.05707138450816274
+        },
+        {
+          "layer_a": 6,
+          "layer_b": 7,
+          "interchange_kl": 0.001626100409339415,
+          "replacement_kl": 0.11061608139425516
+        },
+        {
+          "layer_a": 7,
+          "layer_b": 8,
+          "interchange_kl": 0.0005340661527952761,
+          "replacement_kl": 0.007298154494492337
+        },
+        {
+          "layer_a": 8,
+          "layer_b": 9,
+          "interchange_kl": 0.0007039823476588936,
+          "replacement_kl": 0.008608293152065016
+        },
+        {
+          "layer_a": 9,
+          "layer_b": 10,
+          "interchange_kl": 0.0010275957192789065,
+          "replacement_kl": 0.011013682000339031
+        },
+        {
+          "layer_a": 10,
+          "layer_b": 11,
+          "interchange_kl": 0.0010867806759051746,
+          "replacement_kl": 0.009907169122016057
+        },
+        {
+          "layer_a": 11,
+          "layer_b": 12,
+          "interchange_kl": 0.0005042972461524187,
+          "replacement_kl": 0.0054405463160946965
+        },
+        {
+          "layer_a": 12,
+          "layer_b": 13,
+          "interchange_kl": 0.0005300036905282468,
+          "replacement_kl": 0.011048655374906957
+        },
+        {
+          "layer_a": 13,
+          "layer_b": 14,
+          "interchange_kl": 0.0005187282167753438,
+          "replacement_kl": 0.011787325172917917
+        },
+        {
+          "layer_a": 14,
+          "layer_b": 15,
+          "interchange_kl": 0.0003995086244685808,
+          "replacement_kl": 0.006780342911952175
+        },
+        {
+          "layer_a": 15,
+          "layer_b": 16,
+          "interchange_kl": 0.0003216835179955524,
+          "replacement_kl": 0.00828107848064974
+        },
+        {
+          "layer_a": 16,
+          "layer_b": 17,
+          "interchange_kl": 0.0003976000834882143,
+          "replacement_kl": 0.012053204060066491
+        },
+        {
+          "layer_a": 17,
+          "layer_b": 18,
+          "interchange_kl": 0.00043911312695854576,
+          "replacement_kl": 0.008343553010490723
+        },
+        {
+          "layer_a": 18,
+          "layer_b": 19,
+          "interchange_kl": 0.000631571737358172,
+          "replacement_kl": 0.006499261944554746
+        },
+        {
+          "layer_a": 19,
+          "layer_b": 20,
+          "interchange_kl": 0.0003464746391728113,
+          "replacement_kl": 0.0043045783750130795
+        },
+        {
+          "layer_a": 20,
+          "layer_b": 21,
+          "interchange_kl": 0.0003601656858336355,
+          "replacement_kl": 0.005052984532085247
+        },
+        {
+          "layer_a": 21,
+          "layer_b": 22,
+          "interchange_kl": 0.0003672742577691679,
+          "replacement_kl": 0.005567273095948622
+        },
+        {
+          "layer_a": 22,
+          "layer_b": 23,
+          "interchange_kl": 0.0004212977082715952,
+          "replacement_kl": 0.0051323074658284895
+        },
+        {
+          "layer_a": 23,
+          "layer_b": 24,
+          "interchange_kl": 0.00045598835276905447,
+          "replacement_kl": 0.0061661369109060615
+        },
+        {
+          "layer_a": 24,
+          "layer_b": 25,
+          "interchange_kl": 0.0009808084096221137,
+          "replacement_kl": 0.005324520621798001
+        },
+        {
+          "layer_a": 25,
+          "layer_b": 26,
+          "interchange_kl": 0.0014243089353840332,
+          "replacement_kl": 0.007237927013193257
+        },
+        {
+          "layer_a": 26,
+          "layer_b": 27,
+          "interchange_kl": 0.0026015278926934116,
+          "replacement_kl": 0.028562586463522166
+        },
+        {
+          "layer_a": 27,
+          "layer_b": 28,
+          "interchange_kl": 0.0009871687825580011,
+          "replacement_kl": 0.015664883103454486
+        },
+        {
+          "layer_a": 28,
+          "layer_b": 29,
+          "interchange_kl": 0.0015458684065379202,
+          "replacement_kl": 0.017466645425884053
+        },
+        {
+          "layer_a": 29,
+          "layer_b": 30,
+          "interchange_kl": 0.003870465709042037,
+          "replacement_kl": 0.5921616051346064
+        },
+        {
+          "layer_a": 30,
+          "layer_b": 31,
+          "interchange_kl": 0.23375961370766163,
+          "replacement_kl": 1.7156144492328167
+        }
+      ],
+      "wall_time_s": 115.53
+    },
+    {
+      "model": "EleutherAI/pythia-6.9b",
+      "checkpoint": "step64000",
+      "n_layers": 32,
+      "n_pairs": 31,
+      "mean_interchange_kl": 0.19475743089887762,
+      "mean_replacement_kl": 0.29747260147386473,
+      "gap_kl": 0.10271517057498711,
+      "pearson_r": 0.9112016366972543,
+      "per_pair": [
+        {
+          "layer_a": 0,
+          "layer_b": 1,
+          "interchange_kl": 5.083127863705158,
+          "replacement_kl": 4.619033984839916
+        },
+        {
+          "layer_a": 1,
+          "layer_b": 2,
+          "interchange_kl": 0.03871054609771818,
+          "replacement_kl": 0.07285684085218236
+        },
+        {
+          "layer_a": 2,
+          "layer_b": 3,
+          "interchange_kl": 0.024124533229041845,
+          "replacement_kl": 0.04130016692215577
+        },
+        {
+          "layer_a": 3,
+          "layer_b": 4,
+          "interchange_kl": 0.04976545402314514,
+          "replacement_kl": 0.07366209768224508
+        },
+        {
+          "layer_a": 4,
+          "layer_b": 5,
+          "interchange_kl": 0.013743624003836885,
+          "replacement_kl": 0.09660492255352437
+        },
+        {
+          "layer_a": 5,
+          "layer_b": 6,
+          "interchange_kl": 0.00825470824202057,
+          "replacement_kl": 0.09286214818712324
+        },
+        {
+          "layer_a": 6,
+          "layer_b": 7,
+          "interchange_kl": 0.0013555236891988898,
+          "replacement_kl": 0.07931309239938855
+        },
+        {
+          "layer_a": 7,
+          "layer_b": 8,
+          "interchange_kl": 0.0009261764616894652,
+          "replacement_kl": 0.00924075921648182
+        },
+        {
+          "layer_a": 8,
+          "layer_b": 9,
+          "interchange_kl": 0.0012083291840099264,
+          "replacement_kl": 0.022301573946606368
+        },
+        {
+          "layer_a": 9,
+          "layer_b": 10,
+          "interchange_kl": 0.001420442364178598,
+          "replacement_kl": 0.023167648061644286
+        },
+        {
+          "layer_a": 10,
+          "layer_b": 11,
+          "interchange_kl": 0.001706931201624684,
+          "replacement_kl": 0.0205100052698981
+        },
+        {
+          "layer_a": 11,
+          "layer_b": 12,
+          "interchange_kl": 0.0009433064715267392,
+          "replacement_kl": 0.013595603581052274
+        },
+        {
+          "layer_a": 12,
+          "layer_b": 13,
+          "interchange_kl": 0.0010678893040676485,
+          "replacement_kl": 0.04120854032225907
+        },
+        {
+          "layer_a": 13,
+          "layer_b": 14,
+          "interchange_kl": 0.0013516625549527816,
+          "replacement_kl": 0.021156237984541804
+        },
+        {
+          "layer_a": 14,
+          "layer_b": 15,
+          "interchange_kl": 0.0010331787998438813,
+          "replacement_kl": 0.043221471772994846
+        },
+        {
+          "layer_a": 15,
+          "layer_b": 16,
+          "interchange_kl": 0.0011913962425751379,
+          "replacement_kl": 0.019406996725592762
+        },
+        {
+          "layer_a": 16,
+          "layer_b": 17,
+          "interchange_kl": 0.005021058084821561,
+          "replacement_kl": 0.03987139725359157
+        },
+        {
+          "layer_a": 17,
+          "layer_b": 18,
+          "interchange_kl": 0.0014836513164482312,
+          "replacement_kl": 0.03826032223878428
+        },
+        {
+          "layer_a": 18,
+          "layer_b": 19,
+          "interchange_kl": 0.0031581627772538923,
+          "replacement_kl": 0.018662381917238235
+        },
+        {
+          "layer_a": 19,
+          "layer_b": 20,
+          "interchange_kl": 0.002198167236201698,
+          "replacement_kl": 0.01739493350032717
+        },
+        {
+          "layer_a": 20,
+          "layer_b": 21,
+          "interchange_kl": 0.0015300837312679505,
+          "replacement_kl": 0.02826012228615582
+        },
+        {
+          "layer_a": 21,
+          "layer_b": 22,
+          "interchange_kl": 0.004237703658873215,
+          "replacement_kl": 0.022867775114718825
+        },
+        {
+          "layer_a": 22,
+          "layer_b": 23,
+          "interchange_kl": 0.0058006311155622825,
+          "replacement_kl": 0.019376230018679053
+        },
+        {
+          "layer_a": 23,
+          "layer_b": 24,
+          "interchange_kl": 0.005038880313804839,
+          "replacement_kl": 0.018324854114325717
+        },
+        {
+          "layer_a": 24,
+          "layer_b": 25,
+          "interchange_kl": 0.010060346030513756,
+          "replacement_kl": 0.020539975201245397
+        },
+        {
+          "layer_a": 25,
+          "layer_b": 26,
+          "interchange_kl": 0.011260213199420832,
+          "replacement_kl": 0.034959713637363166
+        },
+        {
+          "layer_a": 26,
+          "layer_b": 27,
+          "interchange_kl": 0.016902058850973845,
+          "replacement_kl": 0.04283148027025163
+        },
+        {
+          "layer_a": 27,
+          "layer_b": 28,
+          "interchange_kl": 0.028490788128692657,
+          "replacement_kl": 0.03402954270131886
+        },
+        {
+          "layer_a": 28,
+          "layer_b": 29,
+          "interchange_kl": 0.027444926730822772,
+          "replacement_kl": 0.03936903103021905
+        },
+        {
+          "layer_a": 29,
+          "layer_b": 30,
+          "interchange_kl": 0.04496596718672663,
+          "replacement_kl": 1.9290785379707813
+        },
+        {
+          "layer_a": 30,
+          "layer_b": 31,
+          "interchange_kl": 0.6399561539292336,
+          "replacement_kl": 1.628382258117199
+        }
+      ],
+      "wall_time_s": 121.81
+    },
+    {
+      "model": "EleutherAI/pythia-6.9b",
+      "checkpoint": "step143000",
+      "n_layers": 32,
+      "n_pairs": 31,
+      "mean_interchange_kl": 0.20830020703760965,
+      "mean_replacement_kl": 0.4122473155636521,
+      "gap_kl": 0.20394710852604242,
+      "pearson_r": 0.751833000371073,
+      "per_pair": [
+        {
+          "layer_a": 0,
+          "layer_b": 1,
+          "interchange_kl": 4.244736164808273,
+          "replacement_kl": 3.7963378950953484
+        },
+        {
+          "layer_a": 1,
+          "layer_b": 2,
+          "interchange_kl": 0.0564626773702912,
+          "replacement_kl": 0.14688910800032318
+        },
+        {
+          "layer_a": 2,
+          "layer_b": 3,
+          "interchange_kl": 0.059392499504610896,
+          "replacement_kl": 0.05715313530527055
+        },
+        {
+          "layer_a": 3,
+          "layer_b": 4,
+          "interchange_kl": 0.13221092126332223,
+          "replacement_kl": 0.1510038711130619
+        },
+        {
+          "layer_a": 4,
+          "layer_b": 5,
+          "interchange_kl": 0.10159543575718999,
+          "replacement_kl": 0.3105577677488327
+        },
+        {
+          "layer_a": 5,
+          "layer_b": 6,
+          "interchange_kl": 0.03073096545995213,
+          "replacement_kl": 0.45231966208666563
+        },
+        {
+          "layer_a": 6,
+          "layer_b": 7,
+          "interchange_kl": 0.0024358789050893392,
+          "replacement_kl": 0.3436600277200341
+        },
+        {
+          "layer_a": 7,
+          "layer_b": 8,
+          "interchange_kl": 0.0015463114741578465,
+          "replacement_kl": 0.023336099955486134
+        },
+        {
+          "layer_a": 8,
+          "layer_b": 9,
+          "interchange_kl": 0.001885225334262941,
+          "replacement_kl": 0.04213504568906501
+        },
+        {
+          "layer_a": 9,
+          "layer_b": 10,
+          "interchange_kl": 0.0022620784475293476,
+          "replacement_kl": 0.051674400514457375
+        },
+        {
+          "layer_a": 10,
+          "layer_b": 11,
+          "interchange_kl": 0.002477645019098418,
+          "replacement_kl": 0.0420077073504217
+        },
+        {
+          "layer_a": 11,
+          "layer_b": 12,
+          "interchange_kl": 0.001752028096234426,
+          "replacement_kl": 0.04409954650327563
+        },
+        {
+          "layer_a": 12,
+          "layer_b": 13,
+          "interchange_kl": 0.0022289248736342415,
+          "replacement_kl": 0.10856481082737446
+        },
+        {
+          "layer_a": 13,
+          "layer_b": 14,
+          "interchange_kl": 0.0035072554419457447,
+          "replacement_kl": 0.042592940328177065
+        },
+        {
+          "layer_a": 14,
+          "layer_b": 15,
+          "interchange_kl": 0.002490845807187725,
+          "replacement_kl": 0.08120570168830454
+        },
+        {
+          "layer_a": 15,
+          "layer_b": 16,
+          "interchange_kl": 0.0028649360392591916,
+          "replacement_kl": 0.06386151246260852
+        },
+        {
+          "layer_a": 16,
+          "layer_b": 17,
+          "interchange_kl": 0.005675722859450616,
+          "replacement_kl": 0.10663762805052102
+        },
+        {
+          "layer_a": 17,
+          "layer_b": 18,
+          "interchange_kl": 0.004684578234446235,
+          "replacement_kl": 0.15787900099530816
+        },
+        {
+          "layer_a": 18,
+          "layer_b": 19,
+          "interchange_kl": 0.00814278406323865,
+          "replacement_kl": 0.03702807275112718
+        },
+        {
+          "layer_a": 19,
+          "layer_b": 20,
+          "interchange_kl": 0.014542728560627438,
+          "replacement_kl": 0.056539527140557766
+        },
+        {
+          "layer_a": 20,
+          "layer_b": 21,
+          "interchange_kl": 0.008410502887272742,
+          "replacement_kl": 0.0840127799892798
+        },
+        {
+          "layer_a": 21,
+          "layer_b": 22,
+          "interchange_kl": 0.012403919390635565,
+          "replacement_kl": 0.0565504849946592
+        },
+        {
+          "layer_a": 22,
+          "layer_b": 23,
+          "interchange_kl": 0.020278207666706294,
+          "replacement_kl": 0.03473411101731472
+        },
+        {
+          "layer_a": 23,
+          "layer_b": 24,
+          "interchange_kl": 0.015515255799982697,
+          "replacement_kl": 0.04145009577041492
+        },
+        {
+          "layer_a": 24,
+          "layer_b": 25,
+          "interchange_kl": 0.023678486206335947,
+          "replacement_kl": 0.045602632948430255
+        },
+        {
+          "layer_a": 25,
+          "layer_b": 26,
+          "interchange_kl": 0.025356050551636145,
+          "replacement_kl": 0.07660014741122723
+        },
+        {
+          "layer_a": 26,
+          "layer_b": 27,
+          "interchange_kl": 0.03003279624681454,
+          "replacement_kl": 0.07186961045954376
+        },
+        {
+          "layer_a": 27,
+          "layer_b": 28,
+          "interchange_kl": 0.035909603466279805,
+          "replacement_kl": 0.07185163861140609
+        },
+        {
+          "layer_a": 28,
+          "layer_b": 29,
+          "interchange_kl": 0.03662021989293862,
+          "replacement_kl": 0.12547031103167683
+        },
+        {
+          "layer_a": 29,
+          "layer_b": 30,
+          "interchange_kl": 0.25897090788930655,
+          "replacement_kl": 3.797862872481346
+        },
+        {
+          "layer_a": 30,
+          "layer_b": 31,
+          "interchange_kl": 1.3085048608481884,
+          "replacement_kl": 2.258178636431694
+        }
+      ],
+      "wall_time_s": 108.59
+    },
+    {
+      "model": "EleutherAI/pythia-160m",
+      "checkpoint": "step0",
+      "n_layers": 12,
+      "n_pairs": 11,
+      "mean_interchange_kl": 0.04344754807574314,
+      "mean_replacement_kl": 0.08727692765056748,
+      "gap_kl": 0.043829379574824336,
+      "pearson_r": 0.9648344694131213,
+      "per_pair": [
+        {
+          "layer_a": 0,
+          "layer_b": 1,
+          "interchange_kl": 0.2793769771233201,
+          "replacement_kl": 0.27437147591263056
+        },
+        {
+          "layer_a": 1,
+          "layer_b": 2,
+          "interchange_kl": 0.08886435069143772,
+          "replacement_kl": 0.16083600651472807
+        },
+        {
+          "layer_a": 2,
+          "layer_b": 3,
+          "interchange_kl": 0.033576680871192366,
+          "replacement_kl": 0.1128770939540118
+        },
+        {
+          "layer_a": 3,
+          "layer_b": 4,
+          "interchange_kl": 0.022947937774006277,
+          "replacement_kl": 0.07679005688987672
+        },
+        {
+          "layer_a": 4,
+          "layer_b": 5,
+          "interchange_kl": 0.015039482153952122,
+          "replacement_kl": 0.06291871832218021
+        },
+        {
+          "layer_a": 5,
+          "layer_b": 6,
+          "interchange_kl": 0.0119540186424274,
+          "replacement_kl": 0.06570543895941228
+        },
+        {
+          "layer_a": 6,
+          "layer_b": 7,
+          "interchange_kl": 0.007820193757652305,
+          "replacement_kl": 0.050990324933081865
+        },
+        {
+          "layer_a": 7,
+          "layer_b": 8,
+          "interchange_kl": 0.006102988016209565,
+          "replacement_kl": 0.04578096780460328
+        },
+        {
+          "layer_a": 8,
+          "layer_b": 9,
+          "interchange_kl": 0.004808428042451851,
+          "replacement_kl": 0.03789200715254992
+        },
+        {
+          "layer_a": 9,
+          "layer_b": 10,
+          "interchange_kl": 0.003870092310535256,
+          "replacement_kl": 0.03822680318262428
+        },
+        {
+          "layer_a": 10,
+          "layer_b": 11,
+          "interchange_kl": 0.0035618794499896467,
+          "replacement_kl": 0.03365731053054333
+        }
+      ],
+      "wall_time_s": 12.32
+    },
+    {
+      "model": "EleutherAI/pythia-160m",
+      "checkpoint": "step1000",
+      "n_layers": 12,
+      "n_pairs": 11,
+      "mean_interchange_kl": 0.4299129751981871,
+      "mean_replacement_kl": 0.49121551790317014,
+      "gap_kl": 0.06130254270498303,
+      "pearson_r": 0.9984817840090165,
+      "per_pair": [
+        {
+          "layer_a": 0,
+          "layer_b": 1,
+          "interchange_kl": 4.465400874614716,
+          "replacement_kl": 4.230357065796852
+        },
+        {
+          "layer_a": 1,
+          "layer_b": 2,
+          "interchange_kl": 0.06339076289441437,
+          "replacement_kl": 0.15316745778545737
+        },
+        {
+          "layer_a": 2,
+          "layer_b": 3,
+          "interchange_kl": 0.04637292819097638,
+          "replacement_kl": 0.14347371086478233
+        },
+        {
+          "layer_a": 3,
+          "layer_b": 4,
+          "interchange_kl": 0.030142294010147452,
+          "replacement_kl": 0.3181219529360533
+        },
+        {
+          "layer_a": 4,
+          "layer_b": 5,
+          "interchange_kl": 0.011035159215680324,
+          "replacement_kl": 0.10673835384659469
+        },
+        {
+          "layer_a": 5,
+          "layer_b": 6,
+          "interchange_kl": 0.005737444836995564,
+          "replacement_kl": 0.04644277167972177
+        },
+        {
+          "layer_a": 6,
+          "layer_b": 7,
+          "interchange_kl": 0.007981860791915096,
+          "replacement_kl": 0.06334573938511312
+        },
+        {
+          "layer_a": 7,
+          "layer_b": 8,
+          "interchange_kl": 0.00828624730638694,
+          "replacement_kl": 0.06382811884395778
+        },
+        {
+          "layer_a": 8,
+          "layer_b": 9,
+          "interchange_kl": 0.012781477358657867,
+          "replacement_kl": 0.07772283139638603
+        },
+        {
+          "layer_a": 9,
+          "layer_b": 10,
+          "interchange_kl": 0.015054873249027878,
+          "replacement_kl": 0.07347908453084528
+        },
+        {
+          "layer_a": 10,
+          "layer_b": 11,
+          "interchange_kl": 0.06285880471114069,
+          "replacement_kl": 0.1266936098691076
+        }
+      ],
+      "wall_time_s": 35.87
+    },
+    {
+      "model": "EleutherAI/pythia-160m",
+      "checkpoint": "step16000",
+      "n_layers": 12,
+      "n_pairs": 11,
+      "mean_interchange_kl": 0.6164134885449047,
+      "mean_replacement_kl": 0.6939943447227548,
+      "gap_kl": 0.07758085617785004,
+      "pearson_r": 0.9984882496685787,
+      "per_pair": [
+        {
+          "layer_a": 0,
+          "layer_b": 1,
+          "interchange_kl": 6.302708387374878,
+          "replacement_kl": 6.125077500939369
+        },
+        {
+          "layer_a": 1,
+          "layer_b": 2,
+          "interchange_kl": 0.1100665524136275,
+          "replacement_kl": 0.32053110376000404
+        },
+        {
+          "layer_a": 2,
+          "layer_b": 3,
+          "interchange_kl": 0.11687355837784708,
+          "replacement_kl": 0.14612243580631912
+        },
+        {
+          "layer_a": 3,
+          "layer_b": 4,
+          "interchange_kl": 0.07630745775531977,
+          "replacement_kl": 0.3626528764143586
+        },
+        {
+          "layer_a": 4,
+          "layer_b": 5,
+          "interchange_kl": 0.00795474444021238,
+          "replacement_kl": 0.031736884149722755
+        },
+        {
+          "layer_a": 5,
+          "layer_b": 6,
+          "interchange_kl": 0.006529223530378658,
+          "replacement_kl": 0.023393632465740666
+        },
+        {
+          "layer_a": 6,
+          "layer_b": 7,
+          "interchange_kl": 0.006051002143067308,
+          "replacement_kl": 0.031798752839677036
+        },
+        {
+          "layer_a": 7,
+          "layer_b": 8,
+          "interchange_kl": 0.007060552612529136,
+          "replacement_kl": 0.03256716200849041
+        },
+        {
+          "layer_a": 8,
+          "layer_b": 9,
+          "interchange_kl": 0.007271342270541936,
+          "replacement_kl": 0.041364419274032116
+        },
+        {
+          "layer_a": 9,
+          "layer_b": 10,
+          "interchange_kl": 0.010091035364894196,
+          "replacement_kl": 0.19259034376591444
+        },
+        {
+          "layer_a": 10,
+          "layer_b": 11,
+          "interchange_kl": 0.12963451771065593,
+          "replacement_kl": 0.3261026805266738
+        }
+      ],
+      "wall_time_s": 34.38
+    },
+    {
+      "model": "EleutherAI/pythia-160m",
+      "checkpoint": "step64000",
+      "n_layers": 12,
+      "n_pairs": 11,
+      "mean_interchange_kl": 0.4921337006427083,
+      "mean_replacement_kl": 0.7006031828773716,
+      "gap_kl": 0.20846948223466327,
+      "pearson_r": 0.9950437041408426,
+      "per_pair": [
+        {
+          "layer_a": 0,
+          "layer_b": 1,
+          "interchange_kl": 4.520178057253361,
+          "replacement_kl": 5.390911936759949
+        },
+        {
+          "layer_a": 1,
+          "layer_b": 2,
+          "interchange_kl": 0.17574291420169175,
+          "replacement_kl": 0.23375736130401492
+        },
+        {
+          "layer_a": 2,
+          "layer_b": 3,
+          "interchange_kl": 0.2170667052268982,
+          "replacement_kl": 0.22592054260894656
+        },
+        {
+          "layer_a": 3,
+          "layer_b": 4,
+          "interchange_kl": 0.12530736369080842,
+          "replacement_kl": 0.48745136335492134
+        },
+        {
+          "layer_a": 4,
+          "layer_b": 5,
+          "interchange_kl": 0.012324089984758757,
+          "replacement_kl": 0.051454772939905524
+        },
+        {
+          "layer_a": 5,
+          "layer_b": 6,
+          "interchange_kl": 0.010812488006195053,
+          "replacement_kl": 0.04387624451192096
+        },
+        {
+          "layer_a": 6,
+          "layer_b": 7,
+          "interchange_kl": 0.011878160446940456,
+          "replacement_kl": 0.053515027393586934
+        },
+        {
+          "layer_a": 7,
+          "layer_b": 8,
+          "interchange_kl": 0.012842400697991252,
+          "replacement_kl": 0.06281544046942145
+        },
+        {
+          "layer_a": 8,
+          "layer_b": 9,
+          "interchange_kl": 0.014920392277417704,
+          "replacement_kl": 0.0855347691103816
+        },
+        {
+          "layer_a": 9,
+          "layer_b": 10,
+          "interchange_kl": 0.021166004793485627,
+          "replacement_kl": 0.4936103792861104
+        },
+        {
+          "layer_a": 10,
+          "layer_b": 11,
+          "interchange_kl": 0.29123213049024343,
+          "replacement_kl": 0.5777871739119291
+        }
+      ],
+      "wall_time_s": 12.44
+    },
+    {
+      "model": "EleutherAI/pythia-160m",
+      "checkpoint": "step143000",
+      "n_layers": 12,
+      "n_pairs": 11,
+      "mean_interchange_kl": 0.7723323229636828,
+      "mean_replacement_kl": 1.4077548166652294,
+      "gap_kl": 0.6354224937015466,
+      "pearson_r": 0.9903877392351458,
+      "per_pair": [
+        {
+          "layer_a": 0,
+          "layer_b": 1,
+          "interchange_kl": 4.2559734135866165,
+          "replacement_kl": 7.666735365986824
+        },
+        {
+          "layer_a": 1,
+          "layer_b": 2,
+          "interchange_kl": 0.28337271325290203,
+          "replacement_kl": 0.76099968329072
+        },
+        {
+          "layer_a": 2,
+          "layer_b": 3,
+          "interchange_kl": 0.2451659287326038,
+          "replacement_kl": 0.227063680998981
+        },
+        {
+          "layer_a": 3,
+          "layer_b": 4,
+          "interchange_kl": 0.20248919585719705,
+          "replacement_kl": 0.5637073684483767
+        },
+        {
+          "layer_a": 4,
+          "layer_b": 5,
+          "interchange_kl": 0.02819912665290758,
+          "replacement_kl": 0.10209556110203266
+        },
+        {
+          "layer_a": 5,
+          "layer_b": 6,
+          "interchange_kl": 0.021591263299342245,
+          "replacement_kl": 0.06008852133527398
+        },
+        {
+          "layer_a": 6,
+          "layer_b": 7,
+          "interchange_kl": 0.021751487161964178,
+          "replacement_kl": 0.17655337834730744
+        },
+        {
+          "layer_a": 7,
+          "layer_b": 8,
+          "interchange_kl": 0.02808267012005672,
+          "replacement_kl": 0.3804716430604458
+        },
+        {
+          "layer_a": 8,
+          "layer_b": 9,
+          "interchange_kl": 0.044888587726745754,
+          "replacement_kl": 0.29073147336021066
+        },
+        {
+          "layer_a": 9,
+          "layer_b": 10,
+          "interchange_kl": 0.06044802814722061,
+          "replacement_kl": 0.4852376878261566
+        },
+        {
+          "layer_a": 10,
+          "layer_b": 11,
+          "interchange_kl": 3.303693138062954,
+          "replacement_kl": 4.771618619561195
+        }
+      ],
+      "wall_time_s": 12.7
+    }
+  ]
+}

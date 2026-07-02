@@ -1,0 +1,215 @@
+\begin{thebibliography}{29}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Ashkboos et~al.(2024)Ashkboos, Croci, Nascimento, Hoefler, and
+  Hensman]{ashkboos2024slicegpt}
+Saleh Ashkboos, Maximilian~L. Croci, Marcelo Gennari~do Nascimento, Torsten
+  Hoefler, and James Hensman.
+\newblock {SliceGPT}: Compress large language models by deleting rows and
+  columns.
+\newblock In \emph{International Conference on Learning Representations
+  (ICLR)}, 2024.
+
+\bibitem[Biderman et~al.(2023)Biderman, Schoelkopf, Anthony, Bradley, O'Brien,
+  Hallahan, Khan, Purohit, Prashanth, Raff, et~al.]{biderman2023pythia}
+Stella Biderman, Hailey Schoelkopf, Quentin~Gregory Anthony, Herbie Bradley,
+  Kyle O'Brien, Eric Hallahan, Mohammad~Aflah Khan, Shivanshu Purohit,
+  USVSN~Sai Prashanth, Edward Raff, et~al.
+\newblock Pythia: A suite for analyzing large language models across training
+  and scaling.
+\newblock In \emph{International Conference on Machine Learning}, pages
+  2397--2430, 2023.
+
+\bibitem[Conmy et~al.(2023)Conmy, Mavor-Parker, Lynch, Heimersheim, and
+  Garriga-Alonso]{conmy2023automated}
+Arthur Conmy, Augustine~N Mavor-Parker, Aidan Lynch, Stefan Heimersheim, and
+  Adri{\`a} Garriga-Alonso.
+\newblock Towards automated circuit discovery for mechanistic interpretability.
+\newblock In \emph{Advances in Neural Information Processing Systems}, 2023.
+
+\bibitem[Dehghani et~al.(2019)Dehghani, Gouws, Vinyals, Uszkoreit, and
+  Kaiser]{dehghani2019universal}
+Mostafa Dehghani, Stephan Gouws, Oriol Vinyals, Jakob Uszkoreit, and {\L}ukasz
+  Kaiser.
+\newblock Universal transformers.
+\newblock \emph{arXiv preprint arXiv:1807.03819}, 2019.
+
+\bibitem[Desharnais et~al.(2004)Desharnais, Gupta, Jagadeesan, and
+  Panangaden]{desharnais2004metrics}
+Josee Desharnais, Vineet Gupta, Radha Jagadeesan, and Prakash Panangaden.
+\newblock Metrics for labelled {M}arkov processes.
+\newblock \emph{Theoretical Computer Science}, 318\penalty0 (3):\penalty0
+  323--354, 2004.
+
+\bibitem[Ding et~al.(2026)Ding, Sun, Zhang, Yan, Zhou, Huang, Fu,
+  Aviles-Rivero, Xie, and Zhu]{ding2026swm}
+Xuan Ding, Rui Sun, Yunjian Zhang, Xiu Yan, Yueqi Zhou, Kaihao Huang, Suzhong
+  Fu, Angelica~I. Aviles-Rivero, Chuanlong Xie, and Yao Zhu.
+\newblock Sliding-window merging for compacting patch-redundant layers in
+  {LLM}s.
+\newblock In \emph{Proceedings of the AAAI Conference on Artificial
+  Intelligence}, 2026.
+
+\bibitem[Elhage et~al.(2021)Elhage, Nanda, Olsson, Henighan, Joseph, Mann,
+  Askell, Bai, Chen, Conerly, DasSarma, Drain, Ganguli, Goldberg, Hallacy,
+  Hernandez, Levy, Johnston, Kaplan, Krueger, et~al.]{elhage2021mathematical}
+Nelson Elhage, Neel Nanda, Catherine Olsson, Tom Henighan, Nicholas Joseph, Ben
+  Mann, Amanda Askell, Yuntao Bai, Anna Chen, Tom Conerly, Nova DasSarma, Dawn
+  Drain, Deep Ganguli, Zac Goldberg, Danny Hallacy, Danny Hernandez, Ari Levy,
+  Jackson Johnston, Jared Kaplan, Gretchen Krueger, et~al.
+\newblock A mathematical framework for transformer circuits.
+\newblock \emph{Transformer Circuits Thread}, 2021.
+\newblock URL \url{https://transformer-circuits.pub/2021/framework/index.html}.
+
+\bibitem[Fan et~al.(2020)Fan, Grave, and Joulin]{fan2020reducing}
+Angela Fan, Edouard Grave, and Armand Joulin.
+\newblock Reducing transformer depth on demand with structured dropout.
+\newblock In \emph{International Conference on Learning Representations}, 2020.
+
+\bibitem[Frankle and Carlin(2019)]{frankle2019lottery}
+Jonathan Frankle and Michael Carlin.
+\newblock The lottery ticket hypothesis: Finding sparse, trainable neural
+  networks.
+\newblock In \emph{International Conference on Learning Representations}, 2019.
+
+\bibitem[Frantar et~al.(2023)Frantar, Ashkboos, Hoefler, and
+  Alistarh]{frantar2023gptq}
+Elias Frantar, Saleh Ashkboos, Torsten Hoefler, and Dan Alistarh.
+\newblock {GPTQ}: Accurate post-training quantization for generative
+  pre-trained transformers.
+\newblock \emph{arXiv preprint arXiv:2210.17323}, 2023.
+
+\bibitem[Gromov et~al.(2025)Gromov, Tirumala, Shapourian, Glorioso, and
+  Roberts]{gromov2024unreasonable}
+Andrey Gromov, Kushal Tirumala, Hassan Shapourian, Paolo Glorioso, and
+  Daniel~A. Roberts.
+\newblock The unreasonable ineffectiveness of the deeper layers.
+\newblock In \emph{International Conference on Learning Representations}, 2025.
+
+\bibitem[Hinton et~al.(2015)Hinton, Vinyals, and Dean]{hinton2015distilling}
+Geoffrey Hinton, Oriol Vinyals, and Jeff Dean.
+\newblock Distilling the knowledge in a neural network.
+\newblock In \emph{NIPS Deep Learning and Representation Learning Workshop},
+  2015.
+
+\bibitem[Hu et~al.(2022)Hu, Shen, Wallis, Allen-Zhu, Li, Wang, Wang, and
+  Chen]{hu2022lora}
+Edward~J. Hu, Yelong Shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean
+  Wang, Lu~Wang, and Weizhu Chen.
+\newblock {LoRA}: Low-rank adaptation of large language models.
+\newblock In \emph{International Conference on Learning Representations}, 2022.
+
+\bibitem[Kornblith et~al.(2019)Kornblith, Norouzi, Lee, and
+  Hinton]{kornblith2019similarity}
+Simon Kornblith, Mohammad Norouzi, Honglak Lee, and Geoffrey Hinton.
+\newblock Similarity of neural network representations revisited.
+\newblock In \emph{International Conference on Machine Learning}, pages
+  3519--3529, 2019.
+
+\bibitem[Lan et~al.(2020)Lan, Chen, Goodman, Gimpel, Sharma, and
+  Soricut]{lan2020albert}
+Zhenzhong Lan, Mingda Chen, Sebastian Goodman, Kevin Gimpel, Piyush Sharma, and
+  Radu Soricut.
+\newblock {ALBERT}: A lite {BERT} for self-supervised learning of language
+  representations.
+\newblock \emph{arXiv preprint arXiv:1909.11942}, 2020.
+
+\bibitem[Men et~al.(2024)Men, Xu, Zhang, Wang, Lin, Lu, Han, and
+  Chen]{men2024shortgpt}
+Xin Men, Mingyu Xu, Qingyu Zhang, Bingning Wang, Hongyu Lin, Yaojie Lu, Xianpei
+  Han, and Weipeng Chen.
+\newblock {ShortGPT}: Layers in large language models are more redundant than
+  you expect.
+\newblock \emph{arXiv preprint arXiv:2403.03853}, 2024.
+
+\bibitem[Meng et~al.(2022)Meng, Bau, Andonian, and Belinkov]{meng2022locating}
+Kevin Meng, David Bau, Alex Andonian, and Yonatan Belinkov.
+\newblock Locating and editing factual associations in {GPT}.
+\newblock \emph{Advances in Neural Information Processing Systems}, 35, 2022.
+
+\bibitem[Merity et~al.(2016)Merity, Xiong, Bradbury, and
+  Socher]{merity2016pointer}
+Stephen Merity, Caiming Xiong, James Bradbury, and Richard Socher.
+\newblock Pointer sentinel mixture models.
+\newblock \emph{arXiv preprint arXiv:1609.07843}, 2016.
+
+\bibitem[Milner(1989)]{milner1989communication}
+Robin Milner.
+\newblock \emph{Communication and Concurrency}.
+\newblock Prentice Hall, 1989.
+
+\bibitem[Park(1981)]{park1981concurrency}
+David Park.
+\newblock Concurrency and automata on infinite sequences.
+\newblock In \emph{Theoretical Computer Science: 5th GI-Conference}, pages
+  167--183. Springer, 1981.
+
+\bibitem[Raghu et~al.(2021)Raghu, Unterthiner, Kornblith, Zhang, and
+  Dosovitskiy]{raghu2021vision}
+Maithra Raghu, Thomas Unterthiner, Simon Kornblith, Chiyuan Zhang, and Alexey
+  Dosovitskiy.
+\newblock Do vision transformers see like convolutional neural networks?
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  volume~34, 2021.
+
+\bibitem[Sieberling et~al.(2025)Sieberling, Kuznedelev, Kurtic, and
+  Alistarh]{sieberling2025evopress}
+Oliver Sieberling, Denis Kuznedelev, Eldar Kurtic, and Dan Alistarh.
+\newblock {EvoPress}: Accurate dynamic model compression via evolutionary
+  search.
+\newblock In \emph{International Conference on Machine Learning}, 2025.
+
+\bibitem[Song et~al.(2024)Song, Kim, Cho, Kim, Shin, and Moon]{song2024sleb}
+Jiwon Song, Kyungseok Kim, Junwan Cho, Sungmin Kim, Jongjin Shin, and Jinhyuk
+  Moon.
+\newblock {SLEB}: Streamlining {LLMs} through redundancy verification and
+  elimination of transformer blocks.
+\newblock \emph{arXiv preprint arXiv:2402.09025}, 2024.
+
+\bibitem[Vaswani et~al.(2017)Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez,
+  Kaiser, and Polosukhin]{vaswani2017attention}
+Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones,
+  Aidan~N Gomez, {\L}ukasz Kaiser, and Illia Polosukhin.
+\newblock Attention is all you need.
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  volume~30, 2017.
+
+\bibitem[Veit et~al.(2016)Veit, Wilber, and Belongie]{veit2016residual}
+Andreas Veit, Michael~J Wilber, and Serge Belongie.
+\newblock Residual networks behave like ensembles of relatively shallow
+  networks.
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  volume~29, 2016.
+
+\bibitem[Vig et~al.(2020)Vig, Gehrmann, Belinkov, Qian, Nevo, Singer, and
+  Shieber]{vig2020causal}
+Jesse Vig, Sebastian Gehrmann, Yonatan Belinkov, Sharon Qian, Daniel Nevo,
+  Yaron Singer, and Stuart Shieber.
+\newblock Causal mediation analysis for interpreting neural {NLP}: The case of
+  gender bias.
+\newblock \emph{arXiv preprint arXiv:2004.12265}, 2020.
+
+\bibitem[Yang et~al.(2024)Yang, Huang, and Liu]{yang2024laco}
+Yifei Yang, Zouying Huang, and Feng Liu.
+\newblock {LaCo}: Large language model pruning via layer collapse.
+\newblock \emph{arXiv preprint arXiv:2402.11187}, 2024.
+
+\bibitem[Zhang et~al.(2022)Zhang, Roller, Goyal, Artetxe, Chen, Chen, Dewan,
+  Diab, Li, Lin, et~al.]{zhang2022opt}
+Susan Zhang, Stephen Roller, Naman Goyal, Mikel Artetxe, Moya Chen, Shuohui
+  Chen, Christopher Dewan, Mona Diab, Xian Li, Xi~Victoria Lin, et~al.
+\newblock {OPT}: Open pre-trained transformer language models.
+\newblock \emph{arXiv preprint arXiv:2205.01068}, 2022.
+
+\bibitem[Zhong et~al.(2025)Zhong, Wan, Chen, Quan, and
+  Li]{zhong2025blockpruner}
+Longguang Zhong, Fanqi Wan, Ruijun Chen, Xiaojun Quan, and Liangzhi Li.
+\newblock {BlockPruner}: Fine-grained pruning for large language models.
+\newblock In \emph{Findings of the Association for Computational Linguistics:
+  ACL}, 2025.
+
+\end{thebibliography}

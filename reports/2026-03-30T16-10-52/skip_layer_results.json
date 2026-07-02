@@ -1,0 +1,63 @@
+{
+  "baseline": {
+    "skip_layers": [],
+    "n_layers": 24,
+    "perplexity": 19.1889,
+    "n_tokens": 22688,
+    "time_s": 218.8,
+    "ppl_delta_pct": 0.0
+  },
+  "skip_5": {
+    "skip_layers": [
+      5
+    ],
+    "n_layers": 23,
+    "perplexity": 20.1723,
+    "n_tokens": 22688,
+    "time_s": 94.8,
+    "ppl_delta_pct": 5.12
+  },
+  "skip_15": {
+    "skip_layers": [
+      15
+    ],
+    "n_layers": 23,
+    "perplexity": 20.2282,
+    "n_tokens": 22688,
+    "time_s": 96.4,
+    "ppl_delta_pct": 5.42
+  },
+  "skip_13": {
+    "skip_layers": [
+      13
+    ],
+    "n_layers": 23,
+    "perplexity": 20.4345,
+    "n_tokens": 22688,
+    "time_s": 99.2,
+    "ppl_delta_pct": 6.49
+  },
+  "skip_5_15": {
+    "skip_layers": [
+      5,
+      15
+    ],
+    "n_layers": 22,
+    "perplexity": 21.448,
+    "n_tokens": 22688,
+    "time_s": 92.8,
+    "ppl_delta_pct": 11.77
+  },
+  "skip_5_13_15": {
+    "skip_layers": [
+      5,
+      13,
+      15
+    ],
+    "n_layers": 21,
+    "perplexity": 23.4625,
+    "n_tokens": 22688,
+    "time_s": 94.7,
+    "ppl_delta_pct": 22.27
+  }
+}

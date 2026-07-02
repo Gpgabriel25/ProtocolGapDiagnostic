@@ -1,0 +1,157 @@
+{
+  "model": "EleutherAI/pythia-410m",
+  "num_layers": 24,
+  "layers": {
+    "0": {
+      "mean": 14.948,
+      "max": 18.5955,
+      "min": 12.472,
+      "contractive": false
+    },
+    "1": {
+      "mean": 1.6906,
+      "max": 1.9686,
+      "min": 1.3846,
+      "contractive": false
+    },
+    "2": {
+      "mean": 1.301,
+      "max": 1.8047,
+      "min": 1.0394,
+      "contractive": false
+    },
+    "3": {
+      "mean": 4.5804,
+      "max": 5.8038,
+      "min": 3.541,
+      "contractive": false
+    },
+    "4": {
+      "mean": 1.9223,
+      "max": 2.7835,
+      "min": 1.308,
+      "contractive": false
+    },
+    "5": {
+      "mean": 5.0978,
+      "max": 5.7167,
+      "min": 3.6997,
+      "contractive": false
+    },
+    "6": {
+      "mean": 1.5152,
+      "max": 1.9311,
+      "min": 1.2743,
+      "contractive": false
+    },
+    "7": {
+      "mean": 1.39,
+      "max": 1.4847,
+      "min": 1.2777,
+      "contractive": false
+    },
+    "8": {
+      "mean": 1.5275,
+      "max": 1.6752,
+      "min": 1.4278,
+      "contractive": false
+    },
+    "9": {
+      "mean": 1.3857,
+      "max": 1.5111,
+      "min": 1.2966,
+      "contractive": false
+    },
+    "10": {
+      "mean": 1.3405,
+      "max": 1.4748,
+      "min": 1.2223,
+      "contractive": false
+    },
+    "11": {
+      "mean": 1.1838,
+      "max": 1.3183,
+      "min": 1.0833,
+      "contractive": false
+    },
+    "12": {
+      "mean": 1.0469,
+      "max": 1.2552,
+      "min": 0.9675,
+      "contractive": false
+    },
+    "13": {
+      "mean": 2.0328,
+      "max": 2.4287,
+      "min": 1.6943,
+      "contractive": false
+    },
+    "14": {
+      "mean": 4.205,
+      "max": 6.0668,
+      "min": 2.6247,
+      "contractive": false
+    },
+    "15": {
+      "mean": 2.6401,
+      "max": 3.3812,
+      "min": 1.9935,
+      "contractive": false
+    },
+    "16": {
+      "mean": 1.256,
+      "max": 1.72,
+      "min": 0.9422,
+      "contractive": false
+    },
+    "17": {
+      "mean": 3.362,
+      "max": 4.0315,
+      "min": 2.4371,
+      "contractive": false
+    },
+    "18": {
+      "mean": 5.3878,
+      "max": 7.0748,
+      "min": 3.7945,
+      "contractive": false
+    },
+    "19": {
+      "mean": 6.4604,
+      "max": 7.7663,
+      "min": 5.4763,
+      "contractive": false
+    },
+    "20": {
+      "mean": 4.5064,
+      "max": 9.5235,
+      "min": 3.4152,
+      "contractive": false
+    },
+    "21": {
+      "mean": 9.804,
+      "max": 14.7757,
+      "min": 5.9764,
+      "contractive": false
+    },
+    "22": {
+      "mean": 10.625,
+      "max": 14.0989,
+      "min": 8.0983,
+      "contractive": false
+    },
+    "23": {
+      "mean": 12.3085,
+      "max": 17.3604,
+      "min": 9.9487,
+      "contractive": false
+    }
+  },
+  "summary": {
+    "overall_mean": 4.2299,
+    "overall_max": 18.5955,
+    "contractive_layers": 0,
+    "total_layers": 24,
+    "total_seconds": 63.4
+  }
+}

@@ -1,0 +1,312 @@
+{
+  "baseline_ppl": 19.188875730730974,
+  "eval_protocol": {
+    "protocol": "wikitext2_concatenated_overlap_masking_v1",
+    "dataset": "wikitext/wikitext-2-raw-v1",
+    "split": "test",
+    "max_words": 20000,
+    "text_chars": 101786,
+    "text_words": 20000,
+    "token_count": 22688,
+    "max_length": 1024,
+    "stride": 512,
+    "eval_tokens": 22688
+  },
+  "conditions": [
+    {
+      "n_removed": 1,
+      "methods": {
+        "bi_original": {
+          "layers": [
+            6
+          ],
+          "ppl": 20.207257961757367,
+          "delta_pct": 5.307149023824543
+        },
+        "bi_distributed": {
+          "layers": [
+            6
+          ],
+          "ppl": 20.207257961757367,
+          "delta_pct": 5.307149023824543
+        },
+        "bisim_original": {
+          "layers": [
+            4
+          ],
+          "ppl": 20.262154038725207,
+          "delta_pct": 5.593231844611815
+        },
+        "bisim_distributed": {
+          "layers": [
+            4
+          ],
+          "ppl": 20.262154038725207,
+          "delta_pct": 5.593231844611815
+        },
+        "bisim_clustered": {
+          "layers": [
+            14
+          ],
+          "ppl": 20.230552338854444,
+          "delta_pct": 5.428544239594121
+        },
+        "random_distributed": {
+          "layers": [
+            18
+          ],
+          "ppl": 20.63375393794618,
+          "delta_pct": 7.529769995337643
+        }
+      }
+    },
+    {
+      "n_removed": 2,
+      "methods": {
+        "bi_original": {
+          "layers": [
+            6,
+            8
+          ],
+          "ppl": 22.83359777645481,
+          "delta_pct": 18.993932197324177
+        },
+        "bi_distributed": {
+          "layers": [
+            5,
+            9
+          ],
+          "ppl": 22.434638127398795,
+          "delta_pct": 16.91481273949643
+        },
+        "bisim_original": {
+          "layers": [
+            4,
+            14
+          ],
+          "ppl": 21.619077402138743,
+          "delta_pct": 12.664638124243007
+        },
+        "bisim_distributed": {
+          "layers": [
+            4,
+            14
+          ],
+          "ppl": 21.619077402138743,
+          "delta_pct": 12.664638124243007
+        },
+        "bisim_clustered": {
+          "layers": [
+            14,
+            16
+          ],
+          "ppl": 21.803461294268672,
+          "delta_pct": 13.625527624583242
+        },
+        "random_distributed": {
+          "layers": [
+            11,
+            18
+          ],
+          "ppl": 22.188331793784364,
+          "delta_pct": 15.631223554435568
+        }
+      }
+    },
+    {
+      "n_removed": 3,
+      "methods": {
+        "bi_original": {
+          "layers": [
+            6,
+            8,
+            10
+          ],
+          "ppl": 27.431501113310176,
+          "delta_pct": 42.95522832209832
+        },
+        "bi_distributed": {
+          "layers": [
+            5,
+            9,
+            13
+          ],
+          "ppl": 24.806045442469056,
+          "delta_pct": 29.2730527341015
+        },
+        "bisim_original": {
+          "layers": [
+            4,
+            14,
+            16
+          ],
+          "ppl": 23.390915128059195,
+          "delta_pct": 21.898309501263054
+        },
+        "bisim_distributed": {
+          "layers": [
+            4,
+            14,
+            20
+          ],
+          "ppl": 23.22890171627561,
+          "delta_pct": 21.054000464834626
+        },
+        "bisim_clustered": {
+          "layers": [
+            10,
+            14,
+            16
+          ],
+          "ppl": 23.83675398239801,
+          "delta_pct": 24.221733033704854
+        },
+        "random_distributed": {
+          "layers": [
+            11,
+            18,
+            22
+          ],
+          "ppl": 24.871509351122203,
+          "delta_pct": 29.6142082534335
+        }
+      }
+    },
+    {
+      "n_removed": 4,
+      "methods": {
+        "bi_original": {
+          "layers": [
+            6,
+            8,
+            10,
+            12
+          ],
+          "ppl": 32.38355817862743,
+          "delta_pct": 68.76214444791667
+        },
+        "bi_distributed": {
+          "layers": [
+            5,
+            9,
+            13,
+            17
+          ],
+          "ppl": 26.88620151453281,
+          "delta_pct": 40.11347976720999
+        },
+        "bisim_original": {
+          "layers": [
+            4,
+            14,
+            16,
+            20
+          ],
+          "ppl": 25.39652840643765,
+          "delta_pct": 32.35026774270638
+        },
+        "bisim_distributed": {
+          "layers": [
+            4,
+            10,
+            14,
+            20
+          ],
+          "ppl": 25.703616028877853,
+          "delta_pct": 33.95060966345999
+        },
+        "bisim_clustered": {
+          "layers": [
+            10,
+            12,
+            14,
+            16
+          ],
+          "ppl": 27.543170153389962,
+          "delta_pct": 43.53717507941119
+        },
+        "random_distributed": {
+          "layers": [
+            7,
+            11,
+            18,
+            22
+          ],
+          "ppl": 27.40187061389493,
+          "delta_pct": 42.800813337963554
+        }
+      }
+    },
+    {
+      "n_removed": 5,
+      "methods": {
+        "bi_original": {
+          "layers": [
+            6,
+            8,
+            10,
+            12,
+            14
+          ],
+          "ppl": 40.13331540060979,
+          "delta_pct": 109.14886293383154
+        },
+        "bi_distributed": {
+          "layers": [
+            4,
+            8,
+            12,
+            16,
+            20
+          ],
+          "ppl": 27.580843527233565,
+          "delta_pct": 43.733504319186665
+        },
+        "bisim_original": {
+          "layers": [
+            4,
+            14,
+            16,
+            20,
+            22
+          ],
+          "ppl": 29.240412031559476,
+          "delta_pct": 52.38210118131607
+        },
+        "bisim_distributed": {
+          "layers": [
+            4,
+            10,
+            14,
+            18,
+            22
+          ],
+          "ppl": 30.065072247684213,
+          "delta_pct": 56.679696453164354
+        },
+        "bisim_clustered": {
+          "layers": [
+            6,
+            10,
+            12,
+            14,
+            16
+          ],
+          "ppl": 32.76863339930136,
+          "delta_pct": 70.76890725193665
+        },
+        "random_distributed": {
+          "layers": [
+            1,
+            7,
+            11,
+            18,
+            22
+          ],
+          "ppl": 27.9128409016433,
+          "delta_pct": 45.4636597439677
+        }
+      }
+    }
+  ]
+}

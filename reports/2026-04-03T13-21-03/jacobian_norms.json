@@ -1,0 +1,210 @@
+{
+  "model": "openai-community/gpt2-medium",
+  "num_layers": 24,
+  "num_prompts": 50,
+  "seq_len": 64,
+  "method": "finite_difference_power_iteration",
+  "n_power_iters": 20,
+  "layers": {
+    "0": {
+      "mean_spectral_norm": 17.70950050354004,
+      "max_spectral_norm": 20.184473037719727,
+      "min_spectral_norm": 14.912294387817383,
+      "n_prompts": 10,
+      "contractivity": "expansive",
+      "elapsed_seconds": 1.2
+    },
+    "1": {
+      "mean_spectral_norm": 1.8221301078796386,
+      "max_spectral_norm": 2.06681227684021,
+      "min_spectral_norm": 1.7075306177139282,
+      "n_prompts": 10,
+      "contractivity": "expansive",
+      "elapsed_seconds": 1.1
+    },
+    "2": {
+      "mean_spectral_norm": 1.5758846402168274,
+      "max_spectral_norm": 1.921872854232788,
+      "min_spectral_norm": 1.3307311534881592,
+      "n_prompts": 10,
+      "contractivity": "expansive",
+      "elapsed_seconds": 1.3
+    },
+    "3": {
+      "mean_spectral_norm": 1.4585397958755493,
+      "max_spectral_norm": 2.2032341957092285,
+      "min_spectral_norm": 0.8394032716751099,
+      "n_prompts": 10,
+      "contractivity": "expansive",
+      "elapsed_seconds": 1.4
+    },
+    "4": {
+      "mean_spectral_norm": 1.4730063557624817,
+      "max_spectral_norm": 1.731803059577942,
+      "min_spectral_norm": 1.1990697383880615,
+      "n_prompts": 10,
+      "contractivity": "expansive",
+      "elapsed_seconds": 1.5
+    },
+    "5": {
+      "mean_spectral_norm": 1.4498144268989563,
+      "max_spectral_norm": 1.6969265937805176,
+      "min_spectral_norm": 1.2318367958068848,
+      "n_prompts": 10,
+      "contractivity": "expansive",
+      "elapsed_seconds": 1.6
+    },
+    "6": {
+      "mean_spectral_norm": 1.4516419649124146,
+      "max_spectral_norm": 2.0008506774902344,
+      "min_spectral_norm": 1.1304214000701904,
+      "n_prompts": 10,
+      "contractivity": "expansive",
+      "elapsed_seconds": 1.5
+    },
+    "7": {
+      "mean_spectral_norm": 1.3249798536300659,
+      "max_spectral_norm": 1.5774788856506348,
+      "min_spectral_norm": 1.0395708084106445,
+      "n_prompts": 10,
+      "contractivity": "expansive",
+      "elapsed_seconds": 1.4
+    },
+    "8": {
+      "mean_spectral_norm": 1.2812368869781494,
+      "max_spectral_norm": 1.425299882888794,
+      "min_spectral_norm": 1.178575038909912,
+      "n_prompts": 10,
+      "contractivity": "expansive",
+      "elapsed_seconds": 1.5
+    },
+    "9": {
+      "mean_spectral_norm": 1.3063874959945678,
+      "max_spectral_norm": 1.7283339500427246,
+      "min_spectral_norm": 1.0668349266052246,
+      "n_prompts": 10,
+      "contractivity": "expansive",
+      "elapsed_seconds": 1.5
+    },
+    "10": {
+      "mean_spectral_norm": 1.1317763864994048,
+      "max_spectral_norm": 1.4040710926055908,
+      "min_spectral_norm": 0.9926497340202332,
+      "n_prompts": 10,
+      "contractivity": "expansive",
+      "elapsed_seconds": 1.6
+    },
+    "11": {
+      "mean_spectral_norm": 1.0551813304424287,
+      "max_spectral_norm": 1.2107144594192505,
+      "min_spectral_norm": 0.8786764740943909,
+      "n_prompts": 10,
+      "contractivity": "expansive",
+      "elapsed_seconds": 1.8
+    },
+    "12": {
+      "mean_spectral_norm": 0.9986339569091797,
+      "max_spectral_norm": 1.1310584545135498,
+      "min_spectral_norm": 0.8555468320846558,
+      "n_prompts": 10,
+      "contractivity": "expansive",
+      "elapsed_seconds": 1.6
+    },
+    "13": {
+      "mean_spectral_norm": 1.016030067205429,
+      "max_spectral_norm": 1.281569480895996,
+      "min_spectral_norm": 0.7825801968574524,
+      "n_prompts": 10,
+      "contractivity": "expansive",
+      "elapsed_seconds": 1.9
+    },
+    "14": {
+      "mean_spectral_norm": 0.8900375604629517,
+      "max_spectral_norm": 1.0357240438461304,
+      "min_spectral_norm": 0.7327067852020264,
+      "n_prompts": 10,
+      "contractivity": "expansive",
+      "elapsed_seconds": 1.8
+    },
+    "15": {
+      "mean_spectral_norm": 0.9234126746654511,
+      "max_spectral_norm": 1.104198932647705,
+      "min_spectral_norm": 0.8381839394569397,
+      "n_prompts": 10,
+      "contractivity": "expansive",
+      "elapsed_seconds": 2.0
+    },
+    "16": {
+      "mean_spectral_norm": 0.8498205721378327,
+      "max_spectral_norm": 1.0365725755691528,
+      "min_spectral_norm": 0.7064651250839233,
+      "n_prompts": 10,
+      "contractivity": "expansive",
+      "elapsed_seconds": 2.0
+    },
+    "17": {
+      "mean_spectral_norm": 0.7724331140518188,
+      "max_spectral_norm": 1.0172566175460815,
+      "min_spectral_norm": 0.6178888082504272,
+      "n_prompts": 10,
+      "contractivity": "expansive",
+      "elapsed_seconds": 2.1
+    },
+    "18": {
+      "mean_spectral_norm": 0.755895584821701,
+      "max_spectral_norm": 1.0895484685897827,
+      "min_spectral_norm": 0.6178657412528992,
+      "n_prompts": 10,
+      "contractivity": "expansive",
+      "elapsed_seconds": 1.8
+    },
+    "19": {
+      "mean_spectral_norm": 0.7996889114379883,
+      "max_spectral_norm": 1.2842583656311035,
+      "min_spectral_norm": 0.5764462351799011,
+      "n_prompts": 10,
+      "contractivity": "expansive",
+      "elapsed_seconds": 1.9
+    },
+    "20": {
+      "mean_spectral_norm": 0.7463326275348663,
+      "max_spectral_norm": 0.9110444784164429,
+      "min_spectral_norm": 0.6219780445098877,
+      "n_prompts": 10,
+      "contractivity": "contractive",
+      "elapsed_seconds": 2.0
+    },
+    "21": {
+      "mean_spectral_norm": 0.8199162721633911,
+      "max_spectral_norm": 1.1299508810043335,
+      "min_spectral_norm": 0.663322389125824,
+      "n_prompts": 10,
+      "contractivity": "expansive",
+      "elapsed_seconds": 2.2
+    },
+    "22": {
+      "mean_spectral_norm": 0.9786951422691346,
+      "max_spectral_norm": 1.1274479627609253,
+      "min_spectral_norm": 0.8849232792854309,
+      "n_prompts": 10,
+      "contractivity": "expansive",
+      "elapsed_seconds": 2.3
+    },
+    "23": {
+      "mean_spectral_norm": 2.1774721145629883,
+      "max_spectral_norm": 2.3542182445526123,
+      "min_spectral_norm": 1.94441819190979,
+      "n_prompts": 10,
+      "contractivity": "expansive",
+      "elapsed_seconds": 2.2
+    }
+  },
+  "summary": {
+    "overall_mean_norm": 1.8653520144522189,
+    "overall_max_norm": 20.184473037719727,
+    "n_contractive_layers": 1,
+    "n_total_layers": 24,
+    "fraction_contractive": 0.041666666666666664,
+    "prop1_verified": false
+  }
+}

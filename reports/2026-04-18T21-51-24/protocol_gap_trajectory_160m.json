@@ -1,0 +1,411 @@
+{
+  "config": {
+    "prompts": 32,
+    "max_length": 128,
+    "dtype": "float32",
+    "models": [
+      "EleutherAI/pythia-160m"
+    ],
+    "checkpoints": [
+      "step0"
+    ],
+    "smoke": false
+  },
+  "results": [
+    {
+      "model": "EleutherAI/pythia-160m",
+      "checkpoint": "step0",
+      "n_layers": 12,
+      "n_pairs": 11,
+      "mean_interchange_kl": 0.04344754807574314,
+      "mean_replacement_kl": 0.08727692765056748,
+      "gap_kl": 0.043829379574824336,
+      "pearson_r": 0.9648344694131213,
+      "per_pair": [
+        {
+          "layer_a": 0,
+          "layer_b": 1,
+          "interchange_kl": 0.2793769771233201,
+          "replacement_kl": 0.27437147591263056
+        },
+        {
+          "layer_a": 1,
+          "layer_b": 2,
+          "interchange_kl": 0.08886435069143772,
+          "replacement_kl": 0.16083600651472807
+        },
+        {
+          "layer_a": 2,
+          "layer_b": 3,
+          "interchange_kl": 0.033576680871192366,
+          "replacement_kl": 0.1128770939540118
+        },
+        {
+          "layer_a": 3,
+          "layer_b": 4,
+          "interchange_kl": 0.022947937774006277,
+          "replacement_kl": 0.07679005688987672
+        },
+        {
+          "layer_a": 4,
+          "layer_b": 5,
+          "interchange_kl": 0.015039482153952122,
+          "replacement_kl": 0.06291871832218021
+        },
+        {
+          "layer_a": 5,
+          "layer_b": 6,
+          "interchange_kl": 0.0119540186424274,
+          "replacement_kl": 0.06570543895941228
+        },
+        {
+          "layer_a": 6,
+          "layer_b": 7,
+          "interchange_kl": 0.007820193757652305,
+          "replacement_kl": 0.050990324933081865
+        },
+        {
+          "layer_a": 7,
+          "layer_b": 8,
+          "interchange_kl": 0.006102988016209565,
+          "replacement_kl": 0.04578096780460328
+        },
+        {
+          "layer_a": 8,
+          "layer_b": 9,
+          "interchange_kl": 0.004808428042451851,
+          "replacement_kl": 0.03789200715254992
+        },
+        {
+          "layer_a": 9,
+          "layer_b": 10,
+          "interchange_kl": 0.003870092310535256,
+          "replacement_kl": 0.03822680318262428
+        },
+        {
+          "layer_a": 10,
+          "layer_b": 11,
+          "interchange_kl": 0.0035618794499896467,
+          "replacement_kl": 0.03365731053054333
+        }
+      ],
+      "wall_time_s": 20.96
+    },
+    {
+      "model": "EleutherAI/pythia-160m",
+      "checkpoint": "step1000",
+      "n_layers": 12,
+      "n_pairs": 11,
+      "mean_interchange_kl": 0.4299129751981871,
+      "mean_replacement_kl": 0.49121551790317014,
+      "gap_kl": 0.06130254270498303,
+      "pearson_r": 0.9984817840090165,
+      "per_pair": [
+        {
+          "layer_a": 0,
+          "layer_b": 1,
+          "interchange_kl": 4.465400874614716,
+          "replacement_kl": 4.230357065796852
+        },
+        {
+          "layer_a": 1,
+          "layer_b": 2,
+          "interchange_kl": 0.06339076289441437,
+          "replacement_kl": 0.15316745778545737
+        },
+        {
+          "layer_a": 2,
+          "layer_b": 3,
+          "interchange_kl": 0.04637292819097638,
+          "replacement_kl": 0.14347371086478233
+        },
+        {
+          "layer_a": 3,
+          "layer_b": 4,
+          "interchange_kl": 0.030142294010147452,
+          "replacement_kl": 0.3181219529360533
+        },
+        {
+          "layer_a": 4,
+          "layer_b": 5,
+          "interchange_kl": 0.011035159215680324,
+          "replacement_kl": 0.10673835384659469
+        },
+        {
+          "layer_a": 5,
+          "layer_b": 6,
+          "interchange_kl": 0.005737444836995564,
+          "replacement_kl": 0.04644277167972177
+        },
+        {
+          "layer_a": 6,
+          "layer_b": 7,
+          "interchange_kl": 0.007981860791915096,
+          "replacement_kl": 0.06334573938511312
+        },
+        {
+          "layer_a": 7,
+          "layer_b": 8,
+          "interchange_kl": 0.00828624730638694,
+          "replacement_kl": 0.06382811884395778
+        },
+        {
+          "layer_a": 8,
+          "layer_b": 9,
+          "interchange_kl": 0.012781477358657867,
+          "replacement_kl": 0.07772283139638603
+        },
+        {
+          "layer_a": 9,
+          "layer_b": 10,
+          "interchange_kl": 0.015054873249027878,
+          "replacement_kl": 0.07347908453084528
+        },
+        {
+          "layer_a": 10,
+          "layer_b": 11,
+          "interchange_kl": 0.06285880471114069,
+          "replacement_kl": 0.1266936098691076
+        }
+      ],
+      "wall_time_s": 18.88
+    },
+    {
+      "model": "EleutherAI/pythia-160m",
+      "checkpoint": "step16000",
+      "n_layers": 12,
+      "n_pairs": 11,
+      "mean_interchange_kl": 0.6164134885449047,
+      "mean_replacement_kl": 0.6939943447227548,
+      "gap_kl": 0.07758085617785004,
+      "pearson_r": 0.9984882496685787,
+      "per_pair": [
+        {
+          "layer_a": 0,
+          "layer_b": 1,
+          "interchange_kl": 6.302708387374878,
+          "replacement_kl": 6.125077500939369
+        },
+        {
+          "layer_a": 1,
+          "layer_b": 2,
+          "interchange_kl": 0.1100665524136275,
+          "replacement_kl": 0.32053110376000404
+        },
+        {
+          "layer_a": 2,
+          "layer_b": 3,
+          "interchange_kl": 0.11687355837784708,
+          "replacement_kl": 0.14612243580631912
+        },
+        {
+          "layer_a": 3,
+          "layer_b": 4,
+          "interchange_kl": 0.07630745775531977,
+          "replacement_kl": 0.3626528764143586
+        },
+        {
+          "layer_a": 4,
+          "layer_b": 5,
+          "interchange_kl": 0.00795474444021238,
+          "replacement_kl": 0.031736884149722755
+        },
+        {
+          "layer_a": 5,
+          "layer_b": 6,
+          "interchange_kl": 0.006529223530378658,
+          "replacement_kl": 0.023393632465740666
+        },
+        {
+          "layer_a": 6,
+          "layer_b": 7,
+          "interchange_kl": 0.006051002143067308,
+          "replacement_kl": 0.031798752839677036
+        },
+        {
+          "layer_a": 7,
+          "layer_b": 8,
+          "interchange_kl": 0.007060552612529136,
+          "replacement_kl": 0.03256716200849041
+        },
+        {
+          "layer_a": 8,
+          "layer_b": 9,
+          "interchange_kl": 0.007271342270541936,
+          "replacement_kl": 0.041364419274032116
+        },
+        {
+          "layer_a": 9,
+          "layer_b": 10,
+          "interchange_kl": 0.010091035364894196,
+          "replacement_kl": 0.19259034376591444
+        },
+        {
+          "layer_a": 10,
+          "layer_b": 11,
+          "interchange_kl": 0.12963451771065593,
+          "replacement_kl": 0.3261026805266738
+        }
+      ],
+      "wall_time_s": 19.51
+    },
+    {
+      "model": "EleutherAI/pythia-160m",
+      "checkpoint": "step64000",
+      "n_layers": 12,
+      "n_pairs": 11,
+      "mean_interchange_kl": 0.4921337006427083,
+      "mean_replacement_kl": 0.7006031828773716,
+      "gap_kl": 0.20846948223466327,
+      "pearson_r": 0.9950437041408426,
+      "per_pair": [
+        {
+          "layer_a": 0,
+          "layer_b": 1,
+          "interchange_kl": 4.520178057253361,
+          "replacement_kl": 5.390911936759949
+        },
+        {
+          "layer_a": 1,
+          "layer_b": 2,
+          "interchange_kl": 0.17574291420169175,
+          "replacement_kl": 0.23375736130401492
+        },
+        {
+          "layer_a": 2,
+          "layer_b": 3,
+          "interchange_kl": 0.2170667052268982,
+          "replacement_kl": 0.22592054260894656
+        },
+        {
+          "layer_a": 3,
+          "layer_b": 4,
+          "interchange_kl": 0.12530736369080842,
+          "replacement_kl": 0.48745136335492134
+        },
+        {
+          "layer_a": 4,
+          "layer_b": 5,
+          "interchange_kl": 0.012324089984758757,
+          "replacement_kl": 0.051454772939905524
+        },
+        {
+          "layer_a": 5,
+          "layer_b": 6,
+          "interchange_kl": 0.010812488006195053,
+          "replacement_kl": 0.04387624451192096
+        },
+        {
+          "layer_a": 6,
+          "layer_b": 7,
+          "interchange_kl": 0.011878160446940456,
+          "replacement_kl": 0.053515027393586934
+        },
+        {
+          "layer_a": 7,
+          "layer_b": 8,
+          "interchange_kl": 0.012842400697991252,
+          "replacement_kl": 0.06281544046942145
+        },
+        {
+          "layer_a": 8,
+          "layer_b": 9,
+          "interchange_kl": 0.014920392277417704,
+          "replacement_kl": 0.0855347691103816
+        },
+        {
+          "layer_a": 9,
+          "layer_b": 10,
+          "interchange_kl": 0.021166004793485627,
+          "replacement_kl": 0.4936103792861104
+        },
+        {
+          "layer_a": 10,
+          "layer_b": 11,
+          "interchange_kl": 0.29123213049024343,
+          "replacement_kl": 0.5777871739119291
+        }
+      ],
+      "wall_time_s": 16.29
+    },
+    {
+      "model": "EleutherAI/pythia-160m",
+      "checkpoint": "step143000",
+      "n_layers": 12,
+      "n_pairs": 11,
+      "mean_interchange_kl": 0.7723323229636828,
+      "mean_replacement_kl": 1.4077548166652294,
+      "gap_kl": 0.6354224937015466,
+      "pearson_r": 0.9903877392351458,
+      "per_pair": [
+        {
+          "layer_a": 0,
+          "layer_b": 1,
+          "interchange_kl": 4.2559734135866165,
+          "replacement_kl": 7.666735365986824
+        },
+        {
+          "layer_a": 1,
+          "layer_b": 2,
+          "interchange_kl": 0.28337271325290203,
+          "replacement_kl": 0.76099968329072
+        },
+        {
+          "layer_a": 2,
+          "layer_b": 3,
+          "interchange_kl": 0.2451659287326038,
+          "replacement_kl": 0.227063680998981
+        },
+        {
+          "layer_a": 3,
+          "layer_b": 4,
+          "interchange_kl": 0.20248919585719705,
+          "replacement_kl": 0.5637073684483767
+        },
+        {
+          "layer_a": 4,
+          "layer_b": 5,
+          "interchange_kl": 0.02819912665290758,
+          "replacement_kl": 0.10209556110203266
+        },
+        {
+          "layer_a": 5,
+          "layer_b": 6,
+          "interchange_kl": 0.021591263299342245,
+          "replacement_kl": 0.06008852133527398
+        },
+        {
+          "layer_a": 6,
+          "layer_b": 7,
+          "interchange_kl": 0.021751487161964178,
+          "replacement_kl": 0.17655337834730744
+        },
+        {
+          "layer_a": 7,
+          "layer_b": 8,
+          "interchange_kl": 0.02808267012005672,
+          "replacement_kl": 0.3804716430604458
+        },
+        {
+          "layer_a": 8,
+          "layer_b": 9,
+          "interchange_kl": 0.044888587726745754,
+          "replacement_kl": 0.29073147336021066
+        },
+        {
+          "layer_a": 9,
+          "layer_b": 10,
+          "interchange_kl": 0.06044802814722061,
+          "replacement_kl": 0.4852376878261566
+        },
+        {
+          "layer_a": 10,
+          "layer_b": 11,
+          "interchange_kl": 3.303693138062954,
+          "replacement_kl": 4.771618619561195
+        }
+      ],
+      "wall_time_s": 16.19
+    }
+  ]
+}

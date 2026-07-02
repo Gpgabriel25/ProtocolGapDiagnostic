@@ -1,0 +1,144 @@
+% Bundled for arXiv readability: roadmap, taxonomy, and auxiliary tables
+% referenced from the main introduction and experiments.
+
+\section{Roadmaps, protocol taxonomy, and auxiliary tables}
+\label{sec:app_roadmaps}
+
+\noindent This appendix collects navigation aids and tables omitted from the opening pages of the main text. Evaluator contracts for cross-table comparisons are still summarized in Table~\ref{tab:comparison_contract} (\S\ref{sec:exp_skip}).
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Roadmap: main claims and where they are established. Implementation details and configuration matrices are in Appendix~\ref{sec:app_setup} and Table~\ref{tab:comparison_contract}.}
+\label{tab:reviewer_claims}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{>{\raggedright\arraybackslash}p{5.8cm}>{\raggedright\arraybackslash}p{9.2cm}}
+\toprule
+\textbf{Claim} & \textbf{Evidence} \\
+\midrule
+Replacement vs.\ interchange swap-KL can rank different redundant layers and change greedy pruning $\Delta$PPL by several-fold at matched budgets. & Tables~\ref{tab:8b_core} and~\ref{tab:skip_qwen} (Qwen/Llama); harmonized slice Table~\ref{tab:harmonized_xmodel}. \\
+The replacement--interchange \emph{metric} gap grows during training and is pair-heterogeneous. & Pythia checkpoint trajectory \S\ref{sec:exp_scaling}; Figure~\ref{fig:protocol_gap_dist}. \\
+Positional-encoding \emph{families} tag descriptive correlations only; pair distance and training dominate in controlled runs. & Appendix~\ref{sec:app_pe_ablation}; RoPE-off counterfactual in \S\ref{sec:exp_scaling}. \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Where protocol-relative equivalence matters beyond pruning. Each domain makes claims about layer similarity using an implicit protocol; our evidence shows these claims can be protocol-dependent.}
+\label{tab:domains}
+\small
+\setlength{\extrarowheight}{3pt}
+\setlength{\tabcolsep}{6pt}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.05cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\toprule
+\textbf{Domain} & \textbf{Claim} & \textbf{Assumption} & \textbf{Counterevidence} \\
+\midrule
+Layer pruning & ``Layer $i$ is redundant'' & Deletion $\approx$ replacement/interchange & Interchange $4.7\times$ safer on Qwen3-8B (\S\ref{sec:exp_skip}) \\
+Layer merging & ``Layers are compatible'' & Behavioral similarity $\Rightarrow$ parameter compatibility & $51\times$ worse KL with weight averaging (\S\ref{sec:exp_negative}) \\
+Interpretability & ``Middle layers do the same thing'' & CKA/BI similarity $\Rightarrow$ functional equivalence & CKA selects layer 7 (+9.6\%) while interchange selects layer 17 (+2.5\%) \\
+Architecture analysis & ``Some families are more redundant'' & Protocol gap tracks PE brand & Effect is checkpoint- and pair-conditional; PE labels are descriptive only (\S\ref{sec:exp_scaling}) \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Protocol taxonomy for layer equivalence. Different protocols test genuinely different notions of equivalence; agreement under one does not imply agreement under another.}
+\label{tab:protocol_taxonomy}
+\begin{tabular}{>{\raggedright\arraybackslash}p{1.8cm}>{\raggedright\arraybackslash}p{3.8cm}>{\raggedright\arraybackslash}p{1.8cm}>{\raggedright\arraybackslash}p{4.5cm}}
+\toprule
+\textbf{Protocol} & \textbf{Question tested} & \textbf{Operation} & \textbf{What failure means} \\
+\midrule
+Replacement & Are functions substitutable? ($g_i \approx g_j$) & Copy weights & Layer is position-specialized: its function depends on its location in the network \\
+Interchange & Are updates order-invariant? ($g_i \circ g_j \approx g_j \circ g_i$) & Swap positions & Layers do not commute; computation order matters \\
+Deletion & Is marginal contribution small? ($\mathcal{M} \approx \mathcal{M}_{-i}$) & Remove layer & Layer carries unique information not recoverable from neighbors \\
+Averaging  & Are parameters linearly compatible? ($\theta_i \approx \theta_j$) & Merge weights & Same behavior via different parameter configurations (loss landscape mismatch) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Pythia-1.4B full baseline suite on a standardized 10K-word WikiText-2 evaluator (baseline PPL\,$=$\,12.12). Lower is better. Random reports the mean over 5 trials.}
+\label{tab:pythia_baselines}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lccc}
+\toprule
+Method & $n{=}1$ $\Delta$ PPL (\%) & $n{=}2$ $\Delta$ PPL (\%) & $n{=}3$ $\Delta$ PPL (\%) \\
+\midrule
+BI-guided & +11.9 & +33.2 & +74.3 \\
+CKA-guided & +18.1 & +50.9 & +88.0 \\
+SLEB-one-shot & +13.6 & +31.5 & +116.5 \\
+SLEB-iterative & +13.6 & +31.5 & +79.3 \\
+Taylor importance & +13.6 & +56.3 & +199.2 \\
+Random & +74.1 & +152.8 & +206.3 \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Qwen3-8B interchange-guided skips (Table~\ref{tab:skip_qwen}): quality and exact weight memory ($n/36$ layers removed).}
+\label{tab:qwen_deployment}
+\setlength{\tabcolsep}{8pt}
+\begin{tabular}{@{}l l r r@{}}
+\toprule
+$n$ & Selected layers & PPL $\Delta$ (\%) & Mem $\downarrow$ (\%) \\
+\midrule
+1 & \{17\} & +2.5 & 2.8 \\
+2 & \{17, 21\} & +6.4 & 5.6 \\
+3 & \{15, 17, 20\} & +10.3 & 8.3 \\
+5 & \{15, 17, 18, 19, 20\} & +45.4 & 13.9 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Latency for the same configurations (TPU v6e-8, batch 8, seq.\ 128, bf16; 5 warmup, 50 timed iterations, median). ``Ideal'' assumes linear depth scaling. ``Mask'' $=$ scan with identity skip (XLA fuses the loop body). ``Recompiled'' $=$ fewer physical layers.}
+\label{tab:qwen_deployment_latency}
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{@{}l rrrr@{}}
+\toprule
+$n$ & Ideal lat.\ $\downarrow$ (\%) & Mask lat.\ $\downarrow$ (\%) & Recomp.\ lat.\ $\downarrow$ (\%) & Recomp.\ tok/s $\uparrow$ (\%) \\
+\midrule
+1 & 2.8 & 4.1 & 2.6 & +2.6 \\
+2 & 5.6 & 4.1 & 4.8 & +5.4 \\
+3 & 8.3 & 4.1 & 7.4 & +8.2 \\
+5 & 13.9 & 4.1 & 12.6 & +14.4 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Score-to-removal selection algorithm (used for Table~\ref{tab:skip_qwen} and GPT-2 sweeps).}
+\label{tab:selection_algorithm}
+\begin{tabular}{p{0.95\linewidth}}
+\toprule
+\textbf{Input:} pair scores $d(i,j)$, target budget $n$, spacing constraint $\Delta$ (default: no adjacent removals, $\Delta{=}1$), and layer set $\mathcal{L}$. \\
+\textbf{Step 1 (layer score):} for each layer $i\in\mathcal{L}$, compute $s(i)=\min_{j\neq i} d(i,j)$ over valid partners. \\
+\textbf{Step 2 (candidate order):} sort layers by ascending $s(i)$ (lower means more removable). \\
+\textbf{Step 3 (greedy selection):} scan the sorted list and add layer $i$ if $|i-k|>\Delta$ for all already-selected $k$; stop when $n$ layers are selected. \\
+\textbf{Step 4 (evaluation):} remove selected layers with skip connections and report perplexity / downstream deltas. \\
+\textbf{Output:} selected layer set $R_n$ and corresponding quality metrics. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Extended baseline comparison on GPT-2-Medium under the standardized evaluator (baseline PPL\,$=$\,19.19). $\Delta$\% is relative PPL increase. Output-sensitive methods (interchange scoring, SLEB-iterative) dominate representation-change proxies (BI), first-order Taylor pruning, and single-pass SLEB-greedy at practical compression budgets. $^\S$LaCo-style progressive layer collapse~\citep{yang2024laco}: adjacent pairs merged by weight averaging, ordered by swap-KL distance; see Appendix~\ref{sec:app_negative} for analysis.}
+\label{tab:extended_baselines}
+\begin{tabular}{ccccccc}
+\toprule
+$n$ & Interchange-guided & SLEB-iter & SLEB-greedy & BI-guided & Taylor & LaCo$^\S$ \\
+\midrule
+1 & \textbf{+5.1\%} & +5.3\% & +5.3\% & +5.3\% & +6.3\% & +677.1\% \\
+2 & +11.8\% & \textbf{+11.7\%} & +63.2\% & +23.7\% & +19.8\% & +943.9\% \\
+3 & +20.4\% & \textbf{+18.9\%} & +325.6\% & +54.9\% & +40.0\% & +1278.9\% \\
+5 & +48.7\% & \textbf{+43.0\%} & +752.6\% & +247.5\% & +248.6\% & +3110.1\% \\
+\bottomrule
+\end{tabular}
+\end{table}

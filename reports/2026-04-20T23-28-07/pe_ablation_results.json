@@ -1,0 +1,822 @@
+{
+  "experiment": "pe_ablation_jax",
+  "timestamp": "2026-04-21 02:09:49",
+  "jax_version": "0.8.3",
+  "devices": "[TpuDevice(id=0, process_index=0, coords=(0,0,0), core_on_chip=0), TpuDevice(id=1, process_index=0, coords=(1,0,0), core_on_chip=0), TpuDevice(id=2, process_index=0, coords=(0,1,0), core_on_chip=0), TpuDevice(id=3, process_index=0, coords=(1,1,0), core_on_chip=0), TpuDevice(id=4, process_index=0, coords=(0,2,0), core_on_chip=0), TpuDevice(id=5, process_index=0, coords=(1,2,0), core_on_chip=0), TpuDevice(id=6, process_index=0, coords=(0,3,0), core_on_chip=0), TpuDevice(id=7, process_index=0, coords=(1,3,0), core_on_chip=0)]",
+  "device_count": 8,
+  "training": {
+    "total_steps": 61035,
+    "batch_size": 64,
+    "seq_len": 512,
+    "n_layers": 16,
+    "d_model": 768,
+    "dataset": "wikitext-103-raw-v1"
+  },
+  "results": {
+    "abspe": {
+      "config": {
+        "use_rope": false,
+        "n_layers": 16,
+        "d_model": 768,
+        "n_heads": 12
+      },
+      "summary": {
+        "mean_interchange": 3.424019481533419,
+        "mean_replacement": 2.5806792725330943,
+        "mean_I_R_ratio": 1.240570510435842,
+        "pairs_ratio_lt_0.5": 2,
+        "pairs_ratio_gt_0.8": 41,
+        "n_pairs": 54
+      },
+      "pair_distances": {
+        "0,1": {
+          "interchange": 8.59925127029419,
+          "replacement": 5.075175557817731,
+          "ratio": 1.6943751348421006,
+          "strongly_bisimilar": false
+        },
+        "0,2": {
+          "interchange": 10.594441175460815,
+          "replacement": 5.535521711621966,
+          "ratio": 1.9139011148716356,
+          "strongly_bisimilar": false
+        },
+        "0,3": {
+          "interchange": 9.272982563291277,
+          "replacement": 5.213147555078779,
+          "ratio": 1.7787684820237688,
+          "strongly_bisimilar": false
+        },
+        "0,4": {
+          "interchange": 9.98288811956133,
+          "replacement": 5.1258693763187955,
+          "ratio": 1.9475502371338043,
+          "strongly_bisimilar": false
+        },
+        "1,2": {
+          "interchange": 1.6120965310505457,
+          "replacement": 3.0235490117754256,
+          "ratio": 0.5331802212296886,
+          "strongly_bisimilar": false
+        },
+        "1,3": {
+          "interchange": 2.604677609034947,
+          "replacement": 2.5984550033296854,
+          "ratio": 1.0023947328689735,
+          "strongly_bisimilar": false
+        },
+        "1,4": {
+          "interchange": 3.091707195554461,
+          "replacement": 3.185636707714626,
+          "ratio": 0.9705146817181795,
+          "strongly_bisimilar": false
+        },
+        "1,5": {
+          "interchange": 4.014194045748029,
+          "replacement": 3.0239057881491522,
+          "ratio": 1.3274864783642137,
+          "strongly_bisimilar": false
+        },
+        "2,3": {
+          "interchange": 0.8730251235621316,
+          "replacement": 1.7728444252695357,
+          "ratio": 0.4924431670760711,
+          "strongly_bisimilar": false
+        },
+        "2,4": {
+          "interchange": 2.2606338262557983,
+          "replacement": 2.5943484902381897,
+          "ratio": 0.8713686055188024,
+          "strongly_bisimilar": false
+        },
+        "2,5": {
+          "interchange": 3.0724474361964633,
+          "replacement": 2.486434749194554,
+          "ratio": 1.2356839193420104,
+          "strongly_bisimilar": false
+        },
+        "2,6": {
+          "interchange": 4.231917602675302,
+          "replacement": 2.8935478755405972,
+          "ratio": 1.4625358848567196,
+          "strongly_bisimilar": false
+        },
+        "3,4": {
+          "interchange": 0.8281358310154506,
+          "replacement": 2.0911122475351607,
+          "ratio": 0.39602648396899287,
+          "strongly_bisimilar": false
+        },
+        "3,5": {
+          "interchange": 2.216143463339124,
+          "replacement": 2.0594827362469266,
+          "ratio": 1.0760679971855844,
+          "strongly_bisimilar": false
+        },
+        "3,6": {
+          "interchange": 3.9149803434099466,
+          "replacement": 2.6144451073237827,
+          "ratio": 1.4974421655644103,
+          "strongly_bisimilar": false
+        },
+        "3,7": {
+          "interchange": 3.5849443333489557,
+          "replacement": 2.7558189119611467,
+          "ratio": 1.3008635355752332,
+          "strongly_bisimilar": false
+        },
+        "4,5": {
+          "interchange": 1.245120814868382,
+          "replacement": 2.149555572441646,
+          "ratio": 0.5792456965400269,
+          "strongly_bisimilar": false
+        },
+        "4,6": {
+          "interchange": 2.6189042670386176,
+          "replacement": 2.3424885187830244,
+          "ratio": 1.1180008977322105,
+          "strongly_bisimilar": false
+        },
+        "4,7": {
+          "interchange": 3.0795848199299405,
+          "replacement": 2.627923675945827,
+          "ratio": 1.1718699625872382,
+          "strongly_bisimilar": false
+        },
+        "4,8": {
+          "interchange": 3.654598355293274,
+          "replacement": 2.664042915616717,
+          "ratio": 1.3718241300591303,
+          "strongly_bisimilar": false
+        },
+        "5,6": {
+          "interchange": 1.57904623235975,
+          "replacement": 2.355900202478681,
+          "ratio": 0.6702517494719787,
+          "strongly_bisimilar": false
+        },
+        "5,7": {
+          "interchange": 3.1921940190451483,
+          "replacement": 2.668444003377642,
+          "ratio": 1.1962754380024203,
+          "strongly_bisimilar": false
+        },
+        "5,8": {
+          "interchange": 3.0350616829735895,
+          "replacement": 2.889784710747855,
+          "ratio": 1.0502725935189514,
+          "strongly_bisimilar": false
+        },
+        "5,9": {
+          "interchange": 2.9062071357454573,
+          "replacement": 2.545428889138358,
+          "ratio": 1.1417357397145953,
+          "strongly_bisimilar": false
+        },
+        "6,7": {
+          "interchange": 1.7734749913215637,
+          "replacement": 2.5161133323396956,
+          "ratio": 0.7048470227698176,
+          "strongly_bisimilar": false
+        },
+        "6,8": {
+          "interchange": 2.2919473988669257,
+          "replacement": 2.4188687460763116,
+          "ratio": 0.947528633990571,
+          "strongly_bisimilar": false
+        },
+        "6,9": {
+          "interchange": 3.021188395363944,
+          "replacement": 2.5299802848270962,
+          "ratio": 1.1941549162905838,
+          "strongly_bisimilar": false
+        },
+        "6,10": {
+          "interchange": 3.4264554636819025,
+          "replacement": 2.5505289350237166,
+          "ratio": 1.343429363413867,
+          "strongly_bisimilar": false
+        },
+        "7,8": {
+          "interchange": 1.1874856352806091,
+          "replacement": 2.251771926879883,
+          "ratio": 0.5273560883553986,
+          "strongly_bisimilar": false
+        },
+        "7,9": {
+          "interchange": 2.2587516137531827,
+          "replacement": 2.2341916050229753,
+          "ratio": 1.0109927942500059,
+          "strongly_bisimilar": false
+        },
+        "7,10": {
+          "interchange": 2.8861102887562344,
+          "replacement": 2.4748084374836514,
+          "ratio": 1.1661954294830872,
+          "strongly_bisimilar": false
+        },
+        "7,11": {
+          "interchange": 3.4888775008065362,
+          "replacement": 2.617581520761762,
+          "ratio": 1.3328629779056225,
+          "strongly_bisimilar": false
+        },
+        "8,9": {
+          "interchange": 1.2401369980403354,
+          "replacement": 2.0986524650028775,
+          "ratio": 0.5909206115170398,
+          "strongly_bisimilar": false
+        },
+        "8,10": {
+          "interchange": 2.0884291274206976,
+          "replacement": 2.132749881063189,
+          "ratio": 0.9792189632108576,
+          "strongly_bisimilar": false
+        },
+        "8,11": {
+          "interchange": 3.5339431251798357,
+          "replacement": 2.4338328668049405,
+          "ratio": 1.4520073145671193,
+          "strongly_bisimilar": false
+        },
+        "8,12": {
+          "interchange": 2.8761383976255144,
+          "replacement": 2.2824266978672574,
+          "ratio": 1.2601230086324438,
+          "strongly_bisimilar": false
+        },
+        "9,10": {
+          "interchange": 1.159890489918845,
+          "replacement": 2.2521835906164984,
+          "ratio": 0.5150070778865071,
+          "strongly_bisimilar": false
+        },
+        "9,11": {
+          "interchange": 2.1784134081431796,
+          "replacement": 2.3008026906422208,
+          "ratio": 0.9468058329853747,
+          "strongly_bisimilar": false
+        },
+        "9,12": {
+          "interchange": 2.363275681223188,
+          "replacement": 2.034555503300258,
+          "ratio": 1.1615685476624034,
+          "strongly_bisimilar": false
+        },
+        "9,13": {
+          "interchange": 2.6727596521377563,
+          "replacement": 1.8871636390686035,
+          "ratio": 1.4162839918403949,
+          "strongly_bisimilar": false
+        },
+        "10,11": {
+          "interchange": 1.1709329571042741,
+          "replacement": 1.9003216283661977,
+          "ratio": 0.6161761985782199,
+          "strongly_bisimilar": false
+        },
+        "10,12": {
+          "interchange": 2.2090255532945906,
+          "replacement": 2.1272343822887967,
+          "ratio": 1.0384495340912767,
+          "strongly_bisimilar": false
+        },
+        "10,13": {
+          "interchange": 2.6446405138288225,
+          "replacement": 1.9211726103510176,
+          "ratio": 1.3765762115502793,
+          "strongly_bisimilar": false
+        },
+        "10,14": {
+          "interchange": 3.4616042716162543,
+          "replacement": 2.3737877011299133,
+          "ratio": 1.458261945591309,
+          "strongly_bisimilar": false
+        },
+        "11,12": {
+          "interchange": 1.0752354179109846,
+          "replacement": 1.9243483969143458,
+          "ratio": 0.5587529885852416,
+          "strongly_bisimilar": false
+        },
+        "11,13": {
+          "interchange": 1.9576328141348702,
+          "replacement": 1.8142962626048496,
+          "ratio": 1.0790039390900397,
+          "strongly_bisimilar": false
+        },
+        "11,14": {
+          "interchange": 2.7982119151524136,
+          "replacement": 1.9023697291101729,
+          "ratio": 1.4709085579879244,
+          "strongly_bisimilar": false
+        },
+        "11,15": {
+          "interchange": 11.73765928404672,
+          "replacement": 3.1927844541413446,
+          "ratio": 3.6763080791295604,
+          "strongly_bisimilar": false
+        },
+        "12,13": {
+          "interchange": 0.8601708327020918,
+          "replacement": 1.6560076900890897,
+          "ratio": 0.519424419221069,
+          "strongly_bisimilar": false
+        },
+        "12,14": {
+          "interchange": 1.5312672768320357,
+          "replacement": 1.7234119176864624,
+          "ratio": 0.8885091608271946,
+          "strongly_bisimilar": false
+        },
+        "12,15": {
+          "interchange": 8.089744567871094,
+          "replacement": 2.9930769460541864,
+          "ratio": 2.7028187759307793,
+          "strongly_bisimilar": false
+        },
+        "13,14": {
+          "interchange": 0.7992351821490696,
+          "replacement": 1.4194574696677071,
+          "ratio": 0.5630568010465743,
+          "strongly_bisimilar": false
+        },
+        "13,15": {
+          "interchange": 6.688625267573766,
+          "replacement": 3.003462851047516,
+          "ratio": 2.2269711992669663,
+          "strongly_bisimilar": false
+        },
+        "14,15": {
+          "interchange": 9.360604184014457,
+          "replacement": 2.0958728109087263,
+          "ratio": 4.466208128111207,
+          "strongly_bisimilar": false
+        }
+      },
+      "jacobian_norms": {
+        "0": 453.9405212402344,
+        "1": 203.26803588867188,
+        "2": 333.38653564453125,
+        "3": 368.38720703125,
+        "4": 378.8950500488281,
+        "5": 427.0751037597656,
+        "6": 458.4126892089844,
+        "7": 525.6629638671875,
+        "8": 545.2418823242188,
+        "9": 578.9428100585938,
+        "10": 613.2213745117188,
+        "11": 643.4325561523438,
+        "12": 727.2908935546875,
+        "13": 732.1490478515625,
+        "14": 869.0396728515625,
+        "15": 1016.8906860351562
+      },
+      "emergence_trajectory": [
+        {
+          "step": 15000,
+          "loss": 3.1416893491744995,
+          "ppl": 23.142930343770548,
+          "mean_I_R_ratio": 1.3089503860786944
+        },
+        {
+          "step": 30000,
+          "loss": 2.718377080440521,
+          "ppl": 15.155705783734609,
+          "mean_I_R_ratio": 1.2963122746371762
+        },
+        {
+          "step": 61035,
+          "loss": 1.9573017046451568,
+          "ppl": 7.080196805067138,
+          "mean_I_R_ratio": 1.2354158533952153
+        }
+      ],
+      "checkpoint_distances": {
+        "15000": {
+          "step": 15000,
+          "loss": 3.1416893491744995,
+          "ppl": 23.142930343770548,
+          "mean_I_R_ratio": 1.3089503860786944
+        },
+        "30000": {
+          "step": 30000,
+          "loss": 2.718377080440521,
+          "ppl": 15.155705783734609,
+          "mean_I_R_ratio": 1.2963122746371762
+        },
+        "61035": {
+          "step": 61035,
+          "loss": 1.9573017046451568,
+          "ppl": 7.080196805067138,
+          "mean_I_R_ratio": 1.2354158533952153
+        }
+      }
+    },
+    "rope": {
+      "config": {
+        "use_rope": true,
+        "n_layers": 16,
+        "d_model": 768,
+        "n_heads": 12
+      },
+      "summary": {
+        "mean_interchange": 2.0959934472406982,
+        "mean_replacement": 1.0008606237393838,
+        "mean_I_R_ratio": 1.2550615978394772,
+        "pairs_ratio_lt_0.5": 11,
+        "pairs_ratio_gt_0.8": 34,
+        "n_pairs": 54
+      },
+      "pair_distances": {
+        "0,1": {
+          "interchange": 14.687482084546769,
+          "replacement": 4.443620537008558,
+          "ratio": 3.305296202025352,
+          "strongly_bisimilar": false
+        },
+        "0,2": {
+          "interchange": 20.253970418657577,
+          "replacement": 4.637597441673279,
+          "ratio": 4.367341209096636,
+          "strongly_bisimilar": false
+        },
+        "0,3": {
+          "interchange": 14.80651215144566,
+          "replacement": 4.710386631744249,
+          "ratio": 3.143375121555254,
+          "strongly_bisimilar": false
+        },
+        "0,4": {
+          "interchange": 13.53541306086949,
+          "replacement": 5.084929802588054,
+          "ratio": 2.661868223571984,
+          "strongly_bisimilar": false
+        },
+        "1,2": {
+          "interchange": 0.5629256793430872,
+          "replacement": 0.7927847334316798,
+          "ratio": 0.7100612001386284,
+          "strongly_bisimilar": false
+        },
+        "1,3": {
+          "interchange": 1.8429980533463615,
+          "replacement": 1.2617247658116477,
+          "ratio": 1.4606973748468193,
+          "strongly_bisimilar": false
+        },
+        "1,4": {
+          "interchange": 1.8975572245461598,
+          "replacement": 1.0738132170268466,
+          "ratio": 1.7671203839559433,
+          "strongly_bisimilar": false
+        },
+        "1,5": {
+          "interchange": 3.113002572740827,
+          "replacement": 1.6872436787400928,
+          "ratio": 1.8450225132156854,
+          "strongly_bisimilar": false
+        },
+        "2,3": {
+          "interchange": 0.32964515898908886,
+          "replacement": 0.631758953843798,
+          "ratio": 0.5217894529729363,
+          "strongly_bisimilar": false
+        },
+        "2,4": {
+          "interchange": 0.7557660681860787,
+          "replacement": 0.6586940586566925,
+          "ratio": 1.1473704038148043,
+          "strongly_bisimilar": false
+        },
+        "2,5": {
+          "interchange": 1.679467499256134,
+          "replacement": 0.9534110512052263,
+          "ratio": 1.7615355905062475,
+          "strongly_bisimilar": false
+        },
+        "2,6": {
+          "interchange": 1.9182353615760803,
+          "replacement": 1.0564840308257513,
+          "ratio": 1.8156785199064616,
+          "strongly_bisimilar": false
+        },
+        "3,4": {
+          "interchange": 0.19950793577092035,
+          "replacement": 0.5425523583378111,
+          "ratio": 0.3677210736773316,
+          "strongly_bisimilar": false
+        },
+        "3,5": {
+          "interchange": 0.5246680017028535,
+          "replacement": 0.5310602358409336,
+          "ratio": 0.987963259522238,
+          "strongly_bisimilar": false
+        },
+        "3,6": {
+          "interchange": 0.6757649438721793,
+          "replacement": 0.5812192325081145,
+          "ratio": 1.1626678987200894,
+          "strongly_bisimilar": false
+        },
+        "3,7": {
+          "interchange": 0.811392298766545,
+          "replacement": 0.6792976366622108,
+          "ratio": 1.19445770875039,
+          "strongly_bisimilar": false
+        },
+        "4,5": {
+          "interchange": 0.18418519092457636,
+          "replacement": 0.67641481757164,
+          "ratio": 0.2722962095339365,
+          "strongly_bisimilar": false
+        },
+        "4,6": {
+          "interchange": 0.39047455149037497,
+          "replacement": 0.580185068505151,
+          "ratio": 0.6730172364296317,
+          "strongly_bisimilar": false
+        },
+        "4,7": {
+          "interchange": 0.6251118396009718,
+          "replacement": 0.7310792122568404,
+          "ratio": 0.8550535004076333,
+          "strongly_bisimilar": false
+        },
+        "4,8": {
+          "interchange": 0.7323798792702811,
+          "replacement": 0.6289122785840715,
+          "ratio": 1.1645183344213028,
+          "strongly_bisimilar": false
+        },
+        "5,6": {
+          "interchange": 0.13745531546218054,
+          "replacement": 0.40066710327352795,
+          "ratio": 0.34306613721175844,
+          "strongly_bisimilar": false
+        },
+        "5,7": {
+          "interchange": 0.31517791960920605,
+          "replacement": 0.43884172397000454,
+          "ratio": 0.7182040866262946,
+          "strongly_bisimilar": false
+        },
+        "5,8": {
+          "interchange": 0.47478383140904556,
+          "replacement": 0.4462676921061107,
+          "ratio": 1.0638991791271426,
+          "strongly_bisimilar": false
+        },
+        "5,9": {
+          "interchange": 0.6720739688192094,
+          "replacement": 0.47403780264513834,
+          "ratio": 1.417764500905307,
+          "strongly_bisimilar": false
+        },
+        "6,7": {
+          "interchange": 0.12401628973228591,
+          "replacement": 0.4634721130132675,
+          "ratio": 0.2675809098830887,
+          "strongly_bisimilar": false
+        },
+        "6,8": {
+          "interchange": 0.2800738343170711,
+          "replacement": 0.42262197179453714,
+          "ratio": 0.6627053322891643,
+          "strongly_bisimilar": false
+        },
+        "6,9": {
+          "interchange": 0.445028692483902,
+          "replacement": 0.4629681493554797,
+          "ratio": 0.9612512070372935,
+          "strongly_bisimilar": false
+        },
+        "6,10": {
+          "interchange": 0.5293211851801192,
+          "replacement": 0.42941465760980335,
+          "ratio": 1.2326574691305303,
+          "strongly_bisimilar": false
+        },
+        "7,8": {
+          "interchange": 0.12126803823879787,
+          "replacement": 0.42794013023376465,
+          "ratio": 0.2833761772802586,
+          "strongly_bisimilar": false
+        },
+        "7,9": {
+          "interchange": 0.2867502602083342,
+          "replacement": 0.4162770211696625,
+          "ratio": 0.6888447969905565,
+          "strongly_bisimilar": false
+        },
+        "7,10": {
+          "interchange": 0.39851114153862,
+          "replacement": 0.3977840883391244,
+          "ratio": 1.0018277581246362,
+          "strongly_bisimilar": false
+        },
+        "7,11": {
+          "interchange": 0.5333327714885985,
+          "replacement": 0.46811223668711527,
+          "ratio": 1.1393267032477592,
+          "strongly_bisimilar": false
+        },
+        "8,9": {
+          "interchange": 0.12695330487830297,
+          "replacement": 0.3957071730068752,
+          "ratio": 0.3208263926113227,
+          "strongly_bisimilar": false
+        },
+        "8,10": {
+          "interchange": 0.2939784548112324,
+          "replacement": 0.4022349502359118,
+          "ratio": 0.7308625333669465,
+          "strongly_bisimilar": false
+        },
+        "8,11": {
+          "interchange": 0.48383501384939465,
+          "replacement": 0.5020354752029691,
+          "ratio": 0.9637466626385499,
+          "strongly_bisimilar": false
+        },
+        "8,12": {
+          "interchange": 0.7163082361221313,
+          "replacement": 0.5510416754654476,
+          "ratio": 1.299916626790699,
+          "strongly_bisimilar": false
+        },
+        "9,10": {
+          "interchange": 0.1365361011454037,
+          "replacement": 0.39420743925230844,
+          "ratio": 0.34635597280897473,
+          "strongly_bisimilar": false
+        },
+        "9,11": {
+          "interchange": 0.34069932571479256,
+          "replacement": 0.47541311383247375,
+          "ratio": 0.7166384681664134,
+          "strongly_bisimilar": false
+        },
+        "9,12": {
+          "interchange": 0.48259697215897696,
+          "replacement": 0.5005737713405064,
+          "ratio": 0.9640876124416239,
+          "strongly_bisimilar": false
+        },
+        "9,13": {
+          "interchange": 0.7543896819864,
+          "replacement": 0.5197208736624037,
+          "ratio": 1.4515285417057884,
+          "strongly_bisimilar": false
+        },
+        "10,11": {
+          "interchange": 0.13002573964851244,
+          "replacement": 0.4434800233159747,
+          "ratio": 0.29319413002409606,
+          "strongly_bisimilar": false
+        },
+        "10,12": {
+          "interchange": 0.3096202846084322,
+          "replacement": 0.4229743203946522,
+          "ratio": 0.7320072865093634,
+          "strongly_bisimilar": false
+        },
+        "10,13": {
+          "interchange": 0.6453016400337219,
+          "replacement": 0.49803514565740314,
+          "ratio": 1.2956949836388725,
+          "strongly_bisimilar": false
+        },
+        "10,14": {
+          "interchange": 1.16969125185694,
+          "replacement": 0.7414937274796622,
+          "ratio": 1.5774796311156583,
+          "strongly_bisimilar": false
+        },
+        "11,12": {
+          "interchange": 0.13677189286266056,
+          "replacement": 0.44653957656451637,
+          "ratio": 0.3062928797583754,
+          "strongly_bisimilar": false
+        },
+        "11,13": {
+          "interchange": 0.47007497080734795,
+          "replacement": 0.5445812003953117,
+          "ratio": 0.863186188542318,
+          "strongly_bisimilar": false
+        },
+        "11,14": {
+          "interchange": 1.195098046745573,
+          "replacement": 0.6498860120773315,
+          "ratio": 1.838934866041511,
+          "strongly_bisimilar": false
+        },
+        "11,15": {
+          "interchange": 3.823271359716143,
+          "replacement": 1.91340890952519,
+          "ratio": 1.998146522932763,
+          "strongly_bisimilar": false
+        },
+        "12,13": {
+          "interchange": 0.2316157913633755,
+          "replacement": 0.47691186198166435,
+          "ratio": 0.48565743437875447,
+          "strongly_bisimilar": false
+        },
+        "12,14": {
+          "interchange": 0.8461035234587533,
+          "replacement": 0.6069304304463523,
+          "ratio": 1.3940700298996376,
+          "strongly_bisimilar": false
+        },
+        "12,15": {
+          "interchange": 3.9692295278821668,
+          "replacement": 2.111748533589499,
+          "ratio": 1.8795938363681053,
+          "strongly_bisimilar": false
+        },
+        "13,14": {
+          "interchange": 0.23391009654317585,
+          "replacement": 0.6073957830667496,
+          "ratio": 0.3851032605522058,
+          "strongly_bisimilar": false
+        },
+        "13,15": {
+          "interchange": 8.406629937035698,
+          "replacement": 2.326911589929036,
+          "ratio": 3.612784419080915,
+          "strongly_bisimilar": false
+        },
+        "14,15": {
+          "interchange": 4.436751774379186,
+          "replacement": 1.3236676624843051,
+          "ratio": 3.3518623290357876,
+          "strongly_bisimilar": false
+        }
+      },
+      "jacobian_norms": {
+        "0": 455.49700927734375,
+        "1": 470.78594970703125,
+        "2": 549.6777954101562,
+        "3": 444.9266662597656,
+        "4": 394.7877197265625,
+        "5": 307.1744384765625,
+        "6": 322.9237976074219,
+        "7": 360.3999328613281,
+        "8": 382.44940185546875,
+        "9": 438.611083984375,
+        "10": 479.546875,
+        "11": 541.2116088867188,
+        "12": 617.2860717773438,
+        "13": 731.3978881835938,
+        "14": 834.5303955078125,
+        "15": 1090.2816162109375
+      },
+      "emergence_trajectory": [
+        {
+          "step": 15000,
+          "loss": 3.037766363620758,
+          "ppl": 20.85860063398345,
+          "mean_I_R_ratio": 1.07958194944517
+        },
+        {
+          "step": 30000,
+          "loss": 2.6268134751319887,
+          "ppl": 13.829631151285822,
+          "mean_I_R_ratio": 1.1716652478530167
+        },
+        {
+          "step": 61035,
+          "loss": 1.805427751302719,
+          "ppl": 6.082572720537022,
+          "mean_I_R_ratio": 1.257048269412505
+        }
+      ],
+      "checkpoint_distances": {
+        "15000": {
+          "step": 15000,
+          "loss": 3.037766363620758,
+          "ppl": 20.85860063398345,
+          "mean_I_R_ratio": 1.07958194944517
+        },
+        "30000": {
+          "step": 30000,
+          "loss": 2.6268134751319887,
+          "ppl": 13.829631151285822,
+          "mean_I_R_ratio": 1.1716652478530167
+        },
+        "61035": {
+          "step": 61035,
+          "loss": 1.805427751302719,
+          "ppl": 6.082572720537022,
+          "mean_I_R_ratio": 1.257048269412505
+        }
+      }
+    }
+  },
+  "conclusion": {
+    "gap_confirmed": false,
+    "abspe_I_R_ratio": 1.240570510435842,
+    "rope_I_R_ratio": 1.2550615978394772
+  }
+}

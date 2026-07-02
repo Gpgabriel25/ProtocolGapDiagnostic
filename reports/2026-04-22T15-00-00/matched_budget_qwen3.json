@@ -1,0 +1,1668 @@
+{
+  "model": "Qwen/Qwen3-8B",
+  "baseline_ppl": 12.104549480005296,
+  "n_eval_tokens": 5734,
+  "n_layers": 36,
+  "evaluator": {
+    "dataset": "wikitext-2-raw-v1 test",
+    "max_words": 5000,
+    "window": 512,
+    "stride": 256,
+    "dtype": "bfloat16",
+    "device": "TPU_0(process=0,(0,0,0,0))"
+  },
+  "results": [
+    {
+      "method": "sleb_calfree",
+      "budget_target": 50,
+      "evals_actual": 36,
+      "wall_clock_s": 14.43052864074707,
+      "n_removed": 1,
+      "layers_removed": [
+        20
+      ],
+      "final_ppl": 12.297879315159028,
+      "ppl_delta_pct": 1.5971667138300338,
+      "history": [
+        {
+          "step": 1,
+          "layer_added": 20,
+          "removed_so_far": [
+            20
+          ],
+          "ppl": 12.297879315159028,
+          "eval_count_after": 36
+        }
+      ]
+    },
+    {
+      "method": "beam_bisim",
+      "budget_target": 50,
+      "config": {
+        "beam_width": 1,
+        "seed_k": 8,
+        "max_n": 3
+      },
+      "evals_actual": 43,
+      "wall_clock_s": 17.196613788604736,
+      "n_removed": 2,
+      "layers_removed": [
+        15,
+        20
+      ],
+      "final_ppl": 12.552643192636877,
+      "ppl_delta_pct": 3.7018619600155844,
+      "history": [
+        {
+          "step": 1,
+          "best_skip": [
+            20
+          ],
+          "ppl": 12.297879315159028,
+          "eval_count_after": 8
+        },
+        {
+          "step": 2,
+          "best_skip": [
+            15,
+            20
+          ],
+          "ppl": 12.552643192636877,
+          "eval_count_after": 43
+        }
+      ]
+    },
+    {
+      "method": "sleb_calfree",
+      "budget_target": 100,
+      "evals_actual": 71,
+      "wall_clock_s": 28.00082802772522,
+      "n_removed": 2,
+      "layers_removed": [
+        20,
+        15
+      ],
+      "final_ppl": 12.552643192636877,
+      "ppl_delta_pct": 3.7018619600155844,
+      "history": [
+        {
+          "step": 1,
+          "layer_added": 20,
+          "removed_so_far": [
+            20
+          ],
+          "ppl": 12.297879315159028,
+          "eval_count_after": 36
+        },
+        {
+          "step": 2,
+          "layer_added": 15,
+          "removed_so_far": [
+            20,
+            15
+          ],
+          "ppl": 12.552643192636877,
+          "eval_count_after": 71
+        }
+      ]
+    },
+    {
+      "method": "beam_bisim",
+      "budget_target": 100,
+      "config": {
+        "beam_width": 1,
+        "seed_k": 8,
+        "max_n": 4
+      },
+      "evals_actual": 77,
+      "wall_clock_s": 30.679439783096313,
+      "n_removed": 3,
+      "layers_removed": [
+        2,
+        15,
+        20
+      ],
+      "final_ppl": 12.96922264259206,
+      "ppl_delta_pct": 7.143373357389793,
+      "history": [
+        {
+          "step": 1,
+          "best_skip": [
+            20
+          ],
+          "ppl": 12.297879315159028,
+          "eval_count_after": 8
+        },
+        {
+          "step": 2,
+          "best_skip": [
+            15,
+            20
+          ],
+          "ppl": 12.552643192636877,
+          "eval_count_after": 43
+        },
+        {
+          "step": 3,
+          "best_skip": [
+            2,
+            15,
+            20
+          ],
+          "ppl": 12.96922264259206,
+          "eval_count_after": 77
+        }
+      ]
+    },
+    {
+      "method": "sleb_calfree",
+      "budget_target": 200,
+      "evals_actual": 170,
+      "wall_clock_s": 67.525643825531,
+      "n_removed": 5,
+      "layers_removed": [
+        20,
+        15,
+        2,
+        16,
+        26
+      ],
+      "final_ppl": 14.626812619652847,
+      "ppl_delta_pct": 20.837315290535273,
+      "history": [
+        {
+          "step": 1,
+          "layer_added": 20,
+          "removed_so_far": [
+            20
+          ],
+          "ppl": 12.297879315159028,
+          "eval_count_after": 36
+        },
+        {
+          "step": 2,
+          "layer_added": 15,
+          "removed_so_far": [
+            20,
+            15
+          ],
+          "ppl": 12.552643192636877,
+          "eval_count_after": 71
+        },
+        {
+          "step": 3,
+          "layer_added": 2,
+          "removed_so_far": [
+            20,
+            15,
+            2
+          ],
+          "ppl": 12.96922264259206,
+          "eval_count_after": 105
+        },
+        {
+          "step": 4,
+          "layer_added": 16,
+          "removed_so_far": [
+            20,
+            15,
+            2,
+            16
+          ],
+          "ppl": 13.57795958792237,
+          "eval_count_after": 138
+        },
+        {
+          "step": 5,
+          "layer_added": 26,
+          "removed_so_far": [
+            20,
+            15,
+            2,
+            16,
+            26
+          ],
+          "ppl": 14.626812619652847,
+          "eval_count_after": 170
+        }
+      ]
+    },
+    {
+      "method": "beam_bisim",
+      "budget_target": 200,
+      "config": {
+        "beam_width": 2,
+        "seed_k": 10,
+        "max_n": 4
+      },
+      "evals_actual": 147,
+      "wall_clock_s": 57.832470178604126,
+      "n_removed": 3,
+      "layers_removed": [
+        2,
+        15,
+        20
+      ],
+      "final_ppl": 12.96922264259206,
+      "ppl_delta_pct": 7.143373357389793,
+      "history": [
+        {
+          "step": 1,
+          "best_skip": [
+            20
+          ],
+          "ppl": 12.297879315159028,
+          "eval_count_after": 10
+        },
+        {
+          "step": 2,
+          "best_skip": [
+            15,
+            20
+          ],
+          "ppl": 12.552643192636877,
+          "eval_count_after": 79
+        },
+        {
+          "step": 3,
+          "best_skip": [
+            2,
+            15,
+            20
+          ],
+          "ppl": 12.96922264259206,
+          "eval_count_after": 147
+        }
+      ]
+    },
+    {
+      "method": "sleb_calfree",
+      "budget_target": 400,
+      "evals_actual": 390,
+      "wall_clock_s": 155.72270226478577,
+      "n_removed": 13,
+      "layers_removed": [
+        20,
+        15,
+        2,
+        16,
+        26,
+        17,
+        21,
+        32,
+        13,
+        29,
+        18,
+        14,
+        9
+      ],
+      "final_ppl": 40.736589057156635,
+      "ppl_delta_pct": 236.53948975504383,
+      "history": [
+        {
+          "step": 1,
+          "layer_added": 20,
+          "removed_so_far": [
+            20
+          ],
+          "ppl": 12.297879315159028,
+          "eval_count_after": 36
+        },
+        {
+          "step": 2,
+          "layer_added": 15,
+          "removed_so_far": [
+            20,
+            15
+          ],
+          "ppl": 12.552643192636877,
+          "eval_count_after": 71
+        },
+        {
+          "step": 3,
+          "layer_added": 2,
+          "removed_so_far": [
+            20,
+            15,
+            2
+          ],
+          "ppl": 12.96922264259206,
+          "eval_count_after": 105
+        },
+        {
+          "step": 4,
+          "layer_added": 16,
+          "removed_so_far": [
+            20,
+            15,
+            2,
+            16
+          ],
+          "ppl": 13.57795958792237,
+          "eval_count_after": 138
+        },
+        {
+          "step": 5,
+          "layer_added": 26,
+          "removed_so_far": [
+            20,
+            15,
+            2,
+            16,
+            26
+          ],
+          "ppl": 14.626812619652847,
+          "eval_count_after": 170
+        },
+        {
+          "step": 6,
+          "layer_added": 17,
+          "removed_so_far": [
+            20,
+            15,
+            2,
+            16,
+            26,
+            17
+          ],
+          "ppl": 16.180250948489743,
+          "eval_count_after": 201
+        },
+        {
+          "step": 7,
+          "layer_added": 21,
+          "removed_so_far": [
+            20,
+            15,
+            2,
+            16,
+            26,
+            17,
+            21
+          ],
+          "ppl": 17.58967893584928,
+          "eval_count_after": 231
+        },
+        {
+          "step": 8,
+          "layer_added": 32,
+          "removed_so_far": [
+            20,
+            15,
+            2,
+            16,
+            26,
+            17,
+            21,
+            32
+          ],
+          "ppl": 19.471236938522143,
+          "eval_count_after": 260
+        },
+        {
+          "step": 9,
+          "layer_added": 13,
+          "removed_so_far": [
+            20,
+            15,
+            2,
+            16,
+            26,
+            17,
+            21,
+            32,
+            13
+          ],
+          "ppl": 22.160969309921565,
+          "eval_count_after": 288
+        },
+        {
+          "step": 10,
+          "layer_added": 29,
+          "removed_so_far": [
+            20,
+            15,
+            2,
+            16,
+            26,
+            17,
+            21,
+            32,
+            13,
+            29
+          ],
+          "ppl": 25.45777858439433,
+          "eval_count_after": 315
+        },
+        {
+          "step": 11,
+          "layer_added": 18,
+          "removed_so_far": [
+            20,
+            15,
+            2,
+            16,
+            26,
+            17,
+            21,
+            32,
+            13,
+            29,
+            18
+          ],
+          "ppl": 30.73939708752621,
+          "eval_count_after": 341
+        },
+        {
+          "step": 12,
+          "layer_added": 14,
+          "removed_so_far": [
+            20,
+            15,
+            2,
+            16,
+            26,
+            17,
+            21,
+            32,
+            13,
+            29,
+            18,
+            14
+          ],
+          "ppl": 34.61005811249403,
+          "eval_count_after": 366
+        },
+        {
+          "step": 13,
+          "layer_added": 9,
+          "removed_so_far": [
+            20,
+            15,
+            2,
+            16,
+            26,
+            17,
+            21,
+            32,
+            13,
+            29,
+            18,
+            14,
+            9
+          ],
+          "ppl": 40.736589057156635,
+          "eval_count_after": 390
+        }
+      ]
+    },
+    {
+      "method": "beam_bisim",
+      "budget_target": 400,
+      "config": {
+        "beam_width": 3,
+        "seed_k": 12,
+        "max_n": 5
+      },
+      "evals_actual": 400,
+      "wall_clock_s": 157.88098430633545,
+      "n_removed": 5,
+      "layers_removed": [
+        2,
+        15,
+        16,
+        20,
+        26
+      ],
+      "final_ppl": 14.626812619652847,
+      "ppl_delta_pct": 20.837315290535273,
+      "history": [
+        {
+          "step": 1,
+          "best_skip": [
+            20
+          ],
+          "ppl": 12.297879315159028,
+          "eval_count_after": 12
+        },
+        {
+          "step": 2,
+          "best_skip": [
+            15,
+            20
+          ],
+          "ppl": 12.552643192636877,
+          "eval_count_after": 114
+        },
+        {
+          "step": 3,
+          "best_skip": [
+            2,
+            15,
+            20
+          ],
+          "ppl": 12.96922264259206,
+          "eval_count_after": 215
+        },
+        {
+          "step": 4,
+          "best_skip": [
+            2,
+            15,
+            16,
+            20
+          ],
+          "ppl": 13.57795958792237,
+          "eval_count_after": 312
+        },
+        {
+          "step": 5,
+          "best_skip": [
+            2,
+            15,
+            16,
+            20,
+            26
+          ],
+          "ppl": 14.626812619652847,
+          "eval_count_after": 400
+        }
+      ]
+    },
+    {
+      "method": "sleb_calfree",
+      "budget_target": 800,
+      "evals_actual": 666,
+      "wall_clock_s": 267.7667124271393,
+      "n_removed": 36,
+      "layers_removed": [
+        20,
+        15,
+        2,
+        16,
+        26,
+        17,
+        21,
+        32,
+        13,
+        29,
+        18,
+        14,
+        9,
+        30,
+        10,
+        25,
+        35,
+        27,
+        3,
+        19,
+        11,
+        8,
+        23,
+        12,
+        5,
+        28,
+        33,
+        24,
+        1,
+        7,
+        4,
+        31,
+        22,
+        6,
+        0,
+        34
+      ],
+      "final_ppl": 108225879.64033826,
+      "ppl_delta_pct": 894092487.4119431,
+      "history": [
+        {
+          "step": 1,
+          "layer_added": 20,
+          "removed_so_far": [
+            20
+          ],
+          "ppl": 12.297879315159028,
+          "eval_count_after": 36
+        },
+        {
+          "step": 2,
+          "layer_added": 15,
+          "removed_so_far": [
+            20,
+            15
+          ],
+          "ppl": 12.552643192636877,
+          "eval_count_after": 71
+        },
+        {
+          "step": 3,
+          "layer_added": 2,
+          "removed_so_far": [
+            20,
+            15,
+            2
+          ],
+          "ppl": 12.96922264259206,
+          "eval_count_after": 105
+        },
+        {
+          "step": 4,
+          "layer_added": 16,
+          "removed_so_far": [
+            20,
+            15,
+            2,
+            16
+          ],
+          "ppl": 13.57795958792237,
+          "eval_count_after": 138
+        },
+        {
+          "step": 5,
+          "layer_added": 26,
+          "removed_so_far": [
+            20,
+            15,
+            2,
+            16,
+            26
+          ],
+          "ppl": 14.626812619652847,
+          "eval_count_after": 170
+        },
+        {
+          "step": 6,
+          "layer_added": 17,
+          "removed_so_far": [
+            20,
+            15,
+            2,
+            16,
+            26,
+            17
+          ],
+          "ppl": 16.180250948489743,
+          "eval_count_after": 201
+        },
+        {
+          "step": 7,
+          "layer_added": 21,
+          "removed_so_far": [
+            20,
+            15,
+            2,
+            16,
+            26,
+            17,
+            21
+          ],
+          "ppl": 17.58967893584928,
+          "eval_count_after": 231
+        },
+        {
+          "step": 8,
+          "layer_added": 32,
+          "removed_so_far": [
+            20,
+            15,
+            2,
+            16,
+            26,
+            17,
+            21,
+            32
+          ],
+          "ppl": 19.471236938522143,
+          "eval_count_after": 260
+        },
+        {
+          "step": 9,
+          "layer_added": 13,
+          "removed_so_far": [
+            20,
+            15,
+            2,
+            16,
+            26,
+            17,
+            21,
+            32,
+            13
+          ],
+          "ppl": 22.160969309921565,
+          "eval_count_after": 288
+        },
+        {
+          "step": 10,
+          "layer_added": 29,
+          "removed_so_far": [
+            20,
+            15,
+            2,
+            16,
+            26,
+            17,
+            21,
+            32,
+            13,
+            29
+          ],
+          "ppl": 25.45777858439433,
+          "eval_count_after": 315
+        },
+        {
+          "step": 11,
+          "layer_added": 18,
+          "removed_so_far": [
+            20,
+            15,
+            2,
+            16,
+            26,
+            17,
+            21,
+            32,
+            13,
+            29,
+            18
+          ],
+          "ppl": 30.73939708752621,
+          "eval_count_after": 341
+        },
+        {
+          "step": 12,
+          "layer_added": 14,
+          "removed_so_far": [
+            20,
+            15,
+            2,
+            16,
+            26,
+            17,
+            21,
+            32,
+            13,
+            29,
+            18,
+            14
+          ],
+          "ppl": 34.61005811249403,
+          "eval_count_after": 366
+        },
+        {
+          "step": 13,
+          "layer_added": 9,
+          "removed_so_far": [
+            20,
+            15,
+            2,
+            16,
+            26,
+            17,
+            21,
+            32,
+            13,
+            29,
+            18,
+            14,
+            9
+          ],
+          "ppl": 40.736589057156635,
+          "eval_count_after": 390
+        },
+        {
+          "step": 14,
+          "layer_added": 30,
+          "removed_so_far": [
+            20,
+            15,
+            2,
+            16,
+            26,
+            17,
+            21,
+            32,
+            13,
+            29,
+            18,
+            14,
+            9,
+            30
+          ],
+          "ppl": 48.888475563889,
+          "eval_count_after": 413
+        },
+        {
+          "step": 15,
+          "layer_added": 10,
+          "removed_so_far": [
+            20,
+            15,
+            2,
+            16,
+            26,
+            17,
+            21,
+            32,
+            13,
+            29,
+            18,
+            14,
+            9,
+            30,
+            10
+          ],
+          "ppl": 61.20883647761068,
+          "eval_count_after": 435
+        },
+        {
+          "step": 16,
+          "layer_added": 25,
+          "removed_so_far": [
+            20,
+            15,
+            2,
+            16,
+            26,
+            17,
+            21,
+            32,
+            13,
+            29,
+            18,
+            14,
+            9,
+            30,
+            10,
+            25
+          ],
+          "ppl": 79.39398451362467,
+          "eval_count_after": 456
+        },
+        {
+          "step": 17,
+          "layer_added": 35,
+          "removed_so_far": [
+            20,
+            15,
+            2,
+            16,
+            26,
+            17,
+            21,
+            32,
+            13,
+            29,
+            18,
+            14,
+            9,
+            30,
+            10,
+            25,
+            35
+          ],
+          "ppl": 102.03296822926103,
+          "eval_count_after": 476
+        },
+        {
+          "step": 18,
+          "layer_added": 27,
+          "removed_so_far": [
+            20,
+            15,
+            2,
+            16,
+            26,
+            17,
+            21,
+            32,
+            13,
+            29,
+            18,
+            14,
+            9,
+            30,
+            10,
+            25,
+            35,
+            27
+          ],
+          "ppl": 129.7315723907813,
+          "eval_count_after": 495
+        },
+        {
+          "step": 19,
+          "layer_added": 3,
+          "removed_so_far": [
+            20,
+            15,
+            2,
+            16,
+            26,
+            17,
+            21,
+            32,
+            13,
+            29,
+            18,
+            14,
+            9,
+            30,
+            10,
+            25,
+            35,
+            27,
+            3
+          ],
+          "ppl": 163.29408241220415,
+          "eval_count_after": 513
+        },
+        {
+          "step": 20,
+          "layer_added": 19,
+          "removed_so_far": [
+            20,
+            15,
+            2,
+            16,
+            26,
+            17,
+            21,
+            32,
+            13,
+            29,
+            18,
+            14,
+            9,
+            30,
+            10,
+            25,
+            35,
+            27,
+            3,
+            19
+          ],
+          "ppl": 231.57384917079978,
+          "eval_count_after": 530
+        },
+        {
+          "step": 21,
+          "layer_added": 11,
+          "removed_so_far": [
+            20,
+            15,
+            2,
+            16,
+            26,
+            17,
+            21,
+            32,
+            13,
+            29,
+            18,
+            14,
+            9,
+            30,
+            10,
+            25,
+            35,
+            27,
+            3,
+            19,
+            11
+          ],
+          "ppl": 296.0759684171187,
+          "eval_count_after": 546
+        },
+        {
+          "step": 22,
+          "layer_added": 8,
+          "removed_so_far": [
+            20,
+            15,
+            2,
+            16,
+            26,
+            17,
+            21,
+            32,
+            13,
+            29,
+            18,
+            14,
+            9,
+            30,
+            10,
+            25,
+            35,
+            27,
+            3,
+            19,
+            11,
+            8
+          ],
+          "ppl": 404.97156203363556,
+          "eval_count_after": 561
+        },
+        {
+          "step": 23,
+          "layer_added": 23,
+          "removed_so_far": [
+            20,
+            15,
+            2,
+            16,
+            26,
+            17,
+            21,
+            32,
+            13,
+            29,
+            18,
+            14,
+            9,
+            30,
+            10,
+            25,
+            35,
+            27,
+            3,
+            19,
+            11,
+            8,
+            23
+          ],
+          "ppl": 774.477515722644,
+          "eval_count_after": 575
+        },
+        {
+          "step": 24,
+          "layer_added": 12,
+          "removed_so_far": [
+            20,
+            15,
+            2,
+            16,
+            26,
+            17,
+            21,
+            32,
+            13,
+            29,
+            18,
+            14,
+            9,
+            30,
+            10,
+            25,
+            35,
+            27,
+            3,
+            19,
+            11,
+            8,
+            23,
+            12
+          ],
+          "ppl": 1192.4132904073645,
+          "eval_count_after": 588
+        },
+        {
+          "step": 25,
+          "layer_added": 5,
+          "removed_so_far": [
+            20,
+            15,
+            2,
+            16,
+            26,
+            17,
+            21,
+            32,
+            13,
+            29,
+            18,
+            14,
+            9,
+            30,
+            10,
+            25,
+            35,
+            27,
+            3,
+            19,
+            11,
+            8,
+            23,
+            12,
+            5
+          ],
+          "ppl": 1833.2294660693271,
+          "eval_count_after": 600
+        },
+        {
+          "step": 26,
+          "layer_added": 28,
+          "removed_so_far": [
+            20,
+            15,
+            2,
+            16,
+            26,
+            17,
+            21,
+            32,
+            13,
+            29,
+            18,
+            14,
+            9,
+            30,
+            10,
+            25,
+            35,
+            27,
+            3,
+            19,
+            11,
+            8,
+            23,
+            12,
+            5,
+            28
+          ],
+          "ppl": 2841.748086952711,
+          "eval_count_after": 611
+        },
+        {
+          "step": 27,
+          "layer_added": 33,
+          "removed_so_far": [
+            20,
+            15,
+            2,
+            16,
+            26,
+            17,
+            21,
+            32,
+            13,
+            29,
+            18,
+            14,
+            9,
+            30,
+            10,
+            25,
+            35,
+            27,
+            3,
+            19,
+            11,
+            8,
+            23,
+            12,
+            5,
+            28,
+            33
+          ],
+          "ppl": 5535.178603627044,
+          "eval_count_after": 621
+        },
+        {
+          "step": 28,
+          "layer_added": 24,
+          "removed_so_far": [
+            20,
+            15,
+            2,
+            16,
+            26,
+            17,
+            21,
+            32,
+            13,
+            29,
+            18,
+            14,
+            9,
+            30,
+            10,
+            25,
+            35,
+            27,
+            3,
+            19,
+            11,
+            8,
+            23,
+            12,
+            5,
+            28,
+            33,
+            24
+          ],
+          "ppl": 17505.883907344225,
+          "eval_count_after": 630
+        },
+        {
+          "step": 29,
+          "layer_added": 1,
+          "removed_so_far": [
+            20,
+            15,
+            2,
+            16,
+            26,
+            17,
+            21,
+            32,
+            13,
+            29,
+            18,
+            14,
+            9,
+            30,
+            10,
+            25,
+            35,
+            27,
+            3,
+            19,
+            11,
+            8,
+            23,
+            12,
+            5,
+            28,
+            33,
+            24,
+            1
+          ],
+          "ppl": 63133.34259215578,
+          "eval_count_after": 638
+        },
+        {
+          "step": 30,
+          "layer_added": 7,
+          "removed_so_far": [
+            20,
+            15,
+            2,
+            16,
+            26,
+            17,
+            21,
+            32,
+            13,
+            29,
+            18,
+            14,
+            9,
+            30,
+            10,
+            25,
+            35,
+            27,
+            3,
+            19,
+            11,
+            8,
+            23,
+            12,
+            5,
+            28,
+            33,
+            24,
+            1,
+            7
+          ],
+          "ppl": 290140.7174981465,
+          "eval_count_after": 645
+        },
+        {
+          "step": 31,
+          "layer_added": 4,
+          "removed_so_far": [
+            20,
+            15,
+            2,
+            16,
+            26,
+            17,
+            21,
+            32,
+            13,
+            29,
+            18,
+            14,
+            9,
+            30,
+            10,
+            25,
+            35,
+            27,
+            3,
+            19,
+            11,
+            8,
+            23,
+            12,
+            5,
+            28,
+            33,
+            24,
+            1,
+            7,
+            4
+          ],
+          "ppl": 361009.90108832595,
+          "eval_count_after": 651
+        },
+        {
+          "step": 32,
+          "layer_added": 31,
+          "removed_so_far": [
+            20,
+            15,
+            2,
+            16,
+            26,
+            17,
+            21,
+            32,
+            13,
+            29,
+            18,
+            14,
+            9,
+            30,
+            10,
+            25,
+            35,
+            27,
+            3,
+            19,
+            11,
+            8,
+            23,
+            12,
+            5,
+            28,
+            33,
+            24,
+            1,
+            7,
+            4,
+            31
+          ],
+          "ppl": 1034980.2916230927,
+          "eval_count_after": 656
+        },
+        {
+          "step": 33,
+          "layer_added": 22,
+          "removed_so_far": [
+            20,
+            15,
+            2,
+            16,
+            26,
+            17,
+            21,
+            32,
+            13,
+            29,
+            18,
+            14,
+            9,
+            30,
+            10,
+            25,
+            35,
+            27,
+            3,
+            19,
+            11,
+            8,
+            23,
+            12,
+            5,
+            28,
+            33,
+            24,
+            1,
+            7,
+            4,
+            31,
+            22
+          ],
+          "ppl": 1769711.8425490288,
+          "eval_count_after": 660
+        },
+        {
+          "step": 34,
+          "layer_added": 6,
+          "removed_so_far": [
+            20,
+            15,
+            2,
+            16,
+            26,
+            17,
+            21,
+            32,
+            13,
+            29,
+            18,
+            14,
+            9,
+            30,
+            10,
+            25,
+            35,
+            27,
+            3,
+            19,
+            11,
+            8,
+            23,
+            12,
+            5,
+            28,
+            33,
+            24,
+            1,
+            7,
+            4,
+            31,
+            22,
+            6
+          ],
+          "ppl": 783725.1322608334,
+          "eval_count_after": 663
+        },
+        {
+          "step": 35,
+          "layer_added": 0,
+          "removed_so_far": [
+            20,
+            15,
+            2,
+            16,
+            26,
+            17,
+            21,
+            32,
+            13,
+            29,
+            18,
+            14,
+            9,
+            30,
+            10,
+            25,
+            35,
+            27,
+            3,
+            19,
+            11,
+            8,
+            23,
+            12,
+            5,
+            28,
+            33,
+            24,
+            1,
+            7,
+            4,
+            31,
+            22,
+            6,
+            0
+          ],
+          "ppl": 586129.9199190587,
+          "eval_count_after": 665
+        },
+        {
+          "step": 36,
+          "layer_added": 34,
+          "removed_so_far": [
+            20,
+            15,
+            2,
+            16,
+            26,
+            17,
+            21,
+            32,
+            13,
+            29,
+            18,
+            14,
+            9,
+            30,
+            10,
+            25,
+            35,
+            27,
+            3,
+            19,
+            11,
+            8,
+            23,
+            12,
+            5,
+            28,
+            33,
+            24,
+            1,
+            7,
+            4,
+            31,
+            22,
+            6,
+            0,
+            34
+          ],
+          "ppl": 108225879.64033826,
+          "eval_count_after": 666
+        }
+      ]
+    },
+    {
+      "method": "beam_bisim",
+      "budget_target": 800,
+      "config": {
+        "beam_width": 4,
+        "seed_k": 14,
+        "max_n": 6
+      },
+      "evals_actual": 655,
+      "wall_clock_s": 257.8113040924072,
+      "n_removed": 6,
+      "layers_removed": [
+        2,
+        15,
+        16,
+        17,
+        20,
+        21
+      ],
+      "final_ppl": 15.972240386996557,
+      "ppl_delta_pct": 31.952373885372953,
+      "history": [
+        {
+          "step": 1,
+          "best_skip": [
+            20
+          ],
+          "ppl": 12.297879315159028,
+          "eval_count_after": 14
+        },
+        {
+          "step": 2,
+          "best_skip": [
+            15,
+            20
+          ],
+          "ppl": 12.552643192636877,
+          "eval_count_after": 148
+        },
+        {
+          "step": 3,
+          "best_skip": [
+            2,
+            15,
+            20
+          ],
+          "ppl": 12.96922264259206,
+          "eval_count_after": 281
+        },
+        {
+          "step": 4,
+          "best_skip": [
+            2,
+            15,
+            16,
+            20
+          ],
+          "ppl": 13.57795958792237,
+          "eval_count_after": 411
+        },
+        {
+          "step": 5,
+          "best_skip": [
+            2,
+            15,
+            16,
+            20,
+            26
+          ],
+          "ppl": 14.626812619652847,
+          "eval_count_after": 535
+        },
+        {
+          "step": 6,
+          "best_skip": [
+            2,
+            15,
+            16,
+            17,
+            20,
+            21
+          ],
+          "ppl": 15.972240386996557,
+          "eval_count_after": 655
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "jax_version": "0.10.0",
+    "device_count": 8,
+    "timestamp": "2026-04-22T21:03:00"
+  }
+}

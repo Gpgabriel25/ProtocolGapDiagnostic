@@ -1,0 +1,51 @@
+{
+  "baseline": {
+    "scores": {
+      "arc_challenge": 0.275,
+      "arc_easy": 0.435,
+      "hellaswag": 0.465,
+      "lambada_openai": 0.49,
+      "piqa": 0.675,
+      "winogrande": 0.54
+    },
+    "time": 242.0712172985077
+  },
+  "skip_5": {
+    "scores": {
+      "arc_challenge": 0.265,
+      "arc_easy": 0.415,
+      "hellaswag": 0.465,
+      "lambada_openai": 0.445,
+      "piqa": 0.655,
+      "winogrande": 0.54
+    },
+    "time": 233.43746995925903,
+    "deltas": {
+      "arc_challenge": -0.010000000000000009,
+      "arc_easy": -0.020000000000000018,
+      "hellaswag": 0.0,
+      "lambada_openai": -0.044999999999999984,
+      "piqa": -0.020000000000000018,
+      "winogrande": 0.0
+    }
+  },
+  "skip_0": {
+    "scores": {
+      "arc_challenge": 0.27,
+      "arc_easy": 0.255,
+      "hellaswag": 0.29,
+      "lambada_openai": 0.0,
+      "piqa": 0.47,
+      "winogrande": 0.515
+    },
+    "time": 223.8646538257599,
+    "deltas": {
+      "arc_challenge": -0.0050000000000000044,
+      "arc_easy": -0.18,
+      "hellaswag": -0.17500000000000004,
+      "lambada_openai": -0.49,
+      "piqa": -0.20500000000000007,
+      "winogrande": -0.025000000000000022
+    }
+  }
+}
